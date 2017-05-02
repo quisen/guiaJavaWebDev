@@ -2,17 +2,17 @@
 
 Uma vez que você esteja conectado ao seu servidor SQL, utilize o campo de **edição de querys **para realizar os primeiros comandos de criação.
 
-Para efeitos **didáticos **iremos utilizar um banco nomeado universidade, com tabelas e dados fictícios.
+Para efeitos **didáticos **iremos utilizar um banco nomeado **universidade**, com tabelas e dados fictícios.
 
-Utilizamos o comando CREATE DATABASE para definir o nome do banco.
+Utilizamos o comando CREATE DATABASE para criar e definir o nome do banco.
 
 > **CREATE DATABASE universidade;**
 
-É necessário que utilizemos o comando USE para definirmos em qual banco iremos trabalhar, **caso contrário** o programa **não** **saberá** em qual database você deseja exetuar seus comandos.
+É necessário que utilizemos o comando USE para definirmos em qual banco iremos trabalhar, **caso contrário** o programa **não** **saberá** em qual database você deseja executar seus comandos.
 
 > **USE universidade;**
 
-Depois disso criaremos a primeira tabela **aluno**,  que contém todos os seus atributos:
+Depois disso criaremos a primeira tabela chamada** aluno**:
 
 > **CREATE TABLE aluno \(**
 >
@@ -35,8 +35,6 @@ Depois disso criaremos a primeira tabela **aluno**,  que contém todos os seus a
 > **\);**
 
 Note que o atributo **id**, definido como chave primária, também possui o sufixo **AUTO\_INCREMENT **que delega ao banco realizar a criação de registros de maneira **sequenciada** e **única**. Desse modo, ao inserir registros na tabela,** não é necessário **definir o **id ** como parâmetro do comando INSERT.
-
-
 
 Em seguida, alguns comandos de inserção de registros na tabela aluno:
 
