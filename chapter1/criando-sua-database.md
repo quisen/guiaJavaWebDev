@@ -134,7 +134,7 @@ Agora criaremos a tabela **aluno\_matriculado** que irá ter uma **relação** d
 >
 > **\);**
 
-Por fim, iremos popular a tabela. Note que os registros criados relacionam-se com os registros de aluno e disciplina por meio dos seus ids únicos:
+Por fim, iremos popular a tabela. Note que os registros criados relacionam-se com os registros de aluno e disciplina por meio de suas chaves primárias:
 
 > **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(1,2\);**
 >
