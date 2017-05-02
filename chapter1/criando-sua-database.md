@@ -2,7 +2,7 @@
 
 Uma vez que você esteja conectado ao seu servidor SQL, utilize o campo de **edição de querys **para realizar os primeiros comandos de criação.
 
-Para efeitos **didáticos **iremos utilizar um banco com tabelas e dados fictícios.
+Para efeitos **didáticos **iremos utilizar um banco nomeado universidade, com tabelas e dados fictícios.
 
 Utilizamos o comando CREATE DATABASE para definir o nome do banco.
 
@@ -34,9 +34,5 @@ Depois disso criaremos a primeira tabela **aluno**,  que contém todos os seus a
 >
 > **\);**
 
-&lt;script src="https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350.js"&gt;&lt;/script&gt;
-
-https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350
-
-
+[https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350](https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350)
 
