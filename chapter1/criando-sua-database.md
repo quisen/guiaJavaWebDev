@@ -78,7 +78,7 @@ Em seguida, alguns comandos de inserção de registros na tabela aluno:
 >
 > **INSERT INTO aluno \(nome,matricula,cpf,telefone,endereco,periodo\) VALUES \("Bertha",488541,"1608110458399","\(53\) 98878-6683","4043 Nam Rd.",5\);**
 
-Agora criaremos a tabela disciplina:
+Agora criaremos a tabela **disciplina**:
 
 > **CREATE TABLE disciplina \(**
 >
@@ -116,5 +116,69 @@ Depois inserimos alguns registros:
 >
 > **INSERT INTO disciplina \(nome,periodo,professor\) VALUES \("Desenvolvimento Web",10,"Mariana"\);**
 
-[https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350](https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350)
+Agora criaremos a tabela **aluno\_matriculado** que irá ter uma **relação** direta com as **tabelas** **criadas** **anteriormente**:
+
+> **CREATE TABLE aluno\_matriculado \(**
+>
+> **    id INT NOT NULL AUTO\_INCREMENT,**
+>
+> **    id\_aluno INT NOT NULL,**
+>
+> **    id\_disciplina INT NOT NULL,**
+>
+> **    PRIMARY KEY \(id\),**
+>
+> **    FOREIGN KEY \(id\_aluno\) REFERENCES aluno \(id\),**
+>
+> **    FOREIGN KEY \(id\_disciplina\) REFERENCES disciplina \(id\)**
+>
+> **\);**
+
+Por fim, iremos popular a tabela. Note que os registros criados relacionam-se com os registros de aluno e disciplina por meio dos seus ids únicos:
+
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(1,2\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(1,4\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(2,2\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(2,3\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(3,2\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(4,4\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(4,5\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(5,1\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(5,2\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(5,3\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(6,2\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(6,3\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(7,6\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(8,7\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(8,8\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(8,9\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(8,10\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(9,5\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(9,3\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(10,8\);**
+>
+> **INSERT INTO aluno\_matriculado \(id\_aluno,id\_disciplina\) VALUES \(10,9\);**
+
+---
+
+[https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350](https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350 "Download do script SQL completo.")
 
