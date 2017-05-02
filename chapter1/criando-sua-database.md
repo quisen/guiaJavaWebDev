@@ -180,5 +180,7 @@ Por fim, iremos popular a tabela. Note que os registros criados relacionam-se co
 
 ---
 
+Download do script completo:
+
 [https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350](https://gist.github.com/quisen/bab74027c8140efd34c70c8e9feaf350 "Download do script SQL completo.")
 
