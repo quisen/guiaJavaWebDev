@@ -6,5 +6,7 @@
   * [Criando seu Banco de Dados](chapter1/criando-sua-database.md)
   * [Consultando Registros](chapter1/consultando-registros.md)
   * [Importando Planilhas](chapter1/importando-planilhas.md)
-* [JavaServer Faces/Primefaces](javaserver-facesprimefaces.md)
+* [CRUD Java Web](chapter1/java.md)
+  * [NetBeans](chapter1/java/netbeans.md)
+  * JavaServer Faces/Primefaces
 
