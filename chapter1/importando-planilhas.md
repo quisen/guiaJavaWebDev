@@ -20,9 +20,7 @@ Em seguida, selecione a opção "**Import Records From a External File**"  \(íc
 
 Depois  é necessário selecionar **Apply **no canto inferior direito para que o Workbench converta em instruções SQL e efetive a inserção.
 
-Realize um SELECT novamente e os novos registros poderão ser visualizados.
+Realize um **SELECT** novamente e os novos registros poderão ser visualizados.
 
 ![](/assets/selectAlunosImportFeito.png)
-
-
 
