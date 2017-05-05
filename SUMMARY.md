@@ -7,6 +7,7 @@
   * [Consultando Registros](chapter1/consultando-registros.md)
   * [Importando Planilhas](chapter1/importando-planilhas.md)
 * [CRUD Java Web](chapter1/java.md)
+  * [Criando seu Projeto](chapter1/java/criando-seu-projeto.md)
   * [Gerando Classes de Entidade](chapter1/java/netbeans.md)
   * JavaServer Faces/Primefaces
 
