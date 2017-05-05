@@ -5,8 +5,11 @@ O objetivo principal desse material é repassar os conhecimentos adquiridos dura
 Principais tópicos abordados:
 
 * Gerenciar Banco de Dados;
-* JavaServer Faces e PrimeFaces para aplicações web;
 * Trabalhar com a IDE Netbeans.
+* CRUD Java Web
+* JavaServer Faces e PrimeFaces para aplicações web;
+
+
 
 
 
