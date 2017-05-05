@@ -20,35 +20,33 @@ Escolha um **nome** para o seu projeto, sua **localização**. Id de grupo, Vers
 
 Clique em **Próximo**.
 
-
-
 **Terceira etapa - Definições:**
+
+Caso nenhum servidor seja exibido você deverá clicar no botão **Adicionar**.
 
 ![](/assets/servlet glassfish add.png)
 
-
+Selecione **GlassFish** **Server** e clique no botão **Próximo**.
 
 ![](/assets/glassfish download.png)
 
+Caso você ja tenha baixado, apenas **indique** o diretório no qual o GlassFish se encontra.
 
+Senão, faça o **download **da **versão 4.1**.
+
+**Não** utilize a versão 4.1.1.
 
 ![](/assets/gf download.png)
 
-
-
 ![](/assets/gf 4.1.png)
 
-
-
-
+Nesta etapa não é necessário preenchimento, basta clicar no botão **Finalizar**.
 
 ![](/assets/domain clean.png)
 
-
+Clique em **Finalizar** novamente.
 
 ![](/assets/finalizar.png)
 
-
-
-
+**Pronto**, seu projeto está criado.
 
