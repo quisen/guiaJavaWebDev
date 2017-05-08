@@ -1,14 +1,22 @@
 # Criando o EntityManager e Configurando a Unidade de Persistência Gerada pelas Classes de Entidade do Banco de Dados
 
+Primeiramente você deve criar uma nova classe java para o entitiy manager.
+
 ![](/assets/1 crie a classe.png)
+
+O arquivo **persistence**.**xml** foi criado automaticamente pelo NetBeans e ele guarda todas as informações sobre a camada de persistência que tem uma relação direta com o banco de dados.
 
 ![](/assets/2 procurar persistence.xml.png)
 
+É recomendado que o **nome** **padrão** da Unidade de Persistência seja modificado para facilitar seu entendimento.
+
 ![](/assets/3 persistence gui.png)
+
+Marque a opção **Nenhum** para o Modo de Cache Compartilhado.
 
 ![](/assets/4 persistence gui desejado.png)
 
-![](/assets/5 emanager configurado.png)
+Abaixo está um exemplo de classe java para um entity manager.![](/assets/5 emanager configurado.png)
 
 ```java
 import javax.persistence.EntityManager;
