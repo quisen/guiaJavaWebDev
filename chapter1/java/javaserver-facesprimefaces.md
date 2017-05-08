@@ -82,7 +82,9 @@ index.xhtml
 </html>
 ```
 
-Neste exemplo que utilizamos, a "dataTable" possui o atributo "var", que é o tipo de objeto que será iterado no preenchimento - e o "value" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior. Em cada coluna, usa-se diretamente a referência de variáveis em relação ao objeto que estamos utilizando, como por exemplo, "\#{aluno.nome}".
+Neste exemplo a "dataTable" possui o atributo "**var**", que é o tipo de objeto que será iterado no preenchimento - e o "**value**" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior. 
+
+Em cada coluna, usa-se diretamente a referência de variáveis em relação ao objeto que estamos utilizando, como por exemplo, "\#{aluno.nome}".
 
 **Vale ressaltar que, **nosso managed bean possui o nome "AlunoBean", porém na hora de referenciar no código xhtml, deve-se usar a primeira letra minúscula, caso contrário, ocorrerão erros de execução.
 
