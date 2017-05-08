@@ -8,13 +8,13 @@ Agora clique com o botão direito do mouse sobre o seu projeto no canto esquerdo
 
 ![](/assets/adicionando jsf framework.png)
 
-Clique em OK e finalize. 
+Clique em OK e finalize.
 
 **Atenção**: **não** **marque** a opção PrimeFaces nesta etapa, pois iremos adicioná-lo de outra maneira.
 
 ![](/assets/jsf click ok.png)
 
-Em seguida, navegue até o arquivo **pom.xml **dentro dele você deverá adicionar as dependências do seu projeto. A primeira que iremos adicionar é a biblioteca do **PrimeFaces** versão 6.1. 
+Em seguida, navegue até o arquivo **pom.xml **dentro dele você deverá adicionar as dependências do seu projeto. A primeira que iremos adicionar é a biblioteca do **PrimeFaces** versão 6.1.
 
 ![](/assets/editar pom.xml add prime.png)
 
@@ -29,8 +29,6 @@ Agora um novo arquivo chamado **index**.**xhtml** foi criado pelo NetBeans.
 Abaixo segue o link com exemplos simpoles de componentes para tabelas do PrimeFaces:
 
 [https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml](https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml)
-
-
 
 index.xhtml
 
@@ -88,13 +86,11 @@ Neste exemplo que utilizamos, a "dataTable" possui o atributo "var", que é o ti
 
 **Vale ressaltar que, **nosso managed bean possui o nome "AlunoBean", porém na hora de referenciar no código xhtml, deve-se usar a primeira letra minúscula, caso contrário, ocorrerão erros de execução.
 
-
-
 Resultado final:
 
 ![](/assets/tabela.png)
 
-Agora veremos um exemplo de como executar ações assíncronas com componentes web.
+Agora veremos um exemplo de como executar ações assíncronas com componentes web via primefaces/jsf.
 
 **Ação via botão**
 
@@ -104,9 +100,13 @@ Adicionamos o botão na nossa página web:
 <p:commandButton value="Cadastrar novo Aluno" action="#{alunoBean.novoCadastro}"/>
 ```
 
+E também o "pop-up" com caixas de texto para cadastro:
+
+```
+TODO
+```
+
 E então adicionamos o método novoCadastro\(\) no nosso backing bean:
-
-
 
 ```
     public void novoCadastro() {
@@ -115,4 +115,8 @@ E então adicionamos o método novoCadastro\(\) no nosso backing bean:
 ```
 
 
+
+Resultado final:
+
+TODO
 
