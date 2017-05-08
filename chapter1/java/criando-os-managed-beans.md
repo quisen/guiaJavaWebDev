@@ -1,3 +1,5 @@
+# Introdução aos ManagedBeans
+
 ![](/assets/criando bean.png)
 
 A classe referenciada com a annotation "@ManagedBean" atua como um intermediador entre a página web \(criada na próxima sessão do manual\) e os métodos java que interagem com as classes de entidade e o banco de dados.
