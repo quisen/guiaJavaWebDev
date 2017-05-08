@@ -66,5 +66,7 @@ index.xhtml
 </html>
 ```
 
+Resultado final:
 
+![](/assets/tabela.png)
 
