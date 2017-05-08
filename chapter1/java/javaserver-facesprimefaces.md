@@ -26,7 +26,7 @@ Agora um novo arquivo chamado **index**.**xhtml** foi criado pelo NetBeans.
 
 ![](/assets/index novo.png)
 
-Abaixo segue o link com exemplos simpoles de componentes para tabelas do PrimeFaces:
+Abaixo segue o link com exemplos simples de componentes para tabelas do PrimeFaces:
 
 [https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml](https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml)
 
@@ -113,8 +113,6 @@ E então adicionamos o método novoCadastro\(\) no nosso backing bean:
             TODO        
     }
 ```
-
-
 
 Resultado final:
 
