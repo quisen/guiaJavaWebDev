@@ -5,8 +5,6 @@ A classe referenciada com a annotation "@ManagedBean" atua como um intermediador
 Este é um exemplo básico para o Managed Bean dos alunos. No código seguinte, é declarada uma lista do tipo aluno que tem a finalidade de armazenar todos os alunos resultantes da query "SELECT \* FROM Aluno;"
 
 ```java
-package br.edu.utfpr.universidade;
-
 import java.io.Serializable;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
@@ -35,9 +33,8 @@ public class AlunoBean implements Serializable {
     public void setAlunos(List<Aluno> alunos) {
         this.alunos = alunos;
     }
-    
-}
 
+}
 ```
 
 A annotation "@**PostConstruct" **é usada previamente em um método que precisa ser executado depois que as dependências da classe são carregadas, de forma a fazer algum tipo de inicialização no código. A annotation deve ser chamada antes da classe ser executada.
