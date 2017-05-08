@@ -10,13 +10,9 @@
 
 ![](/assets/index novo.png)
 
-
-
 [https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml](https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml)
 
-
-
-  index.xhtml
+index.xhtml
 
 ```
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -30,7 +26,7 @@
     <h:head>
         <title>Universidade Exemplo</title>
     </h:head>
-    
+
     <h:body>
         <h:form>            
             <p:dataTable var="aluno" value="#{alunoBean.alunos}">
@@ -64,9 +60,11 @@
             </p:dataTable>
         </h:form>
     </h:body>
-    
+
 </html>
 ```
 
+Resultado final:
 
+![](/assets/tabela.png)
 
