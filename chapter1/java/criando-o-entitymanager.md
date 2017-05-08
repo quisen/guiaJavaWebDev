@@ -4,7 +4,7 @@ Primeiramente você deve criar uma nova classe java e configurá-la para ser o s
 
 ![](/assets/1 crie a classe.png)
 
-O arquivo **persistence**.**xml** foi criado automaticamente pelo NetBeans e ele guarda todas as informações sobre a camada de persistência que tem uma relação direta com o banco de dados.
+O arquivo **persistence**.**xml** foi criado automaticamente pelo NetBeans durante a geração das classes de entidade a partir do banco, esse arquivo guarda todas as informações sobre a camada de persistência que tem uma relação direta com o seu banco de dados.
 
 ![](/assets/2 procurar persistence.xml.png)
 
