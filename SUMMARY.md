@@ -9,7 +9,7 @@
 * [CRUD Java Web](chapter1/java.md)
   * [Criando seu Projeto](chapter1/java/criando-seu-projeto.md)
   * [Gerando Classes de Entidade](chapter1/java/netbeans.md)
-  * [Criando o EntityManager](chapter1/java/criando-o-entitymanager.md)
-  * Criando os Managed Beans
+  * [Criando o EntityManager e Persistência](chapter1/java/criando-o-entitymanager.md)
+  * [Criando os Managed Beans](chapter1/java/criando-os-managed-beans.md)
   * [JavaServer Faces/Primefaces](chapter1/java/javaserver-facesprimefaces.md)
 
