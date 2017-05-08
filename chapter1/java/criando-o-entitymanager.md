@@ -1,4 +1,4 @@
-# Criando o EntityManager e Configurando a Unidade de Persistência Gerada pelas Classes de Entidade do Banco de Dados
+# Criando o EntityManager e Configurando a Unidade de Persistência
 
 Primeiramente você deve criar uma nova classe java dentro do seu pacote e configurá-la para ser o seu entitiy manager.
 
