@@ -131,7 +131,7 @@ Partes relevantes do código:
 * O botão possui o atributo "update" que realizará uma mudança visual na tabela, pois ao adicionar o novo usuário queremos que ele seja listado imediatamente junto com os demais.
 * A tag "defaultCommand" indica o id do componente que será executado ao ser pressionada a tecla Enter.
 
-E então **adicionamos** o métonosso **AlunoBean**, assim como a criação do novo objeto "aluno" que será utilizado para fazer o link dos campos de texto para cadAlunoBean.java
+E então **adicionamos** o méto nosso **AlunoBean**, assim como a criação do novo objeto "aluno" que será utilizado para fazer o link dos campos de texto para cadAlunoBean.java
 
 ```
 import java.io.Serializable;
