@@ -1,8 +1,8 @@
 # Introdução
 
-Este  trabalhao deseja oferecer  uma abordagem **simples** e **prática** para a elaboração **aplicações** **web** utilizando **Java** como linguagem de programação. 
+Este  trabalho deseja oferecer uma abordagem **simples** e **prática** para a elaboração **aplicações** **web** utilizando **Java** como linguagem de programação.
 
-Com informações detalhadas sobre como **configurar** e **criar**  bancos de dados relacionais **SQL** para o **armazenamento** seguro de dados.
+Demonstrando detalhadamente como configurar e implementar a **conexão** da sua **aplicação** com um servidor de **bancos** **de** **dados** **relacionais** **SQL** para o **armazenamento** de dados.
 
 O material também explica com trechos de **código**, **comentários** e **imagens ** como utilizar a  especificação Java para o desenvolvimento de interfaces de usuário chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces** com componentes úteis e de fácil utilização.
 
