@@ -1,3 +1,6 @@
+
+---
+
 # Inserção de Registros
 
 Agora veremos um exemplo de como executar ações assíncronas com componentes web via primefaces/jsf.
