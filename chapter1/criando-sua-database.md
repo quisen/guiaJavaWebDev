@@ -6,13 +6,13 @@ Para efeitos **didáticos **iremos utilizar um banco nomeado **universidade**, c
 
 Utilizamos o comando CREATE DATABASE para criar e definir o nome do banco.
 
-```MySQL
+```SQL
 CREATE DATABASE universidade;
 ```
 
 É necessário que utilizemos o comando USE para definirmos em qual banco iremos trabalhar, **caso contrário** o programa **não** **saberá** em qual database você deseja executar seus comandos.
 
-```MySQL
+```SQL
 USE universidade;
 ```
 
@@ -35,7 +35,7 @@ Note que o atributo **id**, definido como chave primária, também possui o sufi
 
 Em seguida, alguns comandos de inserção de registros na tabela aluno:
 
-```MySQL
+```SQL
 INSERT INTO aluno (nome,matricula,cpf,telefone,endereco,periodo) VALUES ("Lois",1421360,"1632010497799","(22) 98492-2558","8603 Per Ave",7);
 INSERT INTO aluno (nome,matricula,cpf,telefone,endereco,periodo) VALUES ("Medge",299215,"1613011317199","(14) 98501-1201","Ap #157-3813 Justo Street",6);
 INSERT INTO aluno (nome,matricula,cpf,telefone,endereco,periodo) VALUES ("Quincy",1578504,"1600011477899","(65) 98901-5201","269-9229 Vitae Street",4);
@@ -60,7 +60,7 @@ INSERT INTO aluno (nome,matricula,cpf,telefone,endereco,periodo) VALUES ("Bertha
 
 Agora criaremos a tabela **disciplina**:
 
-```MySQL
+```SQL
 CREATE TABLE disciplina (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(255) DEFAULT NULL,
@@ -72,7 +72,7 @@ CREATE TABLE disciplina (
 
 Depois inserimos alguns registros:
 
-```MySQL
+```SQL
 INSERT INTO disciplina (nome,periodo,professor) VALUES ("Gestão",1,"João");
 INSERT INTO disciplina (nome,periodo,professor) VALUES ("Arquitetura de Computadores",2,"Cláudio");
 INSERT INTO disciplina (nome,periodo,professor) VALUES ("Matemática",3,"Maria");
@@ -87,7 +87,7 @@ INSERT INTO disciplina (nome,periodo,professor) VALUES ("Desenvolvimento Web",10
 
 Agora criaremos a tabela **aluno\_matriculado** que irá ter uma **relação** direta com as **tabelas** **criadas** **anteriormente**:
 
-```MySQL
+```SQL
 CREATE TABLE aluno_matriculado (
     id INT NOT NULL AUTO_INCREMENT,
     id_aluno INT NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE aluno_matriculado (
 
 Por fim, iremos popular a tabela. Note que os registros criados relacionam-se com os registros de aluno e disciplina por meio de suas chaves primárias:
 
-```MySQL
+```SQL
 INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (1,2);
 INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (1,4);
 INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (2,2);

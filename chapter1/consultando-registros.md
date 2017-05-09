@@ -4,7 +4,7 @@ Para consultar os registros das tabelas do seu banco existem duas maneiras:
 
 A **primeira** é utilizando o comando SELECT no campo de querys, exemplo:
 
-```MySQL
+```SQL
 SELECT * FROM aluno;
 ```
 
