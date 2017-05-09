@@ -19,7 +19,7 @@ O atributo "pop-up" servirá para abrir uma caixa de diálogo com os campos para
 <h:form id="cadastro">
 ```
 
-```
+```xhtml
             <p:dialog header="Novo Aluno" widgetVar="novo-aluno-widget" id="novo-aluno-dialog"
                       resizable="false" modal="false" closeOnEscape="true">
                 <p:outputPanel style="text-align:center">
