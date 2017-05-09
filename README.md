@@ -1,6 +1,6 @@
 # Introdução
 
-Este  trabalho deseja oferecer uma abordagem **simples** e **prática** para a elaboração **aplicações** **web** utilizando **Java** como linguagem de programação.
+Este  trabalho deseja oferecer uma abordagem **prática** para a elaboração de **aplicações** **Java web** utilizando somente ferramentas **open source**.
 
 Demonstrando detalhadamente como configurar e gerenciar a **conexão** da sua **aplicação** com um **banco** **de** **dados** **relacional** **SQL** para o **armazenamento** de dados.
 

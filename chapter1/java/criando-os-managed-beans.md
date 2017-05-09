@@ -6,7 +6,7 @@ Agora crie uma nova classe java chamada** AlunoBean.**
 
 A classe referenciada com a annotation "@ManagedBean" atua como um intermediador entre a página web \(criada na próxima sessão do manual\) e os métodos java que interagem com as classes de entidade e o banco de dados.
 
-Este é um exemplo básico para o Managed Bean dos alunos. No código seguinte, é declarada uma lista do tipo aluno que tem a finalidade de armazenar todos os alunos resultantes da query "SELECT \* FROM Aluno;"
+Este é um exemplo básico para o Managed Bean dos alunos. No código abaixo, é declarada uma lista do tipo aluno que tem a finalidade de armazenar todos os alunos resultantes da query "SELECT \* FROM Aluno;"
 
 ```java
 import java.io.Serializable;
