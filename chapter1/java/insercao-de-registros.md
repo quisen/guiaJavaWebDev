@@ -69,7 +69,7 @@ Partes relevantes do código:
 
 E então adicionamos o método novoCadastro\(\) no nosso backing bean, assim como a criação do novo objeto "aluno" que será utilizado para fazer o link dos campos de texto para cadastro.
 
-# Criação do Alunobean
+# Modificação do Alunobean
 
 AlunoBean.java
 
