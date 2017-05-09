@@ -11,5 +11,9 @@
   * [Gerando Classes de Entidade](chapter1/java/netbeans.md)
   * [Criando o EntityManager e Persistência](chapter1/java/criando-o-entitymanager.md)
   * [Introdução aos ManagedBeans](chapter1/java/criando-os-managed-beans.md)
-  * [Introdução à Criação de Páginas Web](chapter1/java/javaserver-facesprimefaces.md)
+  * [Criação de Páginas Web com PrimeFaces](chapter1/java/javaserver-facesprimefaces.md)
+  * [Incorporando elementos do PrimeFaces](chapter1/java/incorporando-elementos-do-primefaces.md)
+  * [Inserção de Registros](chapter1/java/insercao-de-registros.md)
+  * Edição de Registros
+  * Exclusão de Registros
 
