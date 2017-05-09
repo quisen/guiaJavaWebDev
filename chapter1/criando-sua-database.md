@@ -18,7 +18,7 @@ USE universidade;
 
 Depois disso criaremos a primeira tabela chamada** aluno**:
 
-```MySQL
+```SQL
 CREATE TABLE aluno (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(255) DEFAULT NULL,
