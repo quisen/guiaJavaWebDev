@@ -1,14 +1,18 @@
 # Introdução
 
-O objetivo principal desse material é repassar conhecimentos adquiridos durante o processo de desenvolvimento de sistemas que utilizam Java.
+Este  trabalhao deseja oferecer  uma abordagem **simples** e **prática** para a elaboração **aplicações** **web** utilizando **Java** como linguagem de programação. 
+
+Com informações detalhadas sobre como **configurar** e **criar**  bancos de dados relacionais **SQL** para o **armazenamento** seguro de dados.
+
+O material também explica com trechos de **código**, **comentários** e **imagens ** como utilizar a  especificação Java para o desenvolvimento de interfaces de usuário chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces** com componentes úteis e de fácil utilização.
 
 Principais tópicos abordados:
 
-* Gerenciar Banco de Dados;
+* Como Gerenciar Banco de Dados;
 * Trabalhar com o MySQL Workbench;
 * Trabalhar com a IDE Netbeans;
-* CRUD Java Web;
-* JavaServer Faces e PrimeFaces para aplicações web;
+* Criação de CRUD Java Web com JSF;
+* Utilizando componentes PrimeFaces para aplicações web;
 
 
 
