@@ -76,7 +76,7 @@ E então adicionamos o método novoCadastro\(\) no nosso backing bean, assim com
 
 AlunoBean.java
 
-```
+```xhtml
 import java.io.Serializable;
 import java.util.List;
 import java.util.Random;
