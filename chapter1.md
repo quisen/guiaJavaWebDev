@@ -39,5 +39,3 @@ DELETE - exclui registros de uma tabela.
 
 [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/)
 
-![](/assets/images/MySQLWb.png)
-
