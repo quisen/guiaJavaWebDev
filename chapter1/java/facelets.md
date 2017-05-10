@@ -22,9 +22,9 @@ Para este exemplo será utilizado o modelo composto por 4 partes, sendo elas: **
 
 ![](/assets/3 - template configurado.png)Para integrarmos nosso index.xhtml com o template criado basta inserirmos duas tags.
 
-A primeira serve para referenciar o caminho do template. 
+A primeira **&lt;ui:composition&gt; **serve para referenciar o caminho do template.
 
-A segunda serve para definir qual é a parte do nosso layout que iremos customizar.
+A segunda **&lt;ui:define&gt; **serve para definir qual é a parte do nosso layout que iremos customizar.
 
 Neste caso está definido **que o** **index** irá aparecer dentro do **content**.![](/assets/templateIndex.png)
 
@@ -38,7 +38,7 @@ Abaixo estão os códigos para cada uma das partes.
 
 **topFacelet.xhtml**
 
-```
+```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -57,7 +57,7 @@ Abaixo estão os códigos para cada uma das partes.
 
 **leftFacelet.xhtml**
 
-```
+```xhtml
  <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -76,7 +76,7 @@ Abaixo estão os códigos para cada uma das partes.
 
 **bottomFacelet.xhtml**
 
-```
+```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -95,8 +95,6 @@ Abaixo estão os códigos para cada uma das partes.
     </body>
 </html>
 ```
-
-
 
 Agora você deverá **atualizar** o arquivo **template**.**xhtml** para cada parte referenciar corretamente os arquivos que foram criados para cada facelet.
 
@@ -147,8 +145,6 @@ Agora você deverá **atualizar** o arquivo **template**.**xhtml** para cada par
 **Atualize** também o arquivo res/css/**cssLayout**.**css**, **removendo** as **cores** de background para cada facelet.
 
 ![](/assets/9 - remover background color e color do css.png)
-
-
 
 Resultado:![](/assets/resultado.png)
 
