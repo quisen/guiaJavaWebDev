@@ -14,9 +14,11 @@ No campo Categorias selecione JavaServer Faces, em seguida em Tipos de Arquivos 
 
 ![](/assets/2 - modelo de facelets.png)
 
-Depois disso você deverá optar pelo modelo cujas seções sejam mais adequadas ao seu projeto. 
+Depois disso você deverá optar pelo modelo cujas seções sejam mais adequadas ao seu projeto.
 
-Para este exemplo será utilizado o modelo composto por 4 partes, sendo elas: top; left; content e bottom. ![](/assets/3 - template configurado.png)
+Para este exemplo será utilizado o modelo composto por 4 partes, sendo elas: **top**, **left**, **content** e **bottom**.
+
+ ![](/assets/3 - template configurado.png)
 
 ![](/assets/4 - adicionar uicomposition somente index.png)
 
