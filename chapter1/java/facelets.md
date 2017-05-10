@@ -18,7 +18,33 @@ Depois disso você deverá optar pelo modelo cujas seções sejam mais adequadas
 
 Para este exemplo será utilizado o modelo composto por 4 partes, sendo elas: **top**, **left**, **content** e **bottom**.
 
- ![](/assets/3 - template configurado.png)
+![](/assets/3 - template configurado.png)Para integrarmos nosso index.xhtml com o template criado basta inserirmos duas tags.
+
+A primeira serve para referenciar o caminho do template. A segunda serve para definir qual é a parte do nosso layout que iremos customizar.
+
+```xhtml
+ <ui:compositoin template="./template.xhtml">
+
+            <ui:define name="top">
+                top
+            </ui:define>
+
+            <ui:define name="left">
+                left
+            </ui:define>
+
+            <ui:define name="content">
+                content
+            </ui:define>
+
+            <ui:define name="bottom">
+                bottom
+            </ui:define>
+
+        </ui:composition>
+```
+
+
 
 ![](/assets/4 - adicionar uicomposition somente index.png)
 
