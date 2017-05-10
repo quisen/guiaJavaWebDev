@@ -26,6 +26,10 @@ Clique em finalizar e o arquivo deverá ser criado dentro das Páginas Web do se
 
 ![](/assets/3 - template configurado.png)
 
+Esta imagem mostra o template gerado com algumas modificações - fique atento para os campos dentro da tag "head", onde ocorre a referência aos arquivos de css. A tag padrão "outputStyleSheet" gera alguns problemas de compatibilidade com o glassfish, por isso devemos modificar para o modelo da imagem.
+
+
+
 Para integrarmos nosso index.xhtml com o template criado basta inserirmos duas tags.
 
 A primeira **&lt;ui:composition&gt; **serve para referenciar o caminho do template.
@@ -102,6 +106,10 @@ Abaixo estão os códigos para cada uma das partes.
 </html>
 ```
 
+Fique atento para o fato de que nestas páginas **não existem** as tags **&lt;ui:composition&gt; e &lt;ui:define&gt;**, pois elas são necessárias somente nas seções que apresentarão mudanças de forma dinâmica - por exemplo, neste projeto web de Universidade, a única parte que será "trocada" pela navegação de algum botão ou menu, é o "content", por isso utilizamos as tags neste caso, e não nas páginas estáticas \(top, bottom e left\).
+
+
+
 Agora você deverá **atualizar** o arquivo **template**.**xhtml** para cada parte referenciar corretamente os arquivos que foram criados para cada facelet.
 
 ```xhtml
@@ -150,7 +158,11 @@ Agora você deverá **atualizar** o arquivo **template**.**xhtml** para cada par
 
 **Atualize** também o arquivo res/css/**cssLayout**.**css**, **removendo** as **cores** de background para cada facelet.
 
-![](/assets/9 - remover background color e color do css.png)
+![](/assets/remove css bg color.png)
 
-Resultado:![](/assets/resultado.png)
+
+
+Resultado final:
+
+![](/assets/resultado.png)
 
