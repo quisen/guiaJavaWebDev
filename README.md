@@ -16,7 +16,7 @@ Principais tópicos abordados:
 * Trabalhar com o MySQL Workbench;
 * Trabalhar com a IDE Netbeans;
 * Criação de CRUD Java Web com JSF;
-* Utilizando componentes PrimeFaces para aplicações web;
+* Utilizando componentes PrimeFaces para aplicações web; 
 
 
 
