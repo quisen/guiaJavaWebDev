@@ -1,10 +1,8 @@
 # Guia de Programação Java
 
-
-
 Escrito por [Carlo Moro](https://github.com/cnmoro "Carlo Moro") e [Rodrigo Quisen](https://github.com/quisen "Rodrigo Quisen").
 
-Este  guia deseja oferecer uma abordagem **prática** para a elaboração de **aplicações** **Java web** com ferramentas **open source ** .
+Este guia deseja oferecer uma abordagem **prática** para a elaboração de **aplicações** **Java web** com ferramentas gratuitas e open source no ano de 2017.
 
 As informações do material estão dispostas de maneira **linear**, sendo que ao seu **término** você será capaz de **criar** uma **aplicação** **funcional**.
 
@@ -21,6 +19,16 @@ Principais tópicos abordados:
 * Trabalhar com a IDE Netbeans;
 * Criação de CRUD Java Web com JSF;
 * Utilizando componentes PrimeFaces para aplicações web; 
+
+---
+
+## **Licença**
+
+![](/assets/cc.png) 
+
+Esse trabalho é licenciado sob a Creative Commons - Atribuição-SemDerivações-SemDerivados 3.0 Não Adaptada \(CC BY-NC-ND 3.0\).
+
+
 
 
 
