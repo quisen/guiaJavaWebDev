@@ -10,19 +10,17 @@ Primeiramente crie um novo Modelo de Faceletes, para isso, clique com o botão d
 
 ![](/assets/1 - novo.png)
 
-
+No campo Categorias selecione JavaServer Faces, em seguida em Tipos de Arquivos escolha Modelo de Facelets.
 
 ![](/assets/2 - modelo de facelets.png)
 
-![](/assets/3 - template configurado.png)
+Depois disso você deverá optar pelo modelo cujas seções sejam mais adequadas ao seu projeto. 
+
+Para este exemplo será utilizado o modelo composto por 4 partes, sendo elas: top; left; content e bottom. ![](/assets/3 - template configurado.png)
 
 ![](/assets/4 - adicionar uicomposition somente index.png)
 
-
-
 ![](/assets/6 - novas paginas separadas.png)
-
-
 
 ![](/assets/7 - template com includes dos facelets.png)
 
@@ -38,11 +36,11 @@ topFacelet.xhtml
       xmlns:p="http://primefaces.org/ui">
 
     <body>
-        
+
         <div align="center" style="font-size: medium">
             Título / Logotipo
         </div>
-        
+
     </body>
 </html>
 ```
@@ -57,11 +55,11 @@ leftFacelet.xhtml
       xmlns:p="http://primefaces.org/ui">
 
     <body>
-        
+
         <div align="center" style="font-size: medium">
             Menu
         </div>
-        
+
     </body>
 </html>
 ```
@@ -77,13 +75,13 @@ bottomFacelet.xhtml
 
     <body>
         <p:separator style="width: 50%"/>
-        
+
         <br/>
-        
+
         <div align="center" style="font-size: medium">
             Informações básicas sobre o projeto, contato, direitos autorais, etc.
         </div>
-        
+
     </body>
 </html>
 ```
@@ -133,8 +131,6 @@ template.xhtml
 
 </html>
 ```
-
-
 
 Resultado:
 
