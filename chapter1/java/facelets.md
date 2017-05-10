@@ -20,7 +20,13 @@ Depois disso você deverá optar pelo modelo cujas seções sejam mais adequadas
 
 Para este exemplo será utilizado o modelo composto por 4 partes, sendo elas: **top**, **left**, **content** e **bottom**.
 
-![](/assets/3 - template configurado.png)Para integrarmos nosso index.xhtml com o template criado basta inserirmos duas tags.
+![](/assets/Captura de tela de 2017-05-10 13:54:53.png)
+
+Clique em finalizar e o arquivo deverá ser criado dentro das Páginas Web do seu projeto.
+
+![](/assets/3 - template configurado.png)
+
+Para integrarmos nosso index.xhtml com o template criado basta inserirmos duas tags.
 
 A primeira **&lt;ui:composition&gt; **serve para referenciar o caminho do template.
 
