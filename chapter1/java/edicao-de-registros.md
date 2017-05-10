@@ -4,7 +4,7 @@ Para incluir a funcionalidade de edição ou exclusão de registros, faremos uma
 
 Primeiramente vamos relembrar como os dados dos alunos são acessados na tabela:
 
-```
+```xhtml
 ...
 <p:dataTable id="tabela-alunos" var="aluno" value="#{alunoBean.alunos}">
                         <p:column headerText="Id">
@@ -113,8 +113,6 @@ Visualização do botão em nova coluna da tabela:![](/assets/novobotao expandir
 Visualização da janela pop-up ao clicar no botão da tabela:
 
 ![](/assets/popup modifica.png)
-
-
 
 Ao escolher modificar ou excluir, o registro será atualizado ou removido automaticamente da tabela, após a confirmação.
 
