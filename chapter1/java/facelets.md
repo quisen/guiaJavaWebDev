@@ -6,7 +6,7 @@ De forma resumida, iremos utilizar os facelets para atualizar **apenas as seçõ
 
 Vamos integrar os facelets em nosso projeto:
 
-Primeiramente crie um novo Modelo de Faceletes, para isso, clique com o botão direito no projeto, Novo &gt; Outros.
+Primeiramente crie um novo Modelo de Faceletes, para isso, clique com o botão direito no projeto e selecione Novo &gt; Outros.
 
 ![](/assets/1 - novo.png)
 
@@ -14,47 +14,29 @@ No campo Categorias selecione JavaServer Faces, em seguida em Tipos de Arquivos 
 
 ![](/assets/2 - modelo de facelets.png)
 
+Defina um nome do seu Modelo de Facelets, aqui será **template.xhtml.**
+
 Depois disso você deverá optar pelo modelo cujas seções sejam mais adequadas ao seu projeto.
 
 Para este exemplo será utilizado o modelo composto por 4 partes, sendo elas: **top**, **left**, **content** e **bottom**.
 
 ![](/assets/3 - template configurado.png)Para integrarmos nosso index.xhtml com o template criado basta inserirmos duas tags.
 
-A primeira serve para referenciar o caminho do template. A segunda serve para definir qual é a parte do nosso layout que iremos customizar.
+A primeira serve para referenciar o caminho do template. 
 
-```xhtml
- <ui:compositoin template="./template.xhtml">
+A segunda serve para definir qual é a parte do nosso layout que iremos customizar.
 
-            <ui:define name="top">
-                top
-            </ui:define>
+Neste caso está definido **que o** **index** irá aparecer dentro do **content**.![](/assets/templateIndex.png)
 
-            <ui:define name="left">
-                left
-            </ui:define>
+**Agora** iremos criar um arquivo customizado para cada facelet, sendo **bottomFacelet** para a parte inferior da página, **leftFacelet** para o menu na parte esquerda, **topFacelet** para o topo da página. Nosso atual **index** servira para ocupar o nosso **content.**
 
-            <ui:define name="content">
-                content
-            </ui:define>
-
-            <ui:define name="bottom">
-                bottom
-            </ui:define>
-
-        </ui:composition>
-```
-
-
-
-![](/assets/4 - adicionar uicomposition somente index.png)
+Para criar novas páginas **xhtml** basta clicar com o botão direito em seu projeto e selecionar **Outro** e depois **Arquivo** **XHTML**
 
 ![](/assets/6 - novas paginas separadas.png)
 
-![](/assets/7 - template com includes dos facelets.png)
+Abaixo estão os códigos para cada uma das partes.
 
-![](/assets/9 - remover background color e color do css.png)
-
-topFacelet.xhtml
+**topFacelet.xhtml**
 
 ```
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -73,7 +55,7 @@ topFacelet.xhtml
 </html>
 ```
 
-leftFacelet.xhtml
+**leftFacelet.xhtml**
 
 ```
  <?xml version='1.0' encoding='UTF-8' ?>
@@ -92,7 +74,7 @@ leftFacelet.xhtml
 </html>
 ```
 
-bottomFacelet.xhtml
+**bottomFacelet.xhtml**
 
 ```
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -114,9 +96,11 @@ bottomFacelet.xhtml
 </html>
 ```
 
-template.xhtml
 
-```
+
+Agora você deverá **atualizar** o arquivo **template**.**xhtml** para cada parte referenciar corretamente os arquivos que foram criados para cada facelet.
+
+```xhtml
 <?xml version='1.0' encoding='UTF-8' ?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -160,7 +144,11 @@ template.xhtml
 </html>
 ```
 
-Resultado:
+**Atualize** também o arquivo res/css/**cssLayout**.**css**, **removendo** as **cores** de background para cada facelet.
 
-![](/assets/resultado.png)
+![](/assets/9 - remover background color e color do css.png)
+
+
+
+Resultado:![](/assets/resultado.png)
 
