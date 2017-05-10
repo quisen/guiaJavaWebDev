@@ -14,7 +14,6 @@
   * [Criação de Páginas Web com PrimeFaces](chapter1/java/javaserver-facesprimefaces.md)
   * [Incorporando elementos do PrimeFaces](chapter1/java/incorporando-elementos-do-primefaces.md)
   * [Inserção de Registros](chapter1/java/insercao-de-registros.md)
-  * [Edição de Registros](chapter1/java/edicao-de-registros.md)
-  * [Exclusão de Registros](chapter1/java/exclusao-de-registros.md)
+  * [Edição e exclusão de Registros](chapter1/java/edicao-de-registros.md)
   * [Facelets](chapter1/java/facelets.md)
 
