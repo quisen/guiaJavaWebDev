@@ -26,5 +26,5 @@ Principais tópicos abordados:
 
 ![](/assets/cc.png)
 
-Esse trabalho é licenciado sob Creative Commons - Atribuição-SemDerivações-SemDerivados 3.0 Não Adaptada \(CC BY-NC-ND 3.0\). Para saber mais: [https://creativecommons.org/licenses/by-nc-nd/3.0/deed.pt\_BR](https://creativecommons.org/licenses/by-nc-nd/3.0/deed.pt_BR "Link")
+Esse trabalho é licenciado sob as regulamentações da Creative Commons - Atribuição-SemDerivações-SemDerivados 3.0 Não Adaptada \(CC BY-NC-ND 3.0\). Para saber mais: [https://creativecommons.org/licenses/by-nc-nd/3.0/deed.pt\_BR](https://creativecommons.org/licenses/by-nc-nd/3.0/deed.pt_BR "Link")
 
