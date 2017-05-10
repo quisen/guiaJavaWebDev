@@ -108,11 +108,13 @@ E então criamos uma nova coluna com um botão na nossa tabela original:
 
 Este botão irá abrir o pop-up com as informações do aluno selecionado, e ao mesmo tempo acionar o método "enviaAluno" que repassa os dados do registro clicado para um objeto volátil \(sem informação fixa\) "alunoSelecionado" - que receberá o tratamento adequado.
 
-
-
 Visualização do botão em nova coluna da tabela:![](/assets/novobotao expandir.png)
 
 Visualização da janela pop-up ao clicar no botão da tabela:
 
 ![](/assets/popup modifica.png)
+
+
+
+Ao escolher modificar ou excluir, o registro será atualizado ou removido automaticamente da tabela, após a confirmação.
 
