@@ -1,6 +1,10 @@
-# Introdução
+# Guia de Programação Java
 
-Este  trabalho deseja oferecer uma abordagem **prática** para a elaboração de **aplicações** **Java web** utilizando somente ferramentas **open source**.
+
+
+Escrito por [Carlo Moro](https://github.com/cnmoro "Carlo Moro") e [Rodrigo Quisen](https://github.com/quisen "Rodrigo Quisen").
+
+Este  guia deseja oferecer uma abordagem **prática** para a elaboração de **aplicações** **Java web** com ferramentas **open source ** .
 
 As informações do material estão dispostas de maneira **linear**, sendo que ao seu **término** você será capaz de **criar** uma **aplicação** **funcional**.
 
