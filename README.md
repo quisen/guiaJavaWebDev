@@ -8,9 +8,9 @@ As informações do material estão dispostas de maneira **linear**, sendo que a
 
 Tudo será explicado com a utilização de **trechos** **de** **código**, **comentários** e **imagens. **
 
-No decorrer do texto será demonstrado como configurar e gerenciar a **conexão** da sua **aplicação** com um **banco** **de** **dados** **relacional **SQL para o armazenamento de** dados**.
+Na primeira parte será demonstrado como configurar e gerenciar a **conexão** da sua **aplicação** com um **banco** **de** **dados** **relacional **SQL para o armazenamento de** dados**.
 
-Além disso,  utilizaremos a especificação Java para o desenvolvimento de **interfaces** **de** **usuário** chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces** com componentes úteis e de fácil utilização.
+Na segunda parte  utilizaremos a especificação Java para o desenvolvimento de **interfaces** **de** **usuário** chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces** com componentes de fácil utilização que serão fundamentais para a estruturação do projeto.
 
 Principais tópicos abordados:
 
@@ -26,7 +26,7 @@ Principais tópicos abordados:
 
 ![](/assets/cc.png)
 
-Esse trabalho é licenciado sob as regulamentações da Creative Commons - Atribuição-SemDerivações-SemDerivados 3.0 Não Adaptada \(CC BY-NC-ND 3.0\). 
+Esse trabalho é licenciado sob as regulamentações da Creative Commons - Atribuição-SemDerivações-SemDerivados 3.0 Não Adaptada \(CC BY-NC-ND 3.0\).
 
 Para saber mais: [https://creativecommons.org/licenses/by-nc-nd/3.0/deed.pt\_BR](https://creativecommons.org/licenses/by-nc-nd/3.0/deed.pt_BR "Link")
 
