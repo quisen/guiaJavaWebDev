@@ -6,9 +6,9 @@ Ao abrir o MySQL Workbench você deverá primeiro conectar-se ao servidor previa
 
 **Preencha **com os **dados **definidos na **instalação **do server.
 
-![](/assets/WbConnect2.png) 
+![](/assets/WbConnect2.png)
 
-
+Clique em OK para realizar a conexão.
 
 ![](/assets/WbConnectPass.png)
 
