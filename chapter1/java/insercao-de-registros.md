@@ -15,11 +15,9 @@ O atributo "oncomplete" serve para realizar uma ação quando o botão for clica
 
 O atributo "pop-up" servirá para abrir uma caixa de diálogo com os campos para cadastro:
 
-```
-<h:form id="cadastro">
-```
-
 ```xhtml
+<h:form id="cadastro">
+
             <p:dialog header="Novo Aluno" widgetVar="novo-aluno-widget" id="novo-aluno-dialog"
                       resizable="false" modal="false" closeOnEscape="true">
                 <p:outputPanel style="text-align:center">
