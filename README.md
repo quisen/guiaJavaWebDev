@@ -14,7 +14,7 @@ Na segunda parte  utilizaremos a especificação Java para o desenvolvimento de 
 
 Principais tópicos abordados:
 
-* Como Gerenciar Banco de Dados;
+* Como Gerenciar Banco de Dados SQL;
 * Trabalhar com o MySQL Workbench;
 * Trabalhar com a IDE Netbeans;
 * Criação de CRUD Java Web com JSF;
