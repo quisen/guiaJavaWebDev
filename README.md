@@ -10,7 +10,7 @@ Tudo será explicado com a utilização de **trechos** **de** **código**, **com
 
 # Parte I:
 
-A parte um explica como instalar a IDE **Netbeans** e como utilizar o **GitHub** para **controle** **de** **versão** do seu projeto.
+A parte um explica como instalar a IDE **Netbeans** e como integrar seu projeto com a ferramenta de controle de versão do **GitHub.**
 
 # Parte II:
 
