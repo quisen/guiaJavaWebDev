@@ -10,7 +10,7 @@
     * [MySQL](parteI-preparando-seu-ambiente/linux/mysql.md)
     * [NetBeans](parteI-preparando-seu-ambiente/linux/netbeans.md)
     * [Git](parteI-preparando-seu-ambiente/linux/git.md)
-* [Parte II: Bancos de Dados](parteII.md)
+* [Parte II: Bancos de Dados](parteII-bancos-de-dados.md)
   * [Conectando-se a um Servidor](chapter1/conectando-se-a-um-banco-de-dados.md)
   * [Criando seu Banco de Dados](chapter1/criando-sua-database.md)
   * [Consultando Registros](chapter1/consultando-registros.md)
