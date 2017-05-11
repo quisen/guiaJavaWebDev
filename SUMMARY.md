@@ -4,10 +4,10 @@
 * [Parte I: Preparando seu Ambiente](preparando-seu-ambiente.md)
   * [Windows](preparando-seu-ambiente/windows.md)
     * [MySQL](preparando-seu-ambiente/windows/mysql.md)
-    * NetBeans
-    * Git
+    * [NetBeans](preparando-seu-ambiente/windows/netbeans.md)
+    * [Git](preparando-seu-ambiente/windows/git.md)
   * [Linux](preparando-seu-ambiente/linux.md)
-    * MySQL
+    * [MySQL](preparando-seu-ambiente/linux/mysql.md)
     * NetBeans
     * Git
 * [Parte II: Bancos de Dados](chapter1.md)
