@@ -6,7 +6,7 @@
     * [MySQL](preparando-seu-ambiente/windows/mysql.md)
     * NetBeans
     * Git
-  * Linux
+  * [Linux](preparando-seu-ambiente/linux.md)
     * MySQL
     * NetBeans
     * Git
