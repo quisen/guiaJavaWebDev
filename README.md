@@ -18,7 +18,7 @@ A parte dois demonstra como configurar e gerenciar a **conexão** da sua **aplic
 
 # Parte III:
 
-A parte três aborda a especificação Java para o desenvolvimento de **interfaces** **de** **usuário** chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces** com componentes de fácil utilização que serão fundamentais para a estruturação do projeto CRUD.
+A parte três aborda a especificação Java para o desenvolvimento de **interfaces** **de** **usuário** chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces** com componentes que serão fundamentais para a estruturação do CRUD.
 
 ---
 
