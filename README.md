@@ -8,17 +8,17 @@ As informações do material estão dispostas de maneira **linear**, sendo que a
 
 Tudo será explicado com a utilização de **trechos** **de** **código**, **comentários** e **imagens. **
 
-Na primeira parte será demonstrado como configurar e gerenciar a **conexão** da sua **aplicação** com um **banco** **de** **dados** **relacional **SQL para o armazenamento de** dados**.
+# Parte I:
 
-Na segunda parte  utilizaremos a especificação Java para o desenvolvimento de **interfaces** **de** **usuário** chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces** com componentes de fácil utilização que serão fundamentais para a estruturação do projeto.
+A parte um explica como instalar a IDE **Netbeans** e como utilizar o **GitHub** para **controle** **de** **versão** do seu projeto.
 
-Principais tópicos abordados:
+# Parte II:
 
-* Como Gerenciar Banco de Dados SQL;
-* Trabalhar com o MySQL Workbench;
-* Trabalhar com a IDE Netbeans;
-* Criação de CRUD Java Web com JSF;
-* Utilização de componentes do PrimeFaces para aplicações web; 
+A parte dois demonstra como configurar e gerenciar a **conexão** da sua **aplicação** com um **banco** **de** **dados** **relacional **SQL para o armazenamento de** dados**.
+
+# Parte III:
+
+A parte três aborda a especificação Java para o desenvolvimento de **interfaces** **de** **usuário** chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces** com componentes de fácil utilização que serão fundamentais para a estruturação do projeto CRUD.
 
 ---
 
