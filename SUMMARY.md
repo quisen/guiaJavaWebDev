@@ -1,7 +1,7 @@
 # Summary
 
 * [Introdução](README.md)
-* [Parte I: Preparando seu Ambiente](preparando-seu-ambiente.md)
+* [Parte I: Preparando seu Ambiente](parteI-preparando-seu-ambiente.md)
   * [Windows](preparando-seu-ambiente/windows.md)
     * [MySQL](preparando-seu-ambiente/windows/mysql.md)
     * NetBeans
@@ -10,7 +10,7 @@
     * MySQL
     * NetBeans
     * Git
-* [Parte II: Bancos de Dados](chapter1.md)
+* [Parte II: Bancos de Dados](parteII.md)
   * [Conectando-se a um Servidor](chapter1/conectando-se-a-um-banco-de-dados.md)
   * [Criando seu Banco de Dados](chapter1/criando-sua-database.md)
   * [Consultando Registros](chapter1/consultando-registros.md)
