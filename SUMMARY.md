@@ -8,8 +8,8 @@
     * [Git](preparando-seu-ambiente/windows/git.md)
   * [Linux](preparando-seu-ambiente/linux.md)
     * [MySQL](preparando-seu-ambiente/linux/mysql.md)
-    * NetBeans
-    * Git
+    * [NetBeans](preparando-seu-ambiente/linux/netbeans.md)
+    * [Git](preparando-seu-ambiente/linux/git.md)
 * [Parte II: Bancos de Dados](chapter1.md)
   * [Conectando-se a um Servidor](chapter1/conectando-se-a-um-banco-de-dados.md)
   * [Criando seu Banco de Dados](chapter1/criando-sua-database.md)
