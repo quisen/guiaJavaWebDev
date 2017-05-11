@@ -4,7 +4,5 @@ Para o desenvolvimento desse projeto utilizaremos o ambiente de desenvolvimento 
 
 Link para download: [https://netbeans.org/downloads/](https://netbeans.org/downloads/)
 
-Realize a instalação padrão.
-
 
 

@@ -2,6 +2,7 @@
 
 * [Introdução](README.md)
 * [Parte I: Preparando seu Ambiente](preparando-seu-ambiente.md)
+  * [MySQL](mysql.md)
   * [NetBeans](preparando-seu-ambiente/netbeans.md)
   * [GitHub](preparando-seu-ambiente/github.md)
 * [Parte II: Bancos de Dados](chapter1.md)
