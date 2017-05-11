@@ -22,7 +22,7 @@ Agora clique no ícone de Clean and Build para garantir que o Maven baixe todas 
 
 ![](/assets/rebuild.png)
 
-Agora um novo arquivo chamado **index**.**xhtml** foi criado pelo NetBeans.
+Agora um novo arquivo chamado **index**.**xhtml** foi criado pelo Netbeans.
 
 ![](/assets/index novo.png)
 
