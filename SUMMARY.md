@@ -1,16 +1,16 @@
 # Summary
 
 * [Introdução](README.md)
-* [Parte I: Preparando seu Ambiente](parteI-preparando-seu-ambiente.md)
+* [Parte I: Preparando seu Ambiente](preparando-seu-ambiente.md)
   * [Windows](preparando-seu-ambiente/windows.md)
     * [MySQL](preparando-seu-ambiente/windows/mysql.md)
-    * NetBeans
-    * Git
+    * [NetBeans](preparando-seu-ambiente/windows/netbeans.md)
+    * [Git](preparando-seu-ambiente/windows/git.md)
   * [Linux](preparando-seu-ambiente/linux.md)
-    * MySQL
-    * NetBeans
-    * Git
-* [Parte II: Bancos de Dados](parteII.md)
+    * [MySQL](preparando-seu-ambiente/linux/mysql.md)
+    * [NetBeans](preparando-seu-ambiente/linux/netbeans.md)
+    * [Git](preparando-seu-ambiente/linux/git.md)
+* [Parte II: Bancos de Dados](chapter1.md)
   * [Conectando-se a um Servidor](chapter1/conectando-se-a-um-banco-de-dados.md)
   * [Criando seu Banco de Dados](chapter1/criando-sua-database.md)
   * [Consultando Registros](chapter1/consultando-registros.md)
