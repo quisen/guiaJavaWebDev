@@ -6,7 +6,7 @@ Link para download: [https://netbeans.org/downloads/](https://netbeans.org/downl
 
 Baixe pelo site com a plataforma linux selecionada:
 
-![download.png]({{site.baseurl}}/parteI-preparando-seu-ambiente/linux/download.png)
+![download.png]({{site.baseurl}}/assets/download.png)
 
 Com isso, você terá um arquivo **netbeans-XX-linux.sh**.
 
