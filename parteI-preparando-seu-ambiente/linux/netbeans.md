@@ -10,7 +10,7 @@ Baixe pelo site com a plataforma linux selecionada:
 
 Com isso, você terá um arquivo **netbeans-XX-linux.sh**.
 
-Navegue pelo terminal até a pasta onde o arquivo se encontra, e execute os seguintes comandos:
+xNavegue pelo terminal até a pasta onde o arquivo se encontra, e execute os seguintes comandos:
 
 ```
 	sudo chmod +X ./netbeans.sh
