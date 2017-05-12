@@ -18,6 +18,14 @@ Em seguida, navegue até o arquivo **pom.xml **dentro dele você deverá adicion
 
 ![](/assets/editar pom.xml add prime.png)
 
+```java
+<dependency>
+    <groupId>org.primefaces</groupId>
+    <artifactId>primefaces</artifactId>
+    <version>6.1</version>
+</dependency>
+```
+
 Agora clique no ícone de Clean and Build para garantir que o Maven baixe todas as dependências corretamente.
 
 ![](/assets/rebuild.png)
