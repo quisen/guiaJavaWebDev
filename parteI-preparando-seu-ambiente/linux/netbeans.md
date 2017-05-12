@@ -12,7 +12,7 @@ Com isso, você terá um arquivo **netbeans-XX-linux.sh**.
 
 Navegue pelo terminal até a pasta onde o arquivo se encontra, e execute os seguintes comandos:
 
-```bash
-sudo chmod +X ./netbeans.sh
-./netbeans.sh
+```
+	sudo chmod +X ./netbeans.sh
+	./netbeans.sh
 ```
