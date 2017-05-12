@@ -20,8 +20,8 @@ Agora iremos inserir no index.xhtml alguns componentes do PrimeFaces já customi
     </h:head>
 
     <h:body>
-        <h:form>            
-            <p:dataTable var="aluno" value="#{alunoBean.alunos}">
+        <h:form id="tabela">            
+            <p:dataTable id="tabela-alunos" var="aluno" value="#{alunoBean.alunos}">
                 <p:column headerText="Id">
                     <h:outputText value="#{aluno.id}" />
                 </p:column>
