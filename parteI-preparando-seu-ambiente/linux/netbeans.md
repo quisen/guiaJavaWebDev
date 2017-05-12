@@ -4,7 +4,7 @@ Para o desenvolvimento desse projeto utilizaremos o ambiente de desenvolvimento 
 
 Link para download: [https://netbeans.org/downloads/](https://netbeans.org/downloads/)
 
-Baixe pelo site com a plataforma linux selecionadaAA:
+Baixe pelo site com a plataforma linux selecionada:
 
 ![download.png](/assets/download.png)
 
@@ -16,6 +16,3 @@ Navegue pelo terminal até a pasta onde o arquivo se encontra, e execute os segu
     sudo chmod +X ./netbeans-8.2-linux.sh
     ./netbeans-8.2-linux.sh
 ```
-
-
-
