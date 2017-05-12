@@ -6,6 +6,7 @@
     * [MySQL](parteI-preparando-seu-ambiente/windows/mysql.md)
     * [NetBeans](parteI-preparando-seu-ambiente/windows/netbeans.md)
     * [Git](parteI-preparando-seu-ambiente/windows/git.md)
+    	*[Teste]
   * [Linux](parteI-preparando-seu-ambiente/linux.md)
     * [MySQL](parteI-preparando-seu-ambiente/linux/mysql.md)
     * [NetBeans](parteI-preparando-seu-ambiente/linux/netbeans.md)
@@ -25,4 +26,3 @@
   * [Inserção de Registros](parteIII-crud/insercao-de-registros.md)
   * [Edição e Exclusão de Registros](parteIII-crud/edicao-de-registros.md)
   * [Facelets](parteIII-crud/facelets.md)
-
