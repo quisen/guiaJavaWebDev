@@ -18,7 +18,7 @@ Em seguida, navegue até o arquivo **pom.xml **dentro dele você deverá adicion
 
 ![](/assets/editar pom.xml add prime.png)
 
-```java
+```XML
 <dependency>
     <groupId>org.primefaces</groupId>
     <artifactId>primefaces</artifactId>
