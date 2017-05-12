@@ -8,11 +8,11 @@ Baixe pelo site com a plataforma linux selecionada:
 
 ![download.png](/assets/download.png)
 
-Com isso, você terá um arquivo **netbeans-XX-linux.sh**.
+Com isso, você terá um arquivo **netbeans-8.2-linux.sh**.
 
-xNavegue pelo terminal até a pasta onde o arquivo se encontra, e execute os seguintes comandos:
+Navegue pelo terminal até a pasta onde o arquivo se encontra, e execute os seguintes comandos:
 
 ```
-	sudo chmod +X ./netbeans.sh
-	./netbeans.sh
+	sudo chmod +X ./netbeans-8.2-linux.sh
+	./netbeans-8.2-linux.sh
 ```
