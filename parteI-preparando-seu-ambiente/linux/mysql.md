@@ -6,6 +6,12 @@ Além disso, utilizaremos o**MySQL Workbench**para realizarmos testes e operaç�
 
 É importante ressaltar que durante a**instalação**do**MySQLServer**será solicitado definir um nome de**usuário**e**senha**para o administrador.
 
+Comando para instalar por linha de comando:
+
+```bash
+sudo apt-get install mysql-client mysql-server mysql-workbench
+```
+
 **Links para downloads:**
 
 MySQL Workbench:[https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/)
