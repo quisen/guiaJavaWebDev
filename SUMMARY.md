@@ -6,7 +6,7 @@
     * [MySQL](parteI-preparando-seu-ambiente/windows/mysql.md)
     * [NetBeans](parteI-preparando-seu-ambiente/windows/netbeans.md)
     * [Git](parteI-preparando-seu-ambiente/windows/git.md)
-    	*[Teste]
+    	*[Teste](parteI-preparando-seu-ambiente/windows/git.md)
   * [Linux](parteI-preparando-seu-ambiente/linux.md)
     * [MySQL](parteI-preparando-seu-ambiente/linux/mysql.md)
     * [NetBeans](parteI-preparando-seu-ambiente/linux/netbeans.md)
