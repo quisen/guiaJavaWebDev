@@ -14,7 +14,7 @@ Clique em OK e finalize.
 
 ![](/assets/jsf click ok.png)
 
-Em seguida, navegue até o arquivo **pom.xml **dentro dele você deverá adicionar as dependências do seu projeto. A primeira que iremos adicionar é a biblioteca do **PrimeFaces** versão 6.1.
+Em seguida, navegue até o arquivo **pom.xml **dentro dele você deverá adicionar as dependências do seu projeto. A primeira que iremos adicionar é a dependência da biblioteca do **PrimeFaces** versão 6.1.
 
 ![](/assets/editar pom.xml add prime.png)
 
