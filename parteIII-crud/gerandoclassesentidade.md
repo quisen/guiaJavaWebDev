@@ -1,5 +1,9 @@
 # Gerando Classes de Entidade do Banco de Dados
 
+**Entidades** em java são objetos de **domínio de persistência** - são utilizadas para representar **tabelas em um banco de dados** relacional. Sendo que c**ada instância** de uma entidade corresponde a **uma linha** daquela tabela.
+
+O estado de persistência de uma entidade é representado através de campos ou propriedades persistentes - estes utilizam **anotações de mapeamento** para "vincular" entidades e relacionamentos com os dados relacionais presentes no banco de dados original. Iremos utilizar a anotação **@Entity** para indicar que uma classe é uma entidade.
+
 Para gerar clases de entidade a partir  do banco de dados você deverá clicar  com botão direito do mouse sobre o projeto, expandir a opção **Novo** e selecionar **Outros** \(ao final da lista\).
 
 ![](/assets/1.png)
