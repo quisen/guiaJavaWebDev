@@ -20,7 +20,7 @@ Escolha o Driver **MySQL.**
 
 ![](/assets/mysql connector.png)
 
-Preencha o nome do Banco de Dados e indique também o nome do **usuário** e **senha** do Banco de Dados \(previamente definidos\).
+Preencha o nome do banco que estamos utilizando - neste caso, de acordo com nosso script (**Parte II - Criando seu Banco de Dados**), e indique também o nome do **usuário** e **senha** do Banco de Dados, estas informações foram definidas durante a instalação do MySQL, de acordo com a **Parte I** do guia.
 
 Você pode clicar no botão **Testar** **Conexão** para verificar se os campos foram preenchidos corretamente.
 
@@ -35,4 +35,3 @@ Agora que a conexão foi estabelecida entre o NetBeans e o SQL Server, clique no
 Depois disso você perceberá que as classes estarão dentro do seu pacote.
 
 ![](/assets/entidades criadas.png)
-
