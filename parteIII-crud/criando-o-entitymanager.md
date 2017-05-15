@@ -14,22 +14,26 @@ O arquivo **persistence**.**xml** foi criado automaticamente pelo Netbeans duran
 
 ![](/assets/2 procurar persistence.xml.png)
 
-É recomendado que o **nome** **padrão** da Unidade de Persistência seja modificado para facilitar seu entendimento.
+A imagem a seguir mostra a configuração da unidade de persistência que foi gerada pelo Netbeans, é recomendado que o **Nome da Unidade de Persistência** seja modificado para facilitar seu entendimento.
 
 ![](/assets/3 persistence gui.png)
 
-Marque a opção **Nenhum** para o Modo de Cache Compartilhado.
+Aqui simplificamos o nome e também marcamos a opção **Nenhum** para o **Modo de Cache Compartilhado**, isto evita alguns problemas em relação à atualização de valores recentemente modificados no banco, porém só afetará o uso do programa quando estivermos usando um **WebService** - tópico abordado futuramente.
 
 ![](/assets/4 persistence gui desejado.png)
 
-Abaixo está um exemplo de classe java para um entity manager.![](/assets/5 emanager configurado.png)
+Abaixo está um exemplo de classe java para um entity manager.
+
+Utilize-o em seu programa.
+
+![](/assets/5 emanager configurado.png)
 
 ```java
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class EManager implements java.io.Serializable{
+public class EManager implements java.io.Serializable {
 
     private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("UniversidadePU");
     private static EntityManager em = emf.createEntityManager();
