@@ -2,7 +2,7 @@
 
 É possível importar dados de planilhas no formato **.csv** diretamente ao banco de dados com o Workbench.
 
-Para que a importação ocorra da forma adequada é **importante** que as **colunas da planilha **estajam **ordenadas** da mesma forma que as **colunas \(atributos\)** do banco de dados.
+Para que a importação ocorra da forma adequada é **importante** que as **colunas da planilha **estejam **ordenadas** da mesma forma que as **colunas \(atributos\)** do banco de dados.
 
 Caso a primeira linha da planilha esteja identficando o nome de cada coluna, essa linha também será incluída como um registro, portanto é **recomendado** que ela seja removida antes da importação. O que importa é a **ordem** das colunas.
 
@@ -23,4 +23,3 @@ Depois  é necessário selecionar **Apply **no canto inferior direito para que o
 Realize um **SELECT** novamente e os novos registros poderão ser visualizados.
 
 ![](/assets/selectAlunosImportFeito.png)
-
