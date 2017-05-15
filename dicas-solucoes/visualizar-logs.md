@@ -1,7 +1,7 @@
 
 # VisualizaÃ§Ã£o de Logs de Erros
 
-Para visualizar quais erros e exceções ocorreram em seu programa, navegue até a seção "Serviços" do netbeans, clique com o botão direito em um deles e então selecione X:
+Para visualizar quais erros e exceções ocorreram em seu programa, navegue até a seção "Serviços" do netbeans, clique com o botão direito em um deles e então selecione "Exibir log do servidor" ou então "Exibir o Log do Servidor de Domínio":
 
 Exemplo utilizando Tomcat:
 
