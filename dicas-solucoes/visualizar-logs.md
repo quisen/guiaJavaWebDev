@@ -5,14 +5,14 @@ Para visualizar quais erros e exceções ocorreram em seu programa, navegue até
 
 Exemplo utilizando Tomcat:
 
-![logtomcat.png](/dicas-solucoes/logtomcat.png)
+![logtomcat.png](/assets/logtomcat.png)
 
 Exemplo utilizando Glassfish:
 
-![logglassfish.png](/dicas-solucoes/logglassfish.png)
+![logglassfish.png](/assets/logglassfish.png)
 
 Você verá uma janela como esta:
 
-![logview.png](/dicas-solucoes/logview.png)
+![logview.png](/assets/logview.png)
 
 Preste atenção nos erros, se houver algum. Verifique qual a classe que apresenta problemas e também qual a linha de código que originou o problema, isto facilita a identificação de erros de execução.
