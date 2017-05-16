@@ -1,6 +1,6 @@
 # Criando seu Projeto
 
-Abra o netbeans, que foi instalado previamente de acordo com a **Parte I** do guia.
+Abra o Netbeans, que foi instalado previamente de acordo com a **Parte I** do guia.
 
 No canto superior esquerdo expanda o menu **Arquivo** e selecione a opção **Novo Projeto.**
 
@@ -51,3 +51,4 @@ Clique em **Finalizar** novamente.
 ![](/assets/finalizar.png)
 
 **Pronto**, seu projeto está criado.
+
