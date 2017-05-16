@@ -28,4 +28,5 @@
 * [Dicas e Soluções de Problemas](dicas-solucoes.md)
   * [Logs de Erros](dicas-solucoes/visualizar-logs.md)
   * [Limpeza de Cache](dicas-solucoes/limpeza-de-cache.md)
-  * [Logs de Erros](dicas-solucoes/bugs-conhecidos.md)
+  * [Bugs Conhecidos](dicas-solucoes/bugs-conhecidos.md)
+
