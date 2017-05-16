@@ -18,9 +18,7 @@ Pronto, agora seu GlassFish está com o cache apagado.
 
 # NetBeans
 
-Para fazer a limpeza do cache do NetBeans primeiramente você deverá **fechá**-**lo**, independentemente do sistema operacional. 
-
-
+Para fazer a limpeza do cache do NetBeans primeiramente você deverá **fechá**-**lo**, independentemente do sistema operacional.
 
 * Caso você esteja utilizando **Windows**: 
 
