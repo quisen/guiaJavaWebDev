@@ -14,7 +14,7 @@ A parte um explica como instalar a IDE **Netbeans** e como integrar seu projeto 
 
 # Parte II:
 
-A parte dois demonstra como configurar e gerenciar a **conexão** da sua **aplicação** com um **banco** **de** **dados** **relacional **SQL para o armazenamento de** dados**.
+A parte dois demonstra como configurar e gerenciar a **conexão** entre a sua **aplicação** e um **banco** **de** **dados** **relacional **SQL para o armazenamento de** dados**.
 
 # Parte III:
 
