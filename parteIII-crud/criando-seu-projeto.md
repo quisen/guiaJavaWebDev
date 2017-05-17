@@ -1,6 +1,6 @@
 # Criando seu Projeto
 
-Abra o Netbeans, que foi instalado previamente de acordo com a **Parte I** do guia.
+Abra o NetBeans, que foi instalado previamente de acordo com a **Parte I** do guia.
 
 No canto superior esquerdo expanda o menu **Arquivo** e selecione a opção **Novo Projeto.**
 
@@ -16,7 +16,7 @@ Clique em **Próximo**.
 
 **Segunda etapa - Nome e Localização:**
 
-Escolha um **nome** para o seu projeto, sua **localização**. Id de grupo, Versão e Pacote podem ser customizadas mas isso não afetará o desenvolvimento.
+Escolha um **nome** para o seu projeto e **localização** onde ele será armazenado. Os atributos ID de grupo, Versão e Pacote podem ser customizadas mas isso não afetará o desenvolvimento.
 
 ![](/assets/maven proj config.png)
 
