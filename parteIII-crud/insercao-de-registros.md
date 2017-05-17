@@ -9,9 +9,9 @@ Para realizar uma** Ação via botão** adicionamos um **commandButton** na noss
                              oncomplete="PF('novo-aluno-widget').show()" />
 ```
 
-O atributo "update" indica que estaremos fazendo alguma mudança visual na página, sendo que a parte ":cadastro:" é uma referência à outro form \(veja em seguida\).
+O atributo "update" indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":cadastro:" é uma referência à outro form \(veja em seguida\).
 
-O atributo "oncomplete" serve para realizar uma ação quando o botão for clicado.
+O atributo "oncomplete" define uma ação que irá ser realizada quando o botão for clicado.
 
 O atributo "pop-up" servirá para abrir uma caixa de diálogo com os campos para cadastro:
 
