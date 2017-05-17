@@ -10,7 +10,7 @@ Utilizaremos o comando CREATE DATABASE para criar e definir o nome do banco.
 CREATE DATABASE universidade;
 ```
 
-É necessário que utilizemos o comando USE para definirmos em qual banco iremos trabalhar, **caso contrário** o programa **não** **saberá** em qual database você deseja executar seus comandos.
+É necessário executar o comando **USE** para definirmos em qual banco iremos operar, **caso contrário** o programa **não** **saberá** em qual database você deseja executar seus comandos.
 
 ```SQL
 USE universidade;
