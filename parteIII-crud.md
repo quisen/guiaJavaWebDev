@@ -2,11 +2,7 @@
 
 **CRUD** é o acrônimo da expressão do idioma inglês, **Create** \(Criação\), **Retrieve** \(Consulta\), **Update** \(Atualização\) e **Delete** \(Destruição\).
 
-<center>
-
 ![](/assets/crud.png)
-
-</center>
 
 Este acrônimo é comumente utilizado definir as quatro operações básicas usadas em Banco de Dados Relacionais.
 
