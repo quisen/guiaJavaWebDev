@@ -6,3 +6,7 @@ Será demonstrado como preparar seu ambiente de desenvolvimento para os sistemas
 
 A escolha pelo sistema operacional não deverá afetar o resultado final desejado, portanto sinta-se livre para decidir em qual sistema você irá desenvolver.
 
+
+
+
+
