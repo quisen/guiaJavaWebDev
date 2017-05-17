@@ -1,8 +1,8 @@
 # Criando seu Banco de Dados
 
-Uma vez que você esteja conectado ao seu servidor SQL, utilize o campo de **edição de querys **para realizar os primeiros comandos de criação.
+Depois de conectar-se ao seu servidor SQL, utilize o campo de **edição de querys **para realizar os primeiros comandos de criação.
 
-Para efeitos **didáticos **iremos utilizar um banco nomeado **universidade**, com tabelas e dados fictícios.
+Como exemplo,** **iremos utilizar um banco nomeado como **universidade**, contendo tabelas e registros fictícios.
 
 Utilizamos o comando CREATE DATABASE para criar e definir o nome do banco.
 
