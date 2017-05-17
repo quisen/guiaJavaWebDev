@@ -62,5 +62,7 @@ Em cada coluna, usa-se diretamente a referência de variáveis em relação ao o
 
 **ATENÇÃO, **nosso Managed Bean possui o nome "AlunoBean", porém na hora de referenciá-lo no código xhtml, devemos sempre utilizar a **primeira letra minúscula,** caso contrário, ocorrerão **erros** de execução.
 
-Resultado final:![](/assets/tabela.png)
+Resultado final:
+
+![](/assets/tabela.png)
 
