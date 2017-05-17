@@ -31,7 +31,7 @@ CREATE TABLE aluno (
 );
 ```
 
-Note que o atributo **id**, definido como chave primária \(primary key\), também possui o sufixo **AUTO\_INCREMENT **que delega ao banco a criação de registros de maneira **sequenciada** e **única**. 
+Note que o atributo **id**, definido como chave primária \(primary key\), também possui o sufixo **AUTO\_INCREMENT **que delega ao banco a criação de registros de maneira **sequenciada** e **única**.
 
 Note que ao inserir registros na tabela,** não é necessário **definir o **id **como parâmetro dentro do comando **INSERT**.
 
@@ -87,7 +87,7 @@ INSERT INTO disciplina (nome,periodo,professor) VALUES ("Dispositivos Móveis",9
 INSERT INTO disciplina (nome,periodo,professor) VALUES ("Desenvolvimento Web",10,"Mariana");
 ```
 
-Agora criaremos a tabela **aluno\_matriculado** que irá ter uma **relação** direta com as **tabelas** **criadas** **anteriormente**:
+Agora criaremos a tabela **aluno\_matriculado** que irá ter uma **relação** direta com as **tabelas** **criadas** **anteriormente** por meio de chaves estrangeiras \(foreign key\):
 
 ```SQL
 CREATE TABLE aluno_matriculado (
@@ -100,7 +100,7 @@ CREATE TABLE aluno_matriculado (
 );
 ```
 
-Por fim, iremos popular a tabela. Note que os registros criados relacionam-se com os registros de aluno e disciplina por meio de suas chaves primárias:
+Por fim, iremos popular a tabela aluno\_matriculado. Note que os registros criados relacionam-se com os registros de **aluno** e **disciplina** por meio de suas **chaves** **primárias**:
 
 ```SQL
 INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (1,2);
