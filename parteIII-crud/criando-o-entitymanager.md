@@ -12,15 +12,15 @@ Primeiramente você deve criar uma nova classe java dentro do seu pacote e confi
 
 ![](/assets/1 crie a classe.png)
 
-O arquivo **persistence**.**xml** foi criado automaticamente pelo NetBeans durante a geração das classes de entidade a partir do banco, esse arquivo guarda todas as informações sobre a camada de persistência que tem uma relação direta com o seu banco de dados.
+O arquivo **persistence**.**xml** foi criado automaticamente pelo NetBeans durante a geração das classes de entidade a partir do banco, esse arquivo guarda todas as informações sobre a camada de persistência e tem uma relação direta com o seu banco de dados.
 
 ![](/assets/2 procurar persistence.xml.png)
 
-A imagem a seguir mostra a configuração da unidade de persistência que foi gerada pelo Netbeans, é recomendado que o **Nome da Unidade de Persistência** seja modificado para facilitar seu entendimento.
+A imagem a seguir mostra a configuração da unidade de persistência que foi gerada pelo NetBeans, é recomendado que o **Nome da Unidade de Persistência** seja modificado para facilitar seu entendimento.
 
 ![](/assets/3 persistence gui.png)
 
-Aqui simplificamos o nome e também marcamos a opção **Nenhum** para o **Modo de Cache Compartilhado**, isto evita alguns problemas em relação à atualização de valores recentemente modificados no banco, porém só afetará o uso do programa quando estivermos usando um **WebService** - tópico abordado futuramente.
+Nesta etapa simplificamos o nome e também marcamos a opção **Nenhum** para o **Modo de Cache Compartilhado**, isto evita alguns problemas em relação à atualização de valores recentemente modificados no banco, porém só afetará o uso do programa quando estivermos usando um **WebService** - tópico abordado futuramente.
 
 ![](/assets/4 persistence gui desejado.png)
 
