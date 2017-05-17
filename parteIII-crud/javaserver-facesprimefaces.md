@@ -4,17 +4,19 @@ Automaticamente um index.html é criado dentro das Páginas Web do seu projeto, 
 
 ![](/assets/excluir index gerado.png)
 
-Agora clique com o botão direito do mouse sobre o seu projeto no canto esquerdo da tela e vá em Propriedades, dentro das Categorias procure por Frameworks, depois disso clique para adicionar um framework e escolha pela opção JavaServer Faces.
+Agora clique com o botão direito do mouse sobre o seu projeto e selecione Propriedades. Dentro das Categorias procure por Frameworks, em seguida clique para adicionar um framework e escolha a opção JavaServer Faces.
 
 ![](/assets/adicionando jsf framework.png)
 
-Clique em OK e finalize.
+Clique em **OK** e finalize.
 
 **Atenção**: **não** **marque** a opção PrimeFaces nesta etapa, pois iremos adicioná-lo de outra maneira.
 
 ![](/assets/jsf click ok.png)
 
-Em seguida, navegue até o arquivo **pom.xml **dentro dele você deverá adicionar as dependências do seu projeto. A primeira que iremos adicionar é a dependência da biblioteca do **PrimeFaces** versão 6.1.
+Agora, navegue até o arquivo **pom.xml**, localizado dentro de Arquivos do Projeto, nele você deverá adicionar as dependências do seu projeto.
+
+A primeira que iremos adicionar é a dependência da biblioteca do **PrimeFaces** versão 6.1.
 
 ![](/assets/editar pom.xml add prime.png)
 
@@ -30,7 +32,7 @@ Agora clique no ícone de Clean and Build para garantir que o Maven baixe todas 
 
 ![](/assets/rebuild.png)
 
-Agora um novo arquivo chamado **index**.**xhtml** foi criado pelo Netbeans.
+Ao término dessa etapa, um novo arquivo chamado **index**.**xhtml** deve ter sido criado dentro de Páginas Web.
 
 ![](/assets/index novo.png)
 
