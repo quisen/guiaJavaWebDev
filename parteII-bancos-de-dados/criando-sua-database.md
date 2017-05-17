@@ -1,6 +1,6 @@
 # Criando seu Banco de Dados
 
-Depois de conectar-se ao seu servidor SQL, utilize o campo de **edição de querys **para realizar os primeiros comandos de criação.
+Depois de conectar-se ao seu servidor SQL, utilize o campo de **edição de queries **para realizar os primeiros comandos de criação.
 
 Como exemplo,** **iremos utilizar um banco nomeado como **universidade**, contendo tabelas e registros fictícios.
 

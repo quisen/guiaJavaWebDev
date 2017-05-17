@@ -2,7 +2,9 @@
 
 Agora que já temos as classes de entidades geradas a partir do banco, podemos criar o nosso EntityManager.
 
-O **EntityManager** é uma ferramenta utilizada para **interagir com o contexto de persistência** - sendo este um conjunto de instâncias de entidades. Com esta associação, podemos realizar várias ações com o nosso banco de dados, como **criação, exclusão e alteração** de registros de entidades, bem como **buscas (queries)** baseadas em atributos e campos identificadores.
+O **EntityManager** é uma ferramenta utilizada para **interagir com o contexto de persistência** - sendo este um conjunto de instâncias de entidades. 
+
+Com essa associação, podemos realizar várias ações com o nosso banco de dados, como **criação, exclusão e alteração** de registros de entidades, bem como **buscas (queries)** baseadas em atributos e campos identificadores.
 
 Todas as entidades que podem ser **gerenciadas** por um EntityManager são descritas utilizando a **unidade de persistência** - esta define o conjunto de **classes** que têm algum tipo de **interação com o banco**.
 
