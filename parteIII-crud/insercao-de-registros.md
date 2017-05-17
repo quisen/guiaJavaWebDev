@@ -126,12 +126,16 @@ public class AlunoBean implements Serializable {
 Partes relevantes do código:
 
 * No método **novoCadastro\(\)**, geramos uma nova matrícula e preenchemos nosso objeto. Os demais campos \(nome, telefone, cpf, etc\) são preenchidos automaticamente enquanto o usuário insere dados no campo de texto da página web.
-* Acessamos uma nova instância do nosso EntityManager - que faz a conexão com o banco de dados, e persistimos \(inserimos\) nosso objeto do tipo aluno, que é o "match" em java da tabela Aluno e então fazemos o "commit\(\)" - ou seja, validamos de fato o processo.
-* Lembre-se de adicionar o getter e o setter da variável aluno, se não nosso .xhtml não poderá acessar a mesma. \(Pode-se gerar automaticamente todos os getters e os setters das variávels e objetos presentes no código utilizando o atalho do teclado Alt+Insert.
+* Acessamos uma nova instância do nosso **EntityManager** - que faz a conexão com o banco de dados, e persistimos \(inserimos\) nosso objeto do tipo aluno, que é o "match" em java da tabela Aluno e então fazemos o "commit\(\)" - ou seja, validamos de fato o processo.
+* Lembre-se de adicionar o getter e o setter da variável aluno, senão nosso .xhtml não poderá acessá-la. \(Pode-se gerar automaticamente todos os getters e os setters das variávels e objetos presentes no código utilizando o atalho do teclado **Alt+Insert**).
 
 **Resultado final**
 
-Visualização da tabela com o novo botão:![](blob:https://www.gitbook.com/99f5e87e-0d49-4bf3-ad12-d0bc3037e621)Visualização do pop-up
+Visualização da tabela com o novo botão:
+
+![](/assets/tab.PNG)
+
+Visualização do pop-up:
 
 ![](/assets/popup.PNG)
 
