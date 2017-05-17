@@ -2,9 +2,7 @@
 
 Para toda aplicação que requer algum tipo de armazenamento de informações recomenda-se a utilização de um banco de dados para realizar as **transações **de maneira **eficiente**, **organizada **e **segura**.
 
-Para gerenciar seu banco relacional, você deve entender a diferença entre tipos de comandos SQL utilizados para definição e manipulação de dados. 
-
-Os principais grupos retratados aqui são:
+Para gerenciar seu banco relacional, você deve entender a diferença entre tipos de comandos SQL utilizados para definição e manipulação de dados. Os principais tipos retratados aqui são:
 
 **DDL**
 
