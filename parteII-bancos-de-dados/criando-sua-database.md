@@ -31,9 +31,11 @@ CREATE TABLE aluno (
 );
 ```
 
-Note que o atributo **id**, definido como chave primária, também possui o sufixo **AUTO\_INCREMENT **que delega ao banco realizar a criação de registros de maneira **sequenciada** e **única**. Desse modo, ao inserir registros na tabela,** não é necessário **definir o **id ** como parâmetro do comando INSERT.
+Note que o atributo **id**, definido como chave primária \(primary key\), também possui o sufixo **AUTO\_INCREMENT **que delega ao banco a criação de registros de maneira **sequenciada** e **única**. 
 
-Em seguida, alguns comandos de inserção de registros na tabela aluno:
+Note que ao inserir registros na tabela,** não é necessário **definir o **id **como parâmetro dentro do comando **INSERT**.
+
+Abaixo estão alguns comandos de inserção de registros na tabela aluno:
 
 ```SQL
 INSERT INTO aluno (nome,matricula,cpf,telefone,endereco,periodo) VALUES ("Lois",1421360,"1632010497799","(22) 98492-2558","8603 Per Ave",7);
@@ -70,7 +72,7 @@ CREATE TABLE disciplina (
 );
 ```
 
-Depois inserimos alguns registros:
+Depois populamos a tabela com alguns registros:
 
 ```SQL
 INSERT INTO disciplina (nome,periodo,professor) VALUES ("Gestão",1,"João");
