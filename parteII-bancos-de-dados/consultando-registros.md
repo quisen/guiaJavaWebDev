@@ -10,7 +10,7 @@ SELECT * FROM aluno;
 
 Com esse comando serão retornados todos os registros contidos na tabela **aluno**.
 
-A **segunda** maneira para realizar essa mesma consulta não requer a utilização direta de comandos. 
+A **segunda** maneira para realizar essa mesma consulta não requer a utilização direta de comandos.
 
 Basta expandir o SCHEMA universidade localizado no canto **inferior** **esquerdo**, e em seguida expandir o submenu **Tables**.
 
@@ -18,9 +18,11 @@ Basta expandir o SCHEMA universidade localizado no canto **inferior** **esquerdo
 
 Em seguida, clique com o botão direito sobre a tabela cujos registros você deseja visualizar e selecione a opção **"Select Rows - Limit 1000"**, então os registros serão retornados em uma janela **abaixo** do campo de **querys**.
 
+![](/assets/select1000.png)
+
 Essa visualização permite que você altere registros de forma direta dando um duplo clique sobre o registro.
 
 É **importante** ressaltar que caso você realize alterações dentro dessa visualização você precisa clicar em **Apply** para que o Workbench crie o comando e aplique as modificações efetivamente.
 
-Note que nesse mesmo menu existem **outras** possibilidades de comandos \(Create, Alter, Drop...\).
+Note que dentro desse mesmo menu existem **outras** possibilidades de comandos \(Create, Alter, Drop...\).
 
