@@ -4,3 +4,9 @@ Essa seção irá detalhar como instalar e configurar as ferramentas necessária
 
 ![](/assets/linux.png)
 
+Recomendamos a utilização da distribuição** Linux Mint**
+
+![](/assets/mintlogo.png)
+
+Link para download do sistema: [https://www.linuxmint.com/download.php](https://www.linuxmint.com/download.php)
+
