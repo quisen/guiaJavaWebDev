@@ -55,17 +55,17 @@ O atributo **"pop-up"** serve para abrir uma caixa de diálogo com os campos par
 </h:form>
 ```
 
-Nesta parte, criamos um novo "**form**", esta tag indica basicamente a entrada e saída de dados em relação ao java, preste atenção em seu id \(id="cadastro"\), pois precisaremos disso para referenciar componentes entre si em forms diferentes, como visto no componente do botão acima.
+Nesta parte, criamos um novo "**form**", essa tag indica basicamente a entrada e saída de dados em relação ao java, preste atenção em seu id \(id="cadastro"\), pois precisaremos disso para referenciar componentes entre si em forms diferentes, como visto no componente do botão acima.
 
 Partes relevantes do código:
 
-* O panelGrid é um componente que estabelece uma área pré-determinada com uma organização específica, neste caso - duas colunas, sendo a primeira um label \(etiqueta, texto indicativo\), e o valor do campo.
-* Na entrada de dados \(inputText\), o atributo "value" indica qual variável no código java será linkado com o campo em xhtml respectivo. Neste caso, referenciamos nossa classe alunoBean, e dentro da classe teremos um objeto chamado "aluno" e então acessamos suas variáveis utilizando o ponto \(criaremos este objeto e os métodos de criação logo em seguida\).
-* Criamos um botão que executa uma ação \(action=""\), neste caso, executa o método novoCadastro no nosso código java.
-* O botão possui o atributo "update" que realizará uma mudança visual na tabela, pois ao adicionar o novo usuário queremos que ele seja listado imediatamente junto com os demais.
-* A tag "defaultCommand" indica o id do componente que será executado ao ser pressionada a tecla Enter.
+* O **panelGrid** é um componente que estabelece uma área pré-determinada com uma organização específica, neste caso - duas colunas, sendo a primeira um label \(etiqueta, texto indicativo\), e a segunda o valor do campo.
+* Na entrada de dados \(**inputText**\), o atributo "value" indica qual variável no código java será linkado com o campo no xhtml respectivo. Neste caso, referenciamos nossa classe alunoBean, e dentro da classe teremos um objeto chamado "aluno", então acessamos suas variáveis utilizando o ponto \(criaremos este objeto e os métodos de criação logo em seguida\).
+* Criamos um botão que executa uma ação \(**action**=""\), neste caso, executa o método novoCadastro do nosso código java.
+* O botão possui o atributo "**update**" que realizará uma mudança visual na tabela, pois ao adicionar o novo usuário queremos que ele seja listado imediatamente junto com os demais.
+* A tag "**defaultCommand**" indica o id do componente que será executado ao pressionar a tecla Enter.
 
-E então adicionamos o método novoCadastro\(\) no nosso backing bean, assim como a criação do novo objeto "aluno" que será utilizado para fazer o link dos campos de texto para cadastro.
+E então adicionamos o método novoCadastro\(\) no nosso managed bean, bem como o objeto "aluno", que será utilizado para fazer o link dos campos de texto para cadastro.
 
 # Modificação do AlunoBean
 
@@ -125,7 +125,7 @@ public class AlunoBean implements Serializable {
 
 Partes relevantes do código:
 
-* No método novoCadastro\(\), geramos uma nova matrícula e preenchemos nosso objeto. Os demais campos \(nome, telefone, cpf, etc\) são preenchidos automaticamente enquanto o usuário insere dados no campo de texto da página web.
+* No método **novoCadastro\(\)**, geramos uma nova matrícula e preenchemos nosso objeto. Os demais campos \(nome, telefone, cpf, etc\) são preenchidos automaticamente enquanto o usuário insere dados no campo de texto da página web.
 * Acessamos uma nova instância do nosso EntityManager - que faz a conexão com o banco de dados, e persistimos \(inserimos\) nosso objeto do tipo aluno, que é o "match" em java da tabela Aluno e então fazemos o "commit\(\)" - ou seja, validamos de fato o processo.
 * Lembre-se de adicionar o getter e o setter da variável aluno, se não nosso .xhtml não poderá acessar a mesma. \(Pode-se gerar automaticamente todos os getters e os setters das variávels e objetos presentes no código utilizando o atalho do teclado Alt+Insert.
 
