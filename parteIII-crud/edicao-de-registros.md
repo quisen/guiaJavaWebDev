@@ -23,7 +23,9 @@ private Aluno alunoSelecionado = new Aluno();
 
 Não se esqueça de criar o getter e o setter para este objeto.
 
-E então o método que irá **repassar** o objeto \(**aluno**\) **escolhido na tabela** para o **objeto previamente criado**, onde serão feitas as modificações, será mais fácil de entender quando todo o código estiver pronto:
+E então o método **enviaAluno** irá **repassar** o objeto \(**aluno**\) **escolhido na tabela** para o **objeto previamente criado**, onde serão feitas as modificações. 
+
+Será mais fácil de entender quando todo o código estiver pronto:
 
 ```java
 public void enviaAluno(Aluno a) {
@@ -49,9 +51,9 @@ public void deletaAluno() {
 }
 ```
 
-Assim, podemos seguir em frente para incluir as funcionalidades em nossa tabela.
+Assim, podemos seguir adiante para incluir as funcionalidades em nossa tabela.
 
-Vamos criar um novo form, contendo um novo pop-up que irá mostrar os dados do aluno selecionado:
+Vamos criar um novo form chamado "******modifica******", contendo um novo pop-up que irá mostrar os dados do aluno selecionado:
 
 ```xhtml
 <h:form id="modifica">
@@ -95,9 +97,9 @@ Vamos criar um novo form, contendo um novo pop-up que irá mostrar os dados do a
 </h:form>
 ```
 
-Aqui temos dois botões que executam os métodos java que criamos anteriormente, um para modificação e outro para exclusão.
+No trecho de código acima temos dois botões que executam os métodos java que criamos anteriormente, um para **modificação** e outro para **exclusão**.
 
-E então criamos uma nova coluna com um botão na nossa tabela original:
+Agora devemos criar uma **nova** **coluna** na tabela contendo um **botão** que irá servir para **abrir** o **pop-up** com os botões Modificar e Excluir:
 
 ```xhtml
 <p:column style="width:40px;text-align: center">
@@ -114,5 +116,5 @@ Visualização da janela pop-up ao clicar no botão da tabela:
 
 ![](/assets/popup modifica.png)
 
-Ao escolher modificar ou excluir, o registro será atualizado ou removido automaticamente da tabela, após a confirmação.
+Ao escolher modificar ou excluir, o registro será atualizado ou removido automaticamente da tabela após a confirmação.
 
