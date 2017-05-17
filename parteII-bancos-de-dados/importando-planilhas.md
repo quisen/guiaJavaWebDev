@@ -14,13 +14,13 @@ Como exemplo, utilizaremos uma planilha com dados de alunos para serem inseridos
 
 Agora que a planilha está com a ordenação adequada das colunas \(id, nome, matricula, cpf, telefone, endereco, periodo\), iremos importá-la ao banco com o Workbech.
 
-Primeiramente é preciso realizar um **SELECT** dos dados da tabela aluno.
+Primeiro é preciso realizar um **SELECT** dos dados da tabela aluno.
 
 Em seguida, selecione a opção "**Import Records From a External File**"  \(ícone azul com uma flecha para cima\) localizada na parte superior ao resultado da consulta e busque o **csv**.
 
 ![](/assets/importExternalFile.png)
 
-Depois  é necessário selecionar **Apply **no canto inferior direito para que o Workbench converta em instruções SQL e efetive a inserção.
+Por fim,  é necessário selecionar **Apply **no canto inferior direito para que o Workbench converta em instruções SQL e efetive a inserção.
 
 Realize um **SELECT** novamente e os novos registros poderão ser visualizados.
 
