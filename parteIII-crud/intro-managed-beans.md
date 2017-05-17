@@ -47,13 +47,15 @@ public class AlunoBean implements Serializable {
 }
 ```
 
-A annotation "@**PostConstruct" **é usada previamente em um método que precisa ser executado depois que as dependências da classe são carregadas, de forma a fazer algum tipo de inicialização no código. A annotation deve ser chamada antes da classe ser executada.
+A annotation "@**PostConstruct" **é usada previamente em um método que precisa ser executado depois que as dependências da classe são carregadas, de forma a fazer algum tipo de inicialização no código. Essa annotation deve ser chamada antes da classe ser executada.
 
 Desta forma, resumidamente, o método "init\(\)" será executado após a classe ser chamada \(inicializada\) por alguma página web.
 
-Com o código atual, o método "atualizaListaAlunos\(\)" é chamado de forma a fazer uma query no banco que retorna todos os alunos, como mencionado acima. Vale ressaltar que a "NamedQuery" utilizada \("Classe.findAll"\) é criada automaticamente pelo Netbeans, e pode ser verificado no "Aluno.java".
+Com o código atual, o método "atualizaListaAlunos\(\)" é chamado de modo a requisitar uma query no banco que retorna todos os registros de alunos.
 
-Também vale ressaltar que, para todo objeto, atributo ou variável criado dentro do ManagedBean deve possuir seus respectivos "getters e setters", como da seguinte forma:
+Note que a "NamedQuery" utilizada \("Classe.findAll"\) é criada automaticamente pelo NetBeans, e pode ser encontrada dentro da classe "Aluno.java".
+
+Também vale ressaltar que todo objeto, atributo ou variável criado dentro do ManagedBean deve possuir seus respectivos "getters e setters", conforme o trecho de código abaixo.
 
 ```java
 public List<Aluno> getAlunos() {
@@ -65,4 +67,4 @@ public void setAlunos(List<Aluno> alunos) {
 }
 ```
 
-Isso é necessário para que a página web possa "enxergar" as variáveis, e assim acessá-las.
+Isso é **necessário** para que a **página** **web** possa "**enxergar**" as variáveis, e assim acessá-las.
