@@ -4,7 +4,7 @@ Depois de conectar-se ao seu servidor SQL, utilize o campo de **edição de quer
 
 Como exemplo,** **iremos utilizar um banco nomeado como **universidade**, contendo tabelas e registros fictícios.
 
-Utilizamos o comando CREATE DATABASE para criar e definir o nome do banco.
+Utilizaremos o comando CREATE DATABASE para criar e definir o nome do banco.
 
 ```SQL
 CREATE DATABASE universidade;
