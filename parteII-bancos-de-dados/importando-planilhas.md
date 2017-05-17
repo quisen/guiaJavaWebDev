@@ -1,12 +1,12 @@
 # Importando Planilhas para o Banco
 
-É possível importar dados de planilhas no formato **.csv** diretamente ao banco de dados com o Workbench.
+É possível importar dados de planilhas no formato **.csv** diretamente para o banco de dados com o Workbench.
 
 Para que a importação ocorra da forma adequada é **importante** que as **colunas da planilha **estejam **ordenadas** da mesma forma que as **colunas \(atributos\)** do banco de dados.
 
-Caso a primeira linha da planilha esteja identficando o nome de cada coluna, essa linha também será incluída como um registro, portanto é **recomendado** que ela seja removida antes da importação. O que importa é a **ordem** das colunas.
+Caso a primeira linha da planilha esteja identficando o nome de cada coluna, essa linha também será incluída como um registro, portanto é **recomendado** que ela seja removida antes da importação. Perceba que o que importa é a **ordem** das colunas.
 
-É importante ressaltar também que caso já **existam** **registros** na tabela, as **chaves** **primárias** dos novos registros deverão ser **diferentes** daqueles já presentes no banco.
+É importante ressaltar também que caso já **existam** **registros** na tabela, as **chaves** **primárias** dos novos registros deverão ser **diferentes** daqueles já presentes no banco, para evitar conflitos.
 
 Como exemplo, utilizaremos uma planilha com dados de alunos para serem inseridos na tabela aluno.
 
