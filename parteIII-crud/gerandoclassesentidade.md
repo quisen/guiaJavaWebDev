@@ -1,8 +1,10 @@
 # Gerando Classes de Entidade do Banco de Dados
 
-**Entidades** em java são objetos de **domínio de persistência** - são utilizadas para representar **tabelas em um banco de dados** relacional. Sendo que c**ada instância** de uma entidade corresponde a **uma linha** daquela tabela.
+**Entidades** em java são objetos de **domínio de persistência** - são utilizadas para representar **tabelas em um banco de dados** relacional. **Cada instância** de uma entidade corresponde a **uma linha** (registros) da tabela.
 
-O estado de persistência de uma entidade é representado através de campos ou propriedades persistentes - estes utilizam **anotações de mapeamento** para "vincular" entidades e relacionamentos com os dados relacionais presentes no banco de dados original. Iremos utilizar a anotação **@Entity** para indicar que uma classe é uma entidade.
+O estado de persistência de uma entidade é representado por meio de campos ou propriedades persistentes - estes utilizam **anotações de mapeamento** para "vincular" entidades e relacionamentos com os dados relacionais presentes no banco de dados original. 
+
+Iremos utilizar a anotação **@Entity** para indicar que uma classe é uma entidade.
 
 Para gerar clases de entidade a partir  do banco de dados você deverá clicar  com botão direito do mouse sobre o projeto, expandir a opção **Novo** e selecionar **Outros** \(ao final da lista\).
 
@@ -17,6 +19,7 @@ Agora selecione o campo vazio **Fonte de Dados **e escolha a última opção **N
 ![](/assets/importando.png)
 
 Primeiro escolha um **nome** para a JNDI e selecione a opção **Nova Conexão de Banco de Dados...**
+A JNDI - Java Naming and Directory Interface é uma API permite que aplicações cliente descubram e obtenham dados ou objetos através de um nome
 
 ![](/assets/jndi.png)
 
