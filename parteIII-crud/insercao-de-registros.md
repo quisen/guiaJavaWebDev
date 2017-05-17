@@ -13,7 +13,7 @@ O atributo "update" indica que irá ocorrer alguma mudança visual na página, s
 
 O atributo "oncomplete" define uma ação que irá ser realizada quando o botão for clicado.
 
-O atributo "pop-up" servirá para abrir uma caixa de diálogo com os campos para cadastro:
+O atributo "pop-up" serve para abrir uma caixa de diálogo com os campos para cadastro:
 
 ```xhtml
 <h:form id="cadastro">
