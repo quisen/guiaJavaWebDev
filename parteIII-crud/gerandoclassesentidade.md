@@ -39,6 +39,6 @@ Agora que a conexão foi estabelecida entre o NetBeans e o SQL Server, clique no
 
 ![](/assets/entidades.png)
 
-Depois disso você perceberá que as classes estarão dentro do seu pacote.
+Depois disso você perceberá que as classes serão criadas dentro do seu pacote.
 
 ![](/assets/entidades criadas.png)
