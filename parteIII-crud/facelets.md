@@ -1,6 +1,6 @@
 # Facelets
 
-É uma linguagem de descrição de páginas \(PDL\) criada especialmente para o JSF - estabelecendo uma linguagem entre templates que suporta a criação da árvore de componentes das telas JSF, permitindo assim o **reuso de padrões de telas e a composição de componentes JSF para formar novos componentes.**
+É uma linguagem de descrição de páginas criada especialmente para o JSF - estabelecendo uma linguagem entre templates que suporta a criação da árvore de componentes das telas JSF, permitindo assim o **reuso de padrões de telas e a composição de componentes JSF para formar novos componentes.**
 
 De forma resumida, iremos utilizar os facelets para atualizar **apenas as seções que desejamos**, evitando **recarregar toda a página** quando apenas uma **pequena porção sofre modificação**.
 
@@ -24,19 +24,23 @@ Para este exemplo será utilizado o modelo composto por 4 partes, sendo elas: **
 
 Clique em finalizar e o arquivo deverá ser criado dentro das Páginas Web do seu projeto.
 
+A imagem abaixo mostra o template gerado **com algumas modificações** - fique atento para os campos dentro da tag "head", pois é nele que estão inseridas as referências aos arquivos de css. 
+
 ![](/assets/3 - template configurado.png)
 
-Esta imagem mostra o template gerado com algumas modificações - fique atento para os campos dentro da tag "head", onde ocorre a referência aos arquivos de css. A tag padrão "outputStyleSheet" gera alguns problemas de compatibilidade com o glassfish, por isso devemos modificar para o modelo da imagem.
+A tag padrão **"outputStyleSheet"** gera alguns problemas de compatibilidade com o glassfish, por isso devemos modificá-la para **"link"** conforme o modelo da imagem.
 
-Para integrarmos nosso index.xhtml com o template criado basta inserirmos duas tags.
+Para integrarmos nosso index.xhtml com o template criado basta inserirmos **duas** **tags**.
 
-A primeira **&lt;ui:composition&gt; **serve para referenciar o caminho do template.
+A primeira **ui:composition** serve para referenciar o caminho do template.
 
-A segunda **&lt;ui:define&gt; **serve para definir qual é a parte do nosso layout que iremos customizar.
+A segunda **ui:define** serve para definir qual é a parte do nosso layout que iremos customizar.
 
-Neste caso está definido **que o** **index** irá aparecer dentro do **content**.![](/assets/templateIndex.png)
+Neste caso está definido **que o** **index** irá aparecer dentro do **content**.
 
-**Agora** iremos criar um arquivo customizado para cada facelet, sendo **bottomFacelet** para a parte inferior da página, **leftFacelet** para o menu na parte esquerda, **topFacelet** para o topo da página. Nosso atual **index** servira para ocupar o nosso **content.**
+![](/assets/templateIndex.png)
+
+**Agora** iremos criar um arquivo customizado para cada facelet, sendo **bottomFacelet** para a parte inferior da página, **leftFacelet** para o menu na parte esquerda e **topFacelet** para o topo da página. Nosso **index** atual irá ocupar o nosso **content.**
 
 Para criar novas páginas **xhtml** basta clicar com o botão direito em seu projeto e selecionar **Outro** e depois **Arquivo** **XHTML**
 
@@ -104,9 +108,9 @@ Abaixo estão os códigos para cada uma das partes.
 </html>
 ```
 
-Fique atento para o fato de que nestas páginas **não existem** as tags **&lt;ui:composition&gt; e &lt;ui:define&gt;**, pois elas são necessárias somente nas seções que apresentarão mudanças de forma dinâmica - por exemplo, neste projeto web de Universidade, a única parte que será "trocada" pela navegação de algum botão ou menu, é o "content", por isso utilizamos as tags neste caso, e não nas páginas estáticas \(top, bottom e left\).
+Fique atento para o fato de que nestas páginas **não existem** as tags **ui:composition**; e **ui:define**, pois elas são necessárias somente nas seções que apresentarão mudanças de forma dinâmica - por exemplo, neste projeto web de Universidade, a única parte que será "trocada" pela navegação de algum botão ou menu, é o "content", por isso utilizamos as tags neste caso, e não nas páginas estáticas \(top, bottom e left\).
 
-Agora você deverá **atualizar** o arquivo **template**.**xhtml** para cada parte referenciar corretamente os arquivos que foram criados para cada facelet.
+Agora você deverá **atualizar** o arquivo **template**.**xhtml** para que cada parte referencie corretamente os arquivos que foram criados para cada facelet.
 
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?> 
