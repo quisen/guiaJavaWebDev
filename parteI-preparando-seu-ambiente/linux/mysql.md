@@ -12,5 +12,5 @@ Comando para instalar por linha de comando:
 sudo apt-get install mysql-client mysql-server mysql-workbench
 ```
 
-
+![](/assets/mysqllogo.png)
 

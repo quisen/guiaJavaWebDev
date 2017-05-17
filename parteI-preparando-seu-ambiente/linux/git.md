@@ -14,5 +14,5 @@ Após a instalação das dependências, utilize o comando abaixo para instalar o
 apt-get install git
 ```
 
-
+![](/assets/gitlogo.png)
 
