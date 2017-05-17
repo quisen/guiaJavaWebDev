@@ -16,7 +16,9 @@ Agora que a planilha está com a ordenação adequada das colunas \(id, nome, ma
 
 Primeiramente é preciso realizar um **SELECT** dos dados da tabela aluno.
 
-Em seguida, selecione a opção "**Import Records From a External File**"  \(ícone azul com uma flecha para cima\) localizada na parte superior ao resultado da consulta e busque o **csv**.![](/assets/importExternalFile.png)
+Em seguida, selecione a opção "**Import Records From a External File**"  \(ícone azul com uma flecha para cima\) localizada na parte superior ao resultado da consulta e busque o **csv**.
+
+![](/assets/importExternalFile.png)
 
 Depois  é necessário selecionar **Apply **no canto inferior direito para que o Workbench converta em instruções SQL e efetive a inserção.
 
