@@ -8,7 +8,6 @@ Crie uma nova classe chamada **AlunoBean**.
 
 ![](/assets/criando bean.png)
 
-Este é um exemplo básico para o Managed Bean dos alunos. 
 No código abaixo, é declarada uma lista do tipo aluno que tem a finalidade de armazenar todos os alunos resultantes da query "SELECT \* FROM Aluno;"
 
 (Esta query é representada por "Aluno.findAll" - pode ser observada na classe gerada Aluno.java)
