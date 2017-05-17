@@ -32,7 +32,7 @@ Agora clique no ícone de Clean and Build para garantir que o Maven baixe todas 
 
 ![](/assets/rebuild.png)
 
-Ao término dessa etapa, um novo arquivo chamado **index**.**xhtml** deve ter sido criado dentro de Páginas Web.
+Ao término dessa etapa, um novo arquivo chamado **index.xhtml** deve ter sido criado dentro de Páginas Web - bem como o arquivo **web.xml** dentro da pasta WEB-INF.
 
 ![](/assets/index novo.png)
 
