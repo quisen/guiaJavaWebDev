@@ -26,7 +26,7 @@
   * [Edição e Exclusão de Registros](parteIII-crud/edicao-de-registros.md)
   * [Facelets](parteIII-crud/facelets.md)
 * [Dicas e Soluções de Problemas](dicas-solucoes.md)
-  * [Logs de Erros](dicas-solucoes/visualizar-logs.md)
+  * [Visualização de Logs de Erros](dicas-solucoes/visualizar-logs.md)
   * [Limpeza de Cache](dicas-solucoes/limpeza-de-cache.md)
   * [Bugs Conhecidos](dicas-solucoes/bugs-conhecidos.md)
 
