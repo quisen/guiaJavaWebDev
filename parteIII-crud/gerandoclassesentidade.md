@@ -1,8 +1,8 @@
 # Gerando Classes de Entidade do Banco de Dados
 
-**Entidades** em java são objetos de **domínio de persistência** - são utilizadas para representar **tabelas em um banco de dados** relacional. **Cada instância** de uma entidade corresponde a **uma linha** (registros) da tabela.
+**Entidades** em java são objetos de **domínio de persistência** - são utilizadas para representar **tabelas em um banco de dados** relacional. **Cada instância** de uma entidade corresponde a **uma linha** \(registros\) da tabela.
 
-O estado de persistência de uma entidade é representado por meio de campos ou propriedades persistentes - estes utilizam **anotações de mapeamento** para "vincular" entidades e relacionamentos com os dados relacionais presentes no banco de dados original. 
+O estado de persistência de uma entidade é representado por meio de campos ou propriedades persistentes - estes utilizam **anotações de mapeamento** para "vincular" entidades e relacionamentos com os dados relacionais presentes no banco de dados original.
 
 Iremos utilizar a anotação **@Entity** para indicar que uma classe é uma entidade.
 
@@ -18,7 +18,7 @@ Agora selecione o campo vazio **Fonte de Dados **e escolha a última opção **N
 
 ![](/assets/importando.png)
 
-Primeiro escolha um **nome** para a JNDI e selecione a opção **Nova Conexão de Banco de Dados...**
+Primeiro escolha um **nome** para a JNDI e selecione a opção **Nova Conexão de Banco de Dados...**  
 A JNDI - Java Naming and Directory Interface é uma API permite que aplicações cliente descubram e obtenham dados ou objetos através de um nome
 
 ![](/assets/jndi.png)
@@ -27,7 +27,7 @@ Escolha o Driver **MySQL.**
 
 ![](/assets/mysql connector.png)
 
-Preencha o nome do banco que estamos utilizando - neste caso, de acordo com nosso script (**Parte II - Criando seu Banco de Dados**), e indique também o nome do **usuário** e **senha** do Banco de Dados, estas informações foram definidas durante a instalação do MySQL, de acordo com a **Parte I** do guia.
+Preencha o nome do banco que estamos utilizando - neste caso, de acordo com nosso script \(**Parte II - Criando seu Banco de Dados**\), e indique também o nome do **usuário** e **senha** do Banco de Dados, estas informações foram definidas durante a instalação do MySQL, de acordo com a **Parte I** do guia.
 
 Você pode clicar no botão **Testar** **Conexão** para verificar se os campos foram preenchidos corretamente.
 
@@ -35,10 +35,11 @@ Clique em **Próximo**.
 
 ![](/assets/conexao com banco.png)
 
-Agora que a conexão foi estabelecida entre o NetBeans e o SQL Server, clique no botão **Adicionar Tudo &gt;&gt; ** ou selecione individualmente as tabelas desejadas. Clique em **Finalizar**. 
+Agora que a conexão foi estabelecida entre o NetBeans e o SQL Server, clique no botão **Adicionar Tudo &gt;&gt; ** ou selecione individualmente as tabelas desejadas. Clique em **Finalizar**.
 
-![](/assets/entidades.png)
+![](/assets/Captura de tela de 2017-05-24 15:28:10.png)
 
 Depois disso você perceberá que as classes serão criadas dentro do seu pacote.
 
-![](/assets/entidades criadas.png)
+![](/assets/classesentidadegerada.png)
+
