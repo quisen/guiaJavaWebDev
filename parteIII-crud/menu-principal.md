@@ -39,3 +39,7 @@ Depois de criar essas três páginas, modifique seu **leftFacelet.xhtml** para i
 
 
 
+Seu projeto deverá estar como mostra na figura abaixo:
+
+![](/assets/menuateagora.png)
+
