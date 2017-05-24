@@ -180,5 +180,3 @@ Até o momento a interface do seu projeto deverá estar bastante simples, bem co
 
 ![](/assets/Captura de tela de 2017-05-24 16:26:33.png)
 
-
-
