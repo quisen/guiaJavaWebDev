@@ -54,7 +54,7 @@ Neste caso está definido **que o** **index** irá aparecer dentro do **content*
 
 ![](/assets/indexnovo.png)
 
-**Agora** iremos criar um arquivo customizado para cada facelet, sendo **bottomFacelet** para a parte inferior da página, **leftFacelet** para o menu na parte esquerda e **topFacelet** para o topo da página. Nosso **index** atual irá ocupar o nosso **content.**
+**Agora** iremos criar um arquivo customizado para cada facelet, sendo **bottomFacelet** para a parte inferior da página, **leftFacelet** para o menu na parte esquerda e **topFacelet** para o topo da página. Relembrando, o **index** irá ocupar o nosso **content **inicial.
 
 Para criar novas páginas **xhtml** basta clicar com o botão direito em seu projeto e selecionar **Outro** e depois **Arquivo** **XHTML**
 
@@ -122,7 +122,7 @@ Abaixo estão os códigos para cada uma das partes.
 </html>
 ```
 
-Fique atento para o fato de que nestas páginas **não existem** as tags **ui:composition**; e **ui:define**, pois elas são necessárias somente nas seções que apresentarão mudanças de forma dinâmica - por exemplo, neste projeto web de Universidade, a única parte que será "trocada" pela navegação de algum botão ou menu, é o "content", por isso utilizamos as tags neste caso, e não nas páginas estáticas \(top, bottom e left\).
+Fique atento para o fato de que nestas páginas **não existem** as tags **ui:composition**; e **ui:define**, pois elas são necessárias somente nas seções que apresentarão mudanças de forma dinâmica - por exemplo, neste projeto web de Universidade, a única parte que será "trocada" pela navegação de algum botão ou menu, é o "**content**", por isso utilizamos as tags neste caso, e não nas páginas estáticas \(top, bottom e left\).
 
 Agora você deverá **atualizar** o arquivo **template**.**xhtml** para que cada parte referencie corretamente os arquivos que foram criados para cada facelet.
 
