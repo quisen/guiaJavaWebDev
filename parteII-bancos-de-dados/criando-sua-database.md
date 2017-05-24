@@ -100,7 +100,7 @@ CREATE TABLE matricula (
 );
 ```
 
-Por fim, iremos popular a tabela aluno\_matriculado. Note que os registros criados relacionam-se com os registros de **aluno** e **disciplina** por meio de suas **chaves** **primárias**:
+Por fim, iremos popular a tabela matricula. Note que os registros criados relacionam-se com os registros de **aluno** e **disciplina** por meio de suas **chaves** **primárias**:
 
 ```SQL
 INSERT INTO matricula (id_aluno,id_disciplina) VALUES (1,2);
