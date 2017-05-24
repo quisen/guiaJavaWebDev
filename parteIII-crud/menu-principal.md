@@ -10,3 +10,9 @@ Portanto, elas precisam ser Clientes do Modelo de Facelets que foi criado anteri
 
 ![](/assets/clientesdomodelo3crud.png)
 
+Depois de criar essas três páginas, modifique seu **leftFacelet.xhtml** para inserir as opções no Menu Principal.
+
+
+
+
+
