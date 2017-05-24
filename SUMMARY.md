@@ -25,7 +25,6 @@
   * [Menu Principal](parteIII-crud/menu-principal.md)
   * [Incorporando elementos do PrimeFaces](parteIII-crud/incorporando-elementos-do-primefaces.md)
   * [Inserção de Registros](parteIII-crud/insercao-de-registros.md)
-  * [Menu Principal](parteIII-crud/menu-principal.md)
 * [Dicas e Soluções de Problemas](dicas-solucoes.md)
   * [Visualização de Logs de Erros](dicas-solucoes/visualizar-logs.md)
   * [Limpeza de Cache](dicas-solucoes/limpeza-de-cache.md)
