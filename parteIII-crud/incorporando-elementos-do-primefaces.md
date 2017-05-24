@@ -4,7 +4,7 @@ Abaixo segue o link com exemplos simples de componentes para tabelas do PrimeFac
 
 [https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml](https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml)
 
-Agora iremos inserir no index.xhtml alguns componentes do PrimeFaces já customizados com as variáveis do nosso projeto:
+Agora iremos inserir no aluno.xhtml alguns componentes do PrimeFaces já customizados com as variáveis do nosso projeto:
 
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
