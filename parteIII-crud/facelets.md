@@ -44,7 +44,7 @@ Selecione **somente** a opção **content**, pois será o único facelet modific
 
 Clique em **Finalizar**.
 
-
+![](/assets/indexmodelo.png)
 
 Para integrarmos nosso index.xhtml com o template criado basta inserirmos **duas** **tags**.
 
