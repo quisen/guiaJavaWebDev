@@ -87,10 +87,10 @@ INSERT INTO disciplina (nome,periodo,professor) VALUES ("Dispositivos Móveis",9
 INSERT INTO disciplina (nome,periodo,professor) VALUES ("Desenvolvimento Web",10,"Mariana");
 ```
 
-Agora criaremos a tabela **aluno\_matriculado** que irá ter uma **relação** direta com as **tabelas** **criadas** **anteriormente** por meio de chaves estrangeiras \(foreign key\):
+Agora criaremos a tabela **matricula** que irá ter uma **relação** direta com as **tabelas** **criadas** **anteriormente** por meio de chaves estrangeiras \(foreign key\):
 
 ```SQL
-CREATE TABLE aluno_matriculado (
+CREATE TABLE matricula (
     id INT NOT NULL AUTO_INCREMENT,
     id_aluno INT NOT NULL,
     id_disciplina INT NOT NULL,
@@ -103,27 +103,27 @@ CREATE TABLE aluno_matriculado (
 Por fim, iremos popular a tabela aluno\_matriculado. Note que os registros criados relacionam-se com os registros de **aluno** e **disciplina** por meio de suas **chaves** **primárias**:
 
 ```SQL
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (1,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (1,4);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (2,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (2,3);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (3,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (4,4);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (4,5);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (5,1);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (5,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (5,3);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (6,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (6,3);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (7,6);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (8,7);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (8,8);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (8,9);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (8,10);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (9,5);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (9,3);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (10,8);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (10,9);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (1,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (1,4);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (2,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (2,3);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (3,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (4,4);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (4,5);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (5,1);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (5,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (5,3);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (6,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (6,3);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (7,6);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (8,7);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (8,8);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (8,9);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (8,10);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (9,5);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (9,3);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (10,8);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (10,9);
 ```
 
 ---
