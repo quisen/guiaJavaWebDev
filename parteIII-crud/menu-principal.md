@@ -8,7 +8,7 @@ Estas páginas irão preencher o conteúdo do facelet Content de forma dinâmica
 
 Portanto, elas precisam ser Clientes do Modelo de Facelets que foi criado anteriormente.
 
-![](/assets/clientesdomodelo3crud.png)
+![](/assets/contentscustom.png)
 
 Depois de criar essas três páginas, modifique seu **leftFacelet.xhtml** para implementar as opções no Menu Principal.
 
