@@ -2,19 +2,19 @@
 
 Agora que já temos as classes de entidades geradas a partir do banco, podemos criar o nosso EntityManager.
 
-O **EntityManager** é uma ferramenta utilizada para **interagir com o contexto de persistência** - sendo este um conjunto de instâncias de entidades. 
+O **EntityManager** é uma ferramenta utilizada para **interagir com o contexto de persistência** - sendo este um conjunto de instâncias de entidades.
 
-Com essa associação, podemos realizar várias ações com o nosso banco de dados, como **criação, exclusão e alteração** de registros de entidades, bem como **buscas (queries)** baseadas em atributos e campos identificadores.
+Com essa associação, podemos realizar várias ações com o nosso banco de dados, como **criação, exclusão e alteração** de registros de entidades, bem como **buscas \(queries\)** baseadas em atributos e campos identificadores.
 
 Todas as entidades que podem ser **gerenciadas** por um EntityManager são descritas utilizando a **unidade de persistência** - esta define o conjunto de **classes** que têm algum tipo de **interação com o banco**.
 
 Primeiramente você deve criar uma nova classe java dentro do seu pacote e configurá-la para ser o seu entity manager.
 
-![](/assets/1 crie a classe.png)
+![](/assets/emanagerjava.png)
 
 O arquivo **persistence**.**xml** foi criado automaticamente pelo NetBeans durante a geração das classes de entidade a partir do banco, esse arquivo guarda todas as informações sobre a camada de persistência e tem uma relação direta com o seu banco de dados.
 
-![](/assets/2 procurar persistence.xml.png)
+![](/assets/persistencexml.png)
 
 A imagem a seguir mostra a configuração da unidade de persistência que foi gerada pelo NetBeans, é recomendado que o **Nome da Unidade de Persistência** seja modificado para facilitar seu entendimento.
 
@@ -52,3 +52,6 @@ public class EManager implements java.io.Serializable {
 
 }
 ```
+
+
+
