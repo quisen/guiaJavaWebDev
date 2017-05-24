@@ -126,6 +126,8 @@ Fique atento para o fato de que nestas páginas **não existem** as tags **ui:co
 
 Agora você deverá **atualizar** o arquivo **template**.**xhtml** para que cada parte referencie corretamente os arquivos que foram criados para cada facelet.
 
+Observação: A tag padrão **"outputStyleSheet" **gera alguns problemas de **compatibilidade** com o GlassFish, por isso devemos modificá-la para**"link href"**
+
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
