@@ -46,7 +46,7 @@ Clique em **Finalizar**.
 
 ![](/assets/indexmodelo.png)
 
-Para integrarmos nosso index.xhtml com o template criado basta inserirmos **duas** **tags**.
+A integração de cada página com o template ocorre com a utilização de **duas** **tags**.
 
 A primeira **ui:composition** serve para referenciar o caminho do template.
 
