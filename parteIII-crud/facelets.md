@@ -28,8 +28,6 @@ A imagem abaixo mostra o template gerado **com algumas modificações** - fique 
 
 ![](/assets/templateblank.png)
 
-A tag padrão **"outputStyleSheet"** gera alguns problemas de compatibilidade com o glassfish, por isso devemos modificá-la para **"link"** conforme o modelo da imagem.
-
 Agora iremos gerar um** Cliente do Modelo de Facelets**, ou seja, iremos criar uma página que se baseia no template criado anteriormente.
 
 Para isso, clique com o botão direito em seu projeto, em seguida clique em **Novo** &gt; **Outros** &gt; **JavaServer** **Faces** &gt; **Cliente** **do** **Modelo** **de** **Facelets, e clique em próximo.**
@@ -54,7 +52,7 @@ A segunda **ui:define** serve para definir qual é a parte do nosso layout que i
 
 Neste caso está definido **que o** **index** irá aparecer dentro do **content**.
 
-![](/assets/templateIndex.png)
+![](/assets/indexnovo.png)
 
 **Agora** iremos criar um arquivo customizado para cada facelet, sendo **bottomFacelet** para a parte inferior da página, **leftFacelet** para o menu na parte esquerda e **topFacelet** para o topo da página. Nosso **index** atual irá ocupar o nosso **content.**
 
