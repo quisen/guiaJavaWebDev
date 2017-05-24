@@ -30,19 +30,17 @@ A imagem abaixo mostra o template gerado **com algumas modificações** - fique 
 
 A tag padrão **"outputStyleSheet"** gera alguns problemas de compatibilidade com o glassfish, por isso devemos modificá-la para **"link"** conforme o modelo da imagem.
 
-
-
-Agora iremos gerar um** Cliente do Modelo de Facelets**, ou seja, iremos criar uma página que se baseia no template criado anteriormente. 
+Agora iremos gerar um** Cliente do Modelo de Facelets**, ou seja, iremos criar uma página que se baseia no template criado anteriormente.
 
 Para isso, clique com o botão direito em seu projeto, em seguida clique em **Novo** &gt; **Outros** &gt; **JavaServer** **Faces** &gt; **Cliente** **do** **Modelo** **de** **Facelets, e clique em próximo.**
 
 Dê um **nome** para o arquivo, neste caso será **index**.
 
-Também é preciso definir o **Modelo**, então clique em Procurar e busque pelo seu **template**.**xhtml** dentro de Páginas Web. 
+Também é preciso definir o **Modelo**, então clique em Procurar e busque pelo seu **template**.**xhtml** dentro de Páginas Web.
 
-Escolha **ui:composition** para Tag Raiz Gerada. 
+Escolha **ui:composition** para Tag Raiz Gerada.
 
-Selecione **somente** a opção **content**, pois será o único facelet modificado nesta pagina. 
+Selecione **somente** a opção **content**, pois será o único facelet modificado nesta pagina.
 
 Clique em **Finalizar**.
 
