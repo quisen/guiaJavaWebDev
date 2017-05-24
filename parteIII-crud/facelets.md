@@ -24,9 +24,9 @@ Para este exemplo será utilizado o modelo composto por 4 partes, sendo elas: **
 
 Clique em finalizar e o arquivo deverá ser criado dentro das Páginas Web do seu projeto.
 
-A imagem abaixo mostra o template gerado **com algumas modificações** - fique atento para os campos dentro da tag "head", pois é nele que estão inseridas as referências aos arquivos de css. 
+A imagem abaixo mostra o template gerado **com algumas modificações** - fique atento para os campos dentro da tag "head", pois é nele que estão inseridas as referências aos arquivos de css.
 
-![](/assets/3 - template configurado.png)
+![](/assets/templateblank.png)
 
 A tag padrão **"outputStyleSheet"** gera alguns problemas de compatibilidade com o glassfish, por isso devemos modificá-la para **"link"** conforme o modelo da imagem.
 
