@@ -176,7 +176,9 @@ Observação: A tag padrão **"outputStyleSheet" **gera alguns problemas de **co
 
 ![](/assets/remove css bg color.png)
 
-Resultado final:
+Até o momento a interface do seu projeto deverá estar bastante simples, bem como a imagem abaixo:
 
-![](/assets/tabela final.png)
+![](/assets/Captura de tela de 2017-05-24 16:26:33.png)
+
+
 
