@@ -2,6 +2,8 @@
 
 Primerio criaremos **três **novas classes Java, sendo elas: **AlunoBean.java**, **DisciplinaBean.java** e **MatriculaBean.java**.
 
+
+
 **AlunoBean.java**
 
 ```java
@@ -168,8 +170,6 @@ public class DisciplinaBean implements Serializable {
 
 }
 ```
-
-
 
 **MatriculaBean.java**
 
@@ -375,8 +375,6 @@ public class MatriculaBean implements Serializable {
 }
 ```
 
-
-
 # Criando Converters
 
 **AlunoConverter.java**
@@ -412,10 +410,7 @@ public class AlunoConverter implements Converter {
         return "";
     }
 }
-
 ```
-
-
 
 **DisciplinaConverter.java**
 
@@ -450,7 +445,6 @@ public class DisciplinaConverter implements Converter {
         return "";
     }
 }
-
 ```
 
 
