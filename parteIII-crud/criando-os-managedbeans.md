@@ -1,6 +1,6 @@
 # Criando os ManagedBeans
 
-Primeiramente iremos atualizar o nosso AlunoBean, criado na seção anterior, para possibilitar a realização de operações de **inserção**, **edição** e **exclusão** no banco de dados.
+Primeiramente iremos atualizar o nosso AlunoBean, criado na seção anterior, para, além de possibilitar a visualização de registros na tabela, também realização de operações de **inserção**, **edição** e **exclusão** no banco de dados.
 
 **AlunoBean.java**
 
