@@ -2,11 +2,7 @@
 
 ManagedBeans são classes referenciadas com a annotation "**@ManagedBean**", que atuam como **intermediadores** entre as **páginas web** \(abordadas na próxima sessão\) e os **métodos java** que interagem com as classes de entidade e com o banco de dados.
 
-A seguir veremos a criação e funcionamento do ManagedBean para nossa tabela de Aluno.
-
-Crie uma nova classe chamada **AlunoBean**.
-
-![](/assets/alunobean.png)
+A seguir veremos um exemplo simples de criação e funcionamento de um ManagedBean para a tabela Aluno.
 
 No código abaixo, é declarada uma lista do tipo aluno que tem a finalidade de armazenar todos os alunos resultantes da query "SELECT \* FROM Aluno;"
 
