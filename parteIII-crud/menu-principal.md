@@ -6,7 +6,7 @@ Primerio criaremos **três **novas páginas, **alunos.xhtml**, **disciplinas.xht
 
 Essas páginas irão preencher o conteúdo do facelet Content de acordo com a opção selecionada no menu.
 
-Portanto, elas precisam ser Clientes do Modelo de Facelets que foi criado anteriormente.
+Portanto, elas precisam ser Clientes do Modelo de Facelets que foi definido anteriormente.
 
 ![](/assets/contentscustom.png)
 
