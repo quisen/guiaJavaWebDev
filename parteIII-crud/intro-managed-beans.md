@@ -4,6 +4,8 @@ ManagedBeans são classes referenciadas com a annotation "**@ManagedBean**", que
 
 A seguir veremos um exemplo simples de criação e funcionamento de um ManagedBean para a tabela Aluno.
 
+![](/assets/alunobean.png)
+
 No código abaixo, é declarada uma lista do tipo aluno que tem a finalidade de armazenar todos os alunos resultantes da query "SELECT \* FROM Aluno;"
 
 \(Esta query é representada por "Aluno.findAll" - pode ser observada na classe gerada Aluno.java\)
