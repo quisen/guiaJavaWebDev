@@ -4,7 +4,7 @@ Primerio criaremos **três **novas classes Java, sendo elas: **AlunoBean.java**,
 
 **AlunoBean.java**
 
-```
+```java
 package br.edu.utfpr.universidade;
 
 import java.io.Serializable;
@@ -37,7 +37,7 @@ public class AlunoBean implements Serializable {
         EManager.getInstance().getTransaction().commit();
         atualizaListaAlunos();
     }
-    
+
     public void deletaAluno() {
         EManager.getInstance().getTransaction().begin();
         EManager.getInstance().remove(this.alunoSelecionado);
@@ -81,16 +81,13 @@ public class AlunoBean implements Serializable {
     public void setAlunoSelecionado(Aluno alunoSelecionado) {
         this.alunoSelecionado = alunoSelecionado;
     }
-    
+
 }
-
 ```
-
-
 
 **DisciplinaBean.java**
 
-```
+```java
 package br.edu.utfpr.universidade;
 
 import java.io.Serializable;
@@ -123,7 +120,7 @@ public class DisciplinaBean implements Serializable {
         EManager.getInstance().getTransaction().commit();
         atualizaListaDisciplinas();
     }
-    
+
     public void deletaDisciplina() {
         EManager.getInstance().getTransaction().begin();
         EManager.getInstance().remove(this.disciplinaSelecionada);
@@ -167,17 +164,16 @@ public class DisciplinaBean implements Serializable {
         this.disciplinaSelecionada = disciplinaSelecionada;
     }
 
-    
-    
-}
 
+
+}
 ```
 
 
 
 **MatriculaBean.java**
 
-```
+```java
 package br.edu.utfpr.universidade;
 
 import java.io.Serializable;
@@ -376,6 +372,83 @@ public class MatriculaBean implements Serializable {
 
     }
 
+}
+```
+
+
+
+# Criando Converters
+
+**AlunoConverter.java**
+
+```java
+package br.edu.utfpr.universidade;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
+import javax.faces.convert.FacesConverter;
+
+@FacesConverter(value = "alunoConverter")
+public class AlunoConverter implements Converter {
+
+    @Override
+    public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String value) {
+        if (value != null && !value.isEmpty()) {
+            return (Aluno) uiComponent.getAttributes().get(value);
+        }
+        return null;
+    }
+
+    @Override
+    public String getAsString(FacesContext facesContext, UIComponent uiComponent, Object value) {
+        if (value instanceof Aluno) {
+            Aluno entity = (Aluno) value;
+            if (entity != null && entity instanceof Aluno && entity.getId() != null) {
+                uiComponent.getAttributes().put(entity.getId().toString(), entity);
+                return entity.getId().toString();
+            }
+        }
+        return "";
+    }
+}
+
+```
+
+
+
+**DisciplinaConverter.java**
+
+```java
+package br.edu.utfpr.universidade;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
+import javax.faces.convert.FacesConverter;
+
+@FacesConverter(value = "disciplinaConverter")
+public class DisciplinaConverter implements Converter {
+
+    @Override
+    public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String value) {
+        if (value != null && !value.isEmpty()) {
+            return (Disciplina) uiComponent.getAttributes().get(value);
+        }
+        return null;
+    }
+
+    @Override
+    public String getAsString(FacesContext facesContext, UIComponent uiComponent, Object value) {
+        if (value instanceof Disciplina) {
+            Disciplina entity = (Disciplina) value;
+            if (entity != null && entity instanceof Disciplina && entity.getId() != null) {
+                uiComponent.getAttributes().put(entity.getId().toString(), entity);
+                return entity.getId().toString();
+            }
+        }
+        return "";
+    }
 }
 
 ```
