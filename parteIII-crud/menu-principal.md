@@ -4,7 +4,7 @@ Agora que já temos a estrutura básica do nosso projeto, podemos iniciar a cust
 
 Primerio criaremos **três **novas páginas, **alunos.xhtml**, **disciplinas.xhtml** e **matriculas.xhtml**\).
 
-Estas páginas irão preencher o conteúdo do facelet Content de forma dinâmica.
+Essas páginas irão preencher o conteúdo do facelet Content de acordo com a opção selecionada no menu.
 
 Portanto, elas precisam ser Clientes do Modelo de Facelets que foi criado anteriormente.
 
