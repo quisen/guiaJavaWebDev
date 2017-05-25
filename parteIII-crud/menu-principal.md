@@ -2,7 +2,7 @@
 
 Agora que já temos a estrutura básica do nosso projeto, podemos iniciar a customização do menu principal e a criação das páginas que irão preencher e atualizar o content.
 
-Primerio criaremos **três **novas páginas, **alunos.xhtml**, **disciplinas.xhtml** e **matriculas.xhtml**\).
+Primerio criaremos **três **novas páginas, **alunos.xhtml**, **disciplinas.xhtml** e **matriculas.xhtml**.
 
 Essas páginas irão preencher o conteúdo do facelet Content de acordo com a opção selecionada no menu.
 
