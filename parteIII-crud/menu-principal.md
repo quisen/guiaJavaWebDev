@@ -2,7 +2,7 @@
 
 Agora que já temos a estrutura básica do nosso projeto, podemos iniciar a customização do menu principal e a criação das páginas que irão preencher e atualizar o content.
 
-Primerio iremos criar **três** páginas, uma para cada tabela do banco de dados \(**alunos**, **disciplinas** e **matriculas**\).
+Primerio criaremos **três **novas páginas, **alunos.xhtml**, **disciplinas.xhtml** e **matriculas.xhtml**\).
 
 Estas páginas irão preencher o conteúdo do facelet Content de forma dinâmica.
 
@@ -36,8 +36,6 @@ Depois de criar essas três páginas, modifique seu **leftFacelet.xhtml** para i
     </body>
 </html>
 ```
-
-
 
 Seu projeto deverá estar como mostra na figura abaixo:
 
