@@ -1,8 +1,6 @@
 # Criando os ManagedBeans
 
-Primerio criaremos **três **novas classes Java, sendo elas: **AlunoBean.java**, **DisciplinaBean.java** e **MatriculaBean.java**.
-
-
+Primeiramente iremos atualizar o nosso AlunoBean para possibilitar a realização de operações de **inserção**, **edição** e **exclusão** no banco de dados.
 
 **AlunoBean.java**
 
