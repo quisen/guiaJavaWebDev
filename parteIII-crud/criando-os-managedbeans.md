@@ -6,7 +6,7 @@ Primeiramente iremos atualizar o nosso AlunoBean para, além de possibilitar a v
 
 **Atributos** utilizados pela classe:
 
-```
+```java
 private List<Aluno> alunos;
 private Aluno aluno = new Aluno();
 private Aluno alunoSelecionado = new Aluno();
@@ -18,11 +18,9 @@ O objeto "**aluno**" será utilizado na inserção de novos registros.
 
 O objeto "**alunoSelecionado**" será utilizado para armazenar o registro da tabela que deseja-se fazer alguma alteração.
 
-
-
 Método que **popula** a **lista** de alunos com registros **atualizados**:
 
-```
+```java
 public void atualizaListaAlunos() {
     alunos = EManager.getInstance().createNamedQuery("Aluno.findAll").getResultList();
 }
@@ -32,11 +30,9 @@ Nesta linha de código, fazemos uma requisição ao **EntityManager** para retor
 
 \(**Obs**: NamedQuery Aluno.findAll = SELECT \* FROM Aluno\).
 
-
-
 Método que trata a **inserção** de novos alunos na tabela:
 
-```
+```java
 public void novoCadastro() {
     this.aluno.setMatricula(1000000 + new Random().nextInt(9999999 - 1000000 + 1));
     EManager.getInstance().getTransaction().begin();
@@ -55,11 +51,9 @@ Então iniciamos uma **transação** com o banco de dados através da **unidade 
 
 Após a inserção, re-instanciamos nosso objeto aluno para prevenir que existam dados **remanescentes** de transações anteriores, e então atualizamos a lista - para obter o novo registro junto com os demais.
 
-
-
 Método que trata a **modificação** de registros de alunos na tabela:
 
-```
+```java
 public void modificaAluno() {
     EManager.getInstance().getTransaction().begin();
     EManager.getInstance().merge(this.alunoSelecionado);
@@ -70,11 +64,9 @@ public void modificaAluno() {
 
 Utilizamos a mesma metodologia empregada na parte de inserção de alunos, porém aqui ocorre uma mudança durante a transação - chamamos o método "**merge**", passando para ele o objeto "**alunoSelecionado"**, que segura os valores do registro clicado na tabela durante a exibição na página web. Este método indica para o EntityManager que estaremos fazendo mudanças em registros já existentes.
 
-
-
 Método que trata a **remoção** de registros de alunos na tabela:
 
-```
+```java
 public void deletaAluno() {
     EManager.getInstance().getTransaction().begin();
     EManager.getInstance().remove(this.alunoSelecionado);    
@@ -89,29 +81,32 @@ Utilizamos aqui o mesmo processo, diferenciando-se dos outros com o método "**r
 
 
 
+Método que irá repassar o objeto **Aluno** escolhido na tabela \(pela página web\) para nosso objeto instanciado anteriormente. Desta forma recebemos o registro completo, incluindo seu **id.**
+
+```java
+public void enviaAluno(Aluno a) {
+    this.alunoSelecionado = a;
+}
+```
+
+
+
 Método que inicializa a tabela preenchida com os registros, de forma automática ao carregar a página:
 
-```
+```java
 @PostConstruct
 public void init() {
     atualizaListaAlunos();
 }
 ```
 
+Aqui apenas utilizamos o método **atualizaListaAlunos\(\)** descrito anteriormente, com a anotação **@PostConstruct** \(sua funcionalidade é descrita na seção anterior\).
 
 
 
+E então adicionamos todos os **getters **e **setters** \(dica: utilize o atalho Alt+Insert para inserção automática\).
 
 ```java
-
-    
-
-
-
-    public void enviaAluno(Aluno a) {
-        this.alunoSelecionado = a;
-    }
-
     public List<Aluno> getAlunos() {
         return alunos;
     }
@@ -135,9 +130,9 @@ public void init() {
     public void setAlunoSelecionado(Aluno alunoSelecionado) {
         this.alunoSelecionado = alunoSelecionado;
     }
-
-}
 ```
+
+
 
 Repita o processo para o DisciplinaBean.
 
@@ -148,7 +143,6 @@ package br.edu.utfpr.universidade;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Random;
 import javax.faces.bean.ManagedBean;
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ViewScoped;
@@ -219,8 +213,6 @@ public class DisciplinaBean implements Serializable {
     public void setDisciplinaSelecionada(Disciplina disciplinaSelecionada) {
         this.disciplinaSelecionada = disciplinaSelecionada;
     }
-
-
 
 }
 ```
