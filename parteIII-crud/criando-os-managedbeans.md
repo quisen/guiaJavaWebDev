@@ -85,6 +85,8 @@ public class AlunoBean implements Serializable {
 }
 ```
 
+Repita o processo para o DisciplinaBean.
+
 **DisciplinaBean.java**
 
 ```java
@@ -168,6 +170,8 @@ public class DisciplinaBean implements Serializable {
 
 }
 ```
+
+Por fim iremos criar o MatriculaBean para o gerenciamento da tabela Matricula que possui relacionamento com as outras 2 tabelas.
 
 **MatriculaBean.java**
 
