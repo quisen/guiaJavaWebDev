@@ -126,7 +126,7 @@ E então adicionamos todos os **getters **e **setters** \(dica: utilize o atalho
     }
 ```
 
-Repita o mesmo processo utilizado no **AlunoBean** para o **DisciplinaBean **\(com exceção de que não será necessário gerar matrículas\).
+**Exercício** - tente repetir o mesmo processo utilizado no **AlunoBean** para o **DisciplinaBean **\(com exceção de que não será necessário gerar matrículas\). Caso encontre dificuldades, todas as classes serão disponibilizadas no final desta seção.
 
 
 
@@ -134,35 +134,120 @@ Por fim iremos criar o MatriculaBean para o gerenciamento da tabela Matricula qu
 
 **MatriculaBean.java**
 
-```java
-package br.edu.utfpr.universidade;
+Classe aninhada **matriculaMin**:
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-import javax.annotation.PostConstruct;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+```
+public class matriculaMin {
 
-@ManagedBean
-@ViewScoped
-public class MatriculaBean implements Serializable {
+        int id;
+        Aluno aluno;
+        Disciplina disciplina;
 
-    private List<Aluno> alunos;
-    private Aluno alunoSelecionado = new Aluno();
-    private Disciplina disciplinaSelecionada = new Disciplina();
-    private List<Disciplina> disciplinas;
-    private List<Matricula> matriculas;
-    private List<matriculaMin> matriculasMin = new ArrayList<>();
-    private Matricula matriculaSelecionada = new Matricula();
-    private matriculaMin matriculaMinSelecionada = new matriculaMin();
+        public matriculaMin() {
+        }
 
-    @PostConstruct
-    public void init() {
-        atualizaTodos();
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public Aluno getAluno() {
+            return aluno;
+        }
+
+        public void setAluno(Aluno aluno) {
+            this.aluno = aluno;
+        }
+
+        public Disciplina getDisciplina() {
+            return disciplina;
+        }
+
+        public void setDisciplina(Disciplina disciplina) {
+            this.disciplina = disciplina;
+        }
+
     }
 
-    public void novaMatricula() {
+
+```
+
+EXPLICAÇÃO
+
+
+
+Atributos utilizados pela classe:
+
+```
+private List<Aluno> alunos;
+private Aluno alunoSelecionado = new Aluno();
+private Disciplina disciplinaSelecionada = new Disciplina();
+private List<Disciplina> disciplinas;
+private List<Matricula> matriculas;
+private List<matriculaMin> matriculasMin = new ArrayList<>();
+private Matricula matriculaSelecionada = new Matricula();
+private matriculaMin matriculaMinSelecionada = new matriculaMin();
+```
+
+EXPLICAÇÃO
+
+
+
+Método que lista todas as matrículas, juntamente com os alunos e disciplinas relacionadas:
+
+```
+public void agrupaDadosPorId() {
+    this.matriculasMin = new ArrayList<>();
+
+    for (int i = 0; i < matriculas.size(); i++) {
+        matriculaMin mat = new matriculaMin();
+        mat.setId(matriculas.get(i).getId());
+        mat.setAluno((Aluno) EManager.getInstance().createNamedQuery("Aluno.findById").setParameter("id", matriculas.get(i).getIdAluno().getId()).getSingleResult());
+        mat.setDisciplina((Disciplina) EManager.getInstance().createNamedQuery("Disciplina.findById").setParameter("id", matriculas.get(i).getIdDisciplina().getId()).getSingleResult());
+
+        matriculasMin.add(mat);
+    }
+}
+```
+
+EXPLICAÇÃO
+
+
+
+Métodos utilizados para atualizar as listas de matrículas, alunos e disciplinas:
+
+```
+public void atualizaListaAlunos() {
+    alunos = EManager.getInstance().createNamedQuery("Aluno.findAll").getResultList();
+}
+
+public void atualizaListaDisciplinas() {
+    disciplinas = EManager.getInstance().createNamedQuery("Disciplina.findAll").getResultList();
+}
+
+public void atualizaListaMatriculas() {
+    matriculas = EManager.getInstance().createNamedQuery("Matricula.findAll").getResultList();
+}
+
+public void atualizaTodos() {
+        atualizaListaAlunos();
+        atualizaListaDisciplinas();
+        atualizaListaMatriculas();
+        agrupaDadosPorId();
+}
+```
+
+EXPLICAÇÃO
+
+
+
+Método que trata a inserção de novas matrículas:
+
+```
+public void novaMatricula() {
         Matricula matricula = new Matricula();
         matricula.setIdAluno(alunoSelecionado);
         matricula.setIdDisciplina(disciplinaSelecionada);
@@ -172,33 +257,36 @@ public class MatriculaBean implements Serializable {
         this.alunoSelecionado = new Aluno();
         this.disciplinaSelecionada = new Disciplina();
         atualizaTodos();
-    }
+}
+```
 
-    public void agrupaDadosPorId() {
-        this.matriculasMin = new ArrayList<>();
+EXPLICAÇÃO
 
-        for (int i = 0; i < matriculas.size(); i++) {
-            matriculaMin mat = new matriculaMin();
-            mat.setId(matriculas.get(i).getId());
-            mat.setAluno((Aluno) EManager.getInstance().createNamedQuery("Aluno.findById").setParameter("id", matriculas.get(i).getIdAluno().getId()).getSingleResult());
-            mat.setDisciplina((Disciplina) EManager.getInstance().createNamedQuery("Disciplina.findById").setParameter("id", matriculas.get(i).getIdDisciplina().getId()).getSingleResult());
 
-            matriculasMin.add(mat);
-        }
-    }
 
-    public void atualizaTodos() {
-        atualizaListaAlunos();
-        atualizaListaDisciplinas();
-        atualizaListaMatriculas();
-        agrupaDadosPorId();
-    }
+Método que trata a modificação de matrículas:
 
-    public void enviaMatricula(matriculaMin a) {
-        this.matriculaMinSelecionada = a;
-    }
+```
+public void modificaMatricula() {
+    Matricula matricula = new Matricula();
+    matricula.setId(matriculaMinSelecionada.getId());
+    matricula.setIdAluno(matriculaMinSelecionada.getAluno());
+    matricula.setIdDisciplina(matriculaMinSelecionada.getDisciplina());
+    EManager.getInstance().getTransaction().begin();
+    EManager.getInstance().merge(matricula);
+    EManager.getInstance().getTransaction().commit();
+    atualizaTodos();
+}
+```
 
-    public void deletaMatricula() {
+EXPLICAÇÃO
+
+
+
+Método que trata a remoção de matrículas:
+
+```
+public void deletaMatricula() {
         Matricula matricula = new Matricula();
         matricula.setId(matriculaMinSelecionada.getId());
         EManager.getInstance().getTransaction().begin();
@@ -209,31 +297,39 @@ public class MatriculaBean implements Serializable {
         );
         EManager.getInstance().getTransaction().commit();
         atualizaTodos();
-    }
+}
+```
 
-    public void modificaMatricula() {
-        Matricula matricula = new Matricula();
-        matricula.setId(matriculaMinSelecionada.getId());
-        matricula.setIdAluno(matriculaMinSelecionada.getAluno());
-        matricula.setIdDisciplina(matriculaMinSelecionada.getDisciplina());
-        EManager.getInstance().getTransaction().begin();
-        EManager.getInstance().merge(matricula);
-        EManager.getInstance().getTransaction().commit();
-        atualizaTodos();
-    }
+EXPLICAÇÃO
 
-    public void atualizaListaAlunos() {
-        alunos = EManager.getInstance().createNamedQuery("Aluno.findAll").getResultList();
-    }
 
-    public void atualizaListaDisciplinas() {
-        disciplinas = EManager.getInstance().createNamedQuery("Disciplina.findAll").getResultList();
-    }
 
-    public void atualizaListaMatriculas() {
-        matriculas = EManager.getInstance().createNamedQuery("Matricula.findAll").getResultList();
-    }
+Método que repassa a matrícula clicada na tabela.....:
 
+```
+public void enviaMatricula(matriculaMin a) {
+    this.matriculaMinSelecionada = a;
+}
+```
+
+EXPLICAÇÃO
+
+
+
+```
+@PostConstruct
+public void init() {
+    atualizaTodos();
+}
+```
+
+EXPLICAÇÃO
+
+
+
+Getters e Setters:
+
+```java
     public List<Aluno> getAlunos() {
         return alunos;
     }
@@ -297,43 +393,6 @@ public class MatriculaBean implements Serializable {
     public void setMatriculaMinSelecionada(matriculaMin matriculaMinSelecionada) {
         this.matriculaMinSelecionada = matriculaMinSelecionada;
     }
-
-    public class matriculaMin {
-
-        int id;
-        Aluno aluno;
-        Disciplina disciplina;
-
-        public matriculaMin() {
-        }
-
-        public int getId() {
-            return id;
-        }
-
-        public void setId(int id) {
-            this.id = id;
-        }
-
-        public Aluno getAluno() {
-            return aluno;
-        }
-
-        public void setAluno(Aluno aluno) {
-            this.aluno = aluno;
-        }
-
-        public Disciplina getDisciplina() {
-            return disciplina;
-        }
-
-        public void setDisciplina(Disciplina disciplina) {
-            this.disciplina = disciplina;
-        }
-
-    }
-
-}
 ```
 
 # Criando Converters
@@ -373,6 +432,10 @@ public class AlunoConverter implements Converter {
 }
 ```
 
+EXPLICAÇÃO
+
+
+
 **DisciplinaConverter.java**
 
 ```java
@@ -408,5 +471,5 @@ public class DisciplinaConverter implements Converter {
 }
 ```
 
-
+EXPLICAÇÃO
 
