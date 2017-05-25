@@ -20,7 +20,7 @@
   * [Gerando Classes de Entidade](parteIII-crud/gerandoclassesentidade.md)
   * [Criando o EntityManager e Persistência](parteIII-crud/criando-o-entitymanager.md)
   * [Introdução aos ManagedBeans](parteIII-crud/intro-managed-beans.md)
-  * [Criando os ManagedBeans](parteIII-crud/criando-os-managedbeans.md)
+  * [Criando os ManagedBeans\*](parteIII-crud/criando-os-managedbeans.md)
   * [Configurando JSF e PrimeFaces](parteIII-crud/javaserver-facesprimefaces.md)
   * [Facelets](parteIII-crud/facelets.md)
   * [Menu Principal](parteIII-crud/menu-principal.md)
