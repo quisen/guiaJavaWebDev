@@ -67,73 +67,7 @@ Partes relevantes do código:
 
 E então adicionamos o método novoCadastro\(\) no nosso managed bean, bem como o objeto "aluno", que será utilizado para fazer o link dos campos de texto para cadastro.
 
-# Modificação do AlunoBean
 
-AlunoBean.java
-
-```xhtml
-import java.io.Serializable;
-import java.util.List;
-import java.util.Random;
-import javax.faces.bean.ManagedBean;
-import javax.annotation.PostConstruct;
-import javax.faces.bean.ViewScoped;
-
-@ManagedBean
-@ViewScoped
-public class AlunoBean implements Serializable {
-
-    private List<Aluno> alunos;
-    private Aluno aluno = new Aluno();
-
-    @PostConstruct
-    public void init() {
-        atualizaListaAlunos();
-    }
-
-    public void atualizaListaAlunos() {
-        alunos = EManager.getInstance().createNamedQuery("Aluno.findAll").getResultList();
-    }
-
-    public void novoCadastro() {
-        this.aluno.setMatricula(1000000 + new Random().nextInt(9999999 - 1000000 + 1));
-        EManager.getInstance().getTransaction().begin();
-        EManager.getInstance().persist(this.aluno);
-        EManager.getInstance().getTransaction().commit();
-        this.aluno = new Aluno();
-        atualizaListaAlunos();
-    }
-
-    public List<Aluno> getAlunos() {
-        return alunos;
-    }
-
-    public void setAlunos(List<Aluno> alunos) {
-        this.alunos = alunos;
-    }
-
-    public Aluno getAluno() {
-        return aluno;
-    }
-
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
-    }
-
-}
-```
-
-Partes relevantes do código:
-
-* No método **novoCadastro\(\)**, geramos uma nova matrícula e preenchemos nosso objeto. Os demais campos \(nome, telefone, cpf, etc\) são preenchidos automaticamente enquanto o usuário insere dados no campo de texto da página web.
-* Acessamos uma nova instância do nosso **EntityManager** - que faz a conexão com o banco de dados, e persistimos \(inserimos\) nosso objeto do tipo aluno, que é o "match" em java da tabela Aluno e então fazemos o "commit\(\)" - ou seja, validamos de fato o processo.
-* Lembre-se de adicionar o getter e o setter da variável aluno, senão nosso .xhtml não poderá acessá-la. \(Pode-se gerar automaticamente todos os getters e os setters das variávels e objetos presentes no código utilizando o atalho do teclado **Alt+Insert**).
-
-**Resultado final**
-
-Visualização da tabela com o novo botão:
-
-![](/assets/tab.PNG)
 
 Visualização do pop-up:
 
