@@ -182,7 +182,7 @@ Até o momento a interface do seu projeto deverá estar bastante simples e está
 
 Ainda dentro de res/css/**cssLayout**.**css **faça a seguinte modificação:
 
-Adicione **margin-top** para o **\#bottom**, com pelo menos **100px** para não ocorrer **sobreposição** de elementos da parte inferior da página com os botões do menu que está dentro do **leftFacelet**.
+Adicione **margin-top** para o **\#bottom**, com pelo menos **100px** para futuramente não ocorrer **sobreposição** de elementos da parte inferior da página com os botões do menu que está dentro do **leftFacelet**.
 
 ```css
 #bottom {
