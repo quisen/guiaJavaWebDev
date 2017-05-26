@@ -171,8 +171,6 @@ public class matriculaMin {
 
 Utilizaremos essa classe para armazenar a **representação** de uma **matrícula**, de forma a **encapsular** os objetos **Aluno** e **Disciplina** de fato, ao **invés de apenas os seus IDs** - que é o caso da tabela matrícula **original**.
 
-
-
 Atributos utilizados pela classe:
 
 ```
@@ -194,8 +192,6 @@ private matriculaMin matriculaMinSelecionada = new matriculaMin();
 * A Lista **matriculasMin** armazenará todas as matrículas no formato **descrito** **anteriormente**, com a representação da classe matriculaMin;
 * O objeto **matriculaMinSelecionada** representará a matrícula escolhida para modificação ou exclusão dentro da tabela da página web.
 
-
-
 Método que lista todas as matrículas, juntamente com os alunos e disciplinas relacionadas:
 
 ```
@@ -213,7 +209,39 @@ public void agrupaDadosPorId() {
 }
 ```
 
+Aqui inicializamos nossa lista **matriculasMin** como um ArrayList - isto é necessário quando preenchemos nossa lista manualmente, não sendo necessário quando fazemos uma requisição direta do EntityManager que retorna uma lista de resultados.
 
+Então percorremos nossa lista de matrículas, preenchendo um novo objeto matriculaMin - a cada iteração, buscamos o ID de cada aluno e disciplina, e fazemos uma query baseada nesse ID para obtermos o objeto respectivo a partir do registro. Desta forma, terminamos com uma lista mais completa \(que possui o identificador da matrícula, o aluno com todos os seus atributos, e também a disciplina com todos os seus atributos, ao invés de apenas o identificador de cada registro\).
+
+Vamos analisar o método utilizado com mais atenção:
+
+Primeiramente estamos com o intuito de inserir no novo objeto instanciado "**matriculaMin mat**"
+
+```
+mat.setAluno();
+```
+
+Para receber o objeto do banco, fazemos uma **requisição** ao banco utilizando a **NamedQuery Aluno.findById** - para isto, precisamos setar o parâmetro **id** da seguinte forma:
+
+```
+EManager.getInstance().createNamedQuery("Aluno.findById").setParameter("id", ???).getSingleResult()
+```
+
+Porém, para obter o** id do aluno desejado**, precisamos buscar a partir da lista de **matrículas** que estamos iterando:
+
+```
+matriculas.get(i).getIdAluno().getId()
+```
+
+E, por fim, precisamos converter o resultado obtido para **Aluno** \(o objeto resultante das queries é um objeto abstrato, porém como sabemos que está sendo retornado um aluno, fazemos a conversão \(Aluno\) do resultado\).
+
+Resultado final:
+
+```
+(Aluno) EManager.getInstance().createNamedQuery("Aluno.findById").setParameter("id", matriculas.get(i).getIdAluno().getId()).getSingleResult()
+```
+
+Então podemos repetir o processo para as disciplinas.
 
 
 
