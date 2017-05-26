@@ -12,11 +12,9 @@ private Aluno aluno = new Aluno();
 private Aluno alunoSelecionado = new Aluno();
 ```
 
-A lista "**alunos**" do tipo **Aluno** será utilizada para preencher a tabela principal com todos os registros, na visualização da página web de gerenciamento desta entidade.
-
-O objeto "**aluno**" será utilizado na inserção de novos registros.
-
-O objeto "**alunoSelecionado**" será utilizado para armazenar o registro da tabela que deseja-se fazer alguma alteração.
+* A lista "**alunos**" do tipo **Aluno** será utilizada para preencher a tabela principal com todos os registros, na visualização da página web de gerenciamento desta entidade.
+* O objeto "**aluno**" será utilizado na inserção de novos registros.
+* O objeto "**alunoSelecionado**" será utilizado para armazenar o registro da tabela que deseja-se fazer alguma alteração.
 
 Método que **popula** a **lista** de alunos com registros **atualizados**:
 
@@ -134,7 +132,7 @@ Por fim iremos criar o MatriculaBean para o gerenciamento da tabela Matricula qu
 
 Classe aninhada **matriculaMin**:
 
-```
+```java
 public class matriculaMin {
 
         int id;
@@ -171,7 +169,7 @@ public class matriculaMin {
     }
 ```
 
-EXPLICAÇÃO
+Utilizaremos essa classe para armazenar a **representação** de uma **matrícula**, de forma a **encapsular** os objetos **Aluno** e **Disciplina** de fato, ao **invés de apenas os seus IDs** - que é o caso da tabela matrícula **original**.
 
 
 
@@ -188,7 +186,13 @@ private Matricula matriculaSelecionada = new Matricula();
 private matriculaMin matriculaMinSelecionada = new matriculaMin();
 ```
 
-EXPLICAÇÃO
+* A Lista **alunos** será utilizada para armazenar todos os registros de alunos;
+* A Lista **disciplinas** será utilizada para armazenar todos os registros de disciplinas;
+* A Lista **matrículas** será utilizada para armazenar todos os registros de matrículas;
+* O objeto **alunoSelecionado** representará o aluno escolhido para realizar a inserção de uma nova matrícula;
+* Assim como o objeto **disciplinaSelecionada** representará a a disciplina escolhida durante a inserção de uma nova matrícula;
+* A Lista **matriculasMin** armazenará todas as matrículas no formato **descrito** **anteriormente**, com a representação da classe matriculaMin;
+* O objeto **matriculaMinSelecionada** representará a matrícula escolhida para modificação ou exclusão dentro da tabela da página web.
 
 
 
@@ -209,7 +213,7 @@ public void agrupaDadosPorId() {
 }
 ```
 
-EXPLICAÇÃO
+
 
 
 
@@ -238,8 +242,6 @@ public void atualizaTodos() {
 
 EXPLICAÇÃO
 
-
-
 Método que trata a inserção de novas matrículas:
 
 ```
@@ -258,8 +260,6 @@ public void novaMatricula() {
 
 EXPLICAÇÃO
 
-
-
 Método que trata a modificação de matrículas:
 
 ```
@@ -276,8 +276,6 @@ public void modificaMatricula() {
 ```
 
 EXPLICAÇÃO
-
-
 
 Método que trata a remoção de matrículas:
 
@@ -298,8 +296,6 @@ public void deletaMatricula() {
 
 EXPLICAÇÃO
 
-
-
 Método que repassa a matrícula clicada na tabela.....:
 
 ```
@@ -310,8 +306,6 @@ public void enviaMatricula(matriculaMin a) {
 
 EXPLICAÇÃO
 
-
-
 ```
 @PostConstruct
 public void init() {
@@ -320,8 +314,6 @@ public void init() {
 ```
 
 EXPLICAÇÃO
-
-
 
 Getters e Setters:
 
@@ -429,8 +421,6 @@ public class AlunoConverter implements Converter {
 ```
 
 EXPLICAÇÃO
-
-
 
 **DisciplinaConverter.java**
 
