@@ -77,13 +77,15 @@ Utilizamos aqui o mesmo processo, diferenciando-se dos outros com o método "**r
 
 **Vale ressaltar que**, todas estas operações ocorrem com base no **id** do registro que deseja-se manipular - sendo na inserção adicionado um id gerado automaticamente pelo banco SQL \(pois utilizamos **auto increment**\), e na modificação e exclusão utilizamos o id do registro já existente.
 
-Método que irá repassar o objeto **Aluno** escolhido na tabela \(pela página web\) para nosso objeto instanciado anteriormente. Desta forma recebemos o registro completo, incluindo seu **id.**
+Método que irá repassar o objeto **Aluno** escolhido na tabela \(pela página web\) para nosso objeto instanciado anteriormente. 
 
 ```java
 public void enviaAluno(Aluno a) {
     this.alunoSelecionado = a;
 }
 ```
+
+Desta forma recebemos o registro completo, incluindo seu **id.**
 
 Método que inicializa a tabela preenchida com os registros, de forma automática ao carregar a página:
 
@@ -242,8 +244,6 @@ Resultado final:
 ```
 
 Então podemos repetir o processo para as disciplinas.
-
-
 
 Métodos utilizados para atualizar as listas de matrículas, alunos e disciplinas:
 
