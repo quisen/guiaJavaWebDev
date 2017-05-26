@@ -20,6 +20,10 @@ A parte dois demonstra como configurar e gerenciar a **conexão** entre a sua **
 
 A parte três aborda a especificação Java para o desenvolvimento de **interfaces** **de** **usuário** chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces** com componentes que serão fundamentais para a estruturação do CRUD.
 
+# Parte IV:
+
+A parte quatro irá conter dicas para **soluções** de alguns **problemas** **conhecidos** com a utilização das **ferramentas** desse projeto.
+
 ---
 
 ## **Licença**
