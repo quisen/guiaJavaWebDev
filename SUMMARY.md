@@ -27,8 +27,8 @@
   * [\*Incorporando elementos do PrimeFaces](parteIII-crud/incorporando-elementos-do-primefaces.md)
   * [\*Inserção de Registros](parteIII-crud/insercao-de-registros.md)
   * [\*Edição e Exclusão de Registros](parteIII-crud/edicao-de-registros.md)
-* [Dicas e Soluções de Problemas](dicas-solucoes.md)
-  * [Visualização de Logs de Erros](dicas-solucoes/visualizar-logs.md)
-  * [Limpeza de Cache](dicas-solucoes/limpeza-de-cache.md)
-  * [Bugs Conhecidos](dicas-solucoes/bugs-conhecidos.md)
+* [Parte IV: Dicas e Soluções de Problemas](parteIV-dicas-solucoes.md)
+  * [Visualização de Logs de Erros](parteIV-dicas-solucoes/visualizar-logs.md)
+  * [Limpeza de Cache](parteIV-dicas-solucoes/limpeza-de-cache.md)
+  * [Bugs Conhecidos](parteIV-dicas-solucoes/bugs-conhecidos.md)
 

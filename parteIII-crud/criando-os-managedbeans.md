@@ -128,8 +128,6 @@ E então adicionamos todos os **getters **e **setters** \(dica: utilize o atalho
 
 **Exercício** - tente repetir o mesmo processo utilizado no **AlunoBean** para o **DisciplinaBean **\(com exceção de que não será necessário gerar matrículas\). Caso encontre dificuldades, todas as classes serão disponibilizadas no final desta seção.
 
-
-
 Por fim iremos criar o MatriculaBean para o gerenciamento da tabela Matricula que possui relacionamento com as outras 2 tabelas.
 
 **MatriculaBean.java**
@@ -171,8 +169,6 @@ public class matriculaMin {
         }
 
     }
-
-
 ```
 
 EXPLICAÇÃO
