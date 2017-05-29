@@ -77,7 +77,7 @@ Utilizamos aqui o mesmo processo, diferenciando-se dos outros com o método "**r
 
 **Vale ressaltar que**, todas estas operações ocorrem com base no **id** do registro que deseja-se manipular - sendo na inserção adicionado um id gerado automaticamente pelo banco SQL \(pois utilizamos **auto increment**\), e na modificação e exclusão utilizamos o id do registro já existente.
 
-Método que irá repassar o objeto **Aluno** escolhido na tabela \(pela página web\) para nosso objeto instanciado anteriormente. 
+Método que irá repassar o objeto **Aluno** escolhido na tabela \(pela página web\) para nosso objeto instanciado anteriormente.
 
 ```java
 public void enviaAluno(Aluno a) {
@@ -268,7 +268,7 @@ public void atualizaTodos() {
 }
 ```
 
-EXPLICAÇÃO
+Aqui fazemos uma requisição básica ao banco de modo a receber **todos** os **registros** **atualizados** na forma de lista - e por fim chamando o método **agrupaDadosPorId\(\)** explicado anteriormente, que melhora a **manuseabilidade** dos **dados** **relacionados**.
 
 Método que trata a inserção de novas matrículas:
 
@@ -286,7 +286,7 @@ public void novaMatricula() {
 }
 ```
 
-EXPLICAÇÃO
+Aqui, realizamos a **inserção** de uma nova matrícula - instanciamos uma nova matrícula e preenchemos os respectivos **IDs** do aluno e da disciplina, para então persistir os dados no banco. No final do método, **re-instanciamos** os objetos que "seguram" os dados dos objetos escolhidos relacionados para **prevenir** a existência de dados oriundos de **inserções** **antigas**.
 
 Método que trata a modificação de matrículas:
 
@@ -303,7 +303,7 @@ public void modificaMatricula() {
 }
 ```
 
-EXPLICAÇÃO
+Nesta parte, realizamos o mesmo procedimento do método anterior, porém, ao invés de fazer a inserção de uma nova matrícula utilizando o método **persist\(\)**, utilizamos o método **merge\(\)**, que tem a função de **atualizar** entidades** já existentes**.
 
 Método que trata a remoção de matrículas:
 
@@ -313,18 +313,16 @@ public void deletaMatricula() {
         matricula.setId(matriculaMinSelecionada.getId());
         EManager.getInstance().getTransaction().begin();
         EManager.getInstance().remove(
-                EManager.getInstance().find(
-                        Matricula.class, matricula.getId()
-                )
+                EManager.getInstance().find(Matricula.class, matricula.getId())
         );
         EManager.getInstance().getTransaction().commit();
         atualizaTodos();
 }
 ```
 
-EXPLICAÇÃO
+Aqui excluímos uma matrícula passando como referência seu **id** - e para isso fazemos outra requisição ao banco utilizando o método **find** e passando como parâmetro a classe de entidade e o respectivo id.
 
-Método que repassa a matrícula clicada na tabela.....:
+Método que repassa a matrícula escolhida na tabela \(pela página web\) para nosso objeto já instanciado na classe:
 
 ```
 public void enviaMatricula(matriculaMin a) {
@@ -332,7 +330,7 @@ public void enviaMatricula(matriculaMin a) {
 }
 ```
 
-EXPLICAÇÃO
+Método que atualiza todos os registros das listas, atualizando também a visualização da tabela na nossa página web.
 
 ```
 @PostConstruct
@@ -340,8 +338,6 @@ public void init() {
     atualizaTodos();
 }
 ```
-
-EXPLICAÇÃO
 
 Getters e Setters:
 
@@ -413,6 +409,14 @@ Getters e Setters:
 
 # Criando Converters
 
+Para a utilização de um componente do primefaces que exibe uma **lista** de **entidades** **selecionáveis** \(para a seleção de alunos e disciplinas para a matrícula, por exemplo\), precisamos implementar um **Converter** para **cada** **classe** envolvida.
+
+Em nossa utilização do java em conjunto com o JSF, um converter é um componente que permite o **encapsulamento** de um ou mais objetos em uma **representação** via **texto** \(String\) - não sendo esta a visualização que o **usuário** terá, mas sim uma representação **interna** que permite por exemplo, saber qual dos objetos de uma lista foi **selecionada**.
+
+A seguir temos os converters que utilizaremos em nosso projeto.
+
+Eles estão descritos em um formato **base**, que pode ser modificado para funcionar com qualquer outra classe/entidade de qualquer outro projeto.
+
 **AlunoConverter.java**
 
 ```java
@@ -447,8 +451,6 @@ public class AlunoConverter implements Converter {
     }
 }
 ```
-
-EXPLICAÇÃO
 
 **DisciplinaConverter.java**
 
@@ -485,5 +487,5 @@ public class DisciplinaConverter implements Converter {
 }
 ```
 
-EXPLICAÇÃO
+
 
