@@ -28,6 +28,14 @@ A primeira que iremos adicionar é a dependência da biblioteca do **PrimeFaces*
 </dependency>
 ```
 
+![](/assets/prime.png)
+
+Abaixo temos o link com o demonstrativo dos componentes disponíveis na página do PrimeFaces:
+
+[https://www.primefaces.org/showcase](https://www.primefaces.org/showcase/)/
+
+
+
 Agora clique no ícone de Clean and Build para garantir que o Maven baixe todas as dependências corretamente.
 
 ![](/assets/rebuild.png)
