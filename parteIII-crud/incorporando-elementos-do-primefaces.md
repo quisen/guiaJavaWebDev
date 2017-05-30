@@ -1,8 +1,8 @@
 # Incorporando elementos do PrimeFaces
 
-Abaixo segue o link com exemplos simples de componentes para tabelas do PrimeFaces:
+Abaixo temos o link com o demonstrativo dos componentes disponíveis na página do PrimeFaces:
 
-[https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml](https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml)
+[https://www.primefaces.org/showcase](https://www.primefaces.org/showcase/)/
 
 Agora iremos inserir no **aluno.xhtml** alguns componentes do PrimeFaces já customizados com as variáveis do nosso projeto:
 
@@ -14,7 +14,7 @@ Agora iremos inserir no **aluno.xhtml** alguns componentes do PrimeFaces já cus
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-    
+
     <h:body>
         <ui:composition template="./template.xhtml">
             <ui:define name="content">
