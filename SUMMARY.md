@@ -26,7 +26,7 @@
     * [Configurando JSF e PrimeFaces](parteIII-crud/javaserver-facesprimefaces.md)
     * [Facelets](parteIII-crud/facelets.md)
     * [Menu Principal](parteIII-crud/menu-principal.md)
-    * [Integração com Java](parteIII-crud/integrando-com-java.md)
+    * [Integrando com Java](parteIII-crud/integrando-com-java.md)
     * [\*Inserção de Registros](parteIII-crud/insercao-de-registros.md)
     * [\*Edição e Exclusão de Registros](parteIII-crud/edicao-de-registros.md)
 * [Parte IV: Dicas e Soluções de Problemas](parteIV-dicas-solucoes.md)
