@@ -54,7 +54,7 @@ Neste caso está definido **que o** **index** irá aparecer dentro do **content*
 
 ![](/assets/indexnovo.png)
 
-**Agora** iremos criar um arquivo customizado para cada facelet, sendo **bottomFacelet** para a parte inferior da página, **leftFacelet** para o menu na parte esquerda e **topFacelet** para o topo da página. Relembrando, o **index** irá ocupar o nosso **content **inicial.
+**Agora** iremos criar um arquivo customizado para cada facelet, sendo **bottomFacelet** para a parte inferior da página, **leftFacelet** para o menu na parte esquerda e **topFacelet** para o topo da página. Relembrando, o **index** irá ocupar apenas o nosso **content inicial**.
 
 Para criar novas páginas **xhtml** basta clicar com o botão direito em seu projeto e selecionar **Outro** e depois **Arquivo** **XHTML**
 
@@ -69,7 +69,6 @@ Abaixo estão os códigos para cada uma das partes.
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
 
     <body>
 
@@ -88,7 +87,6 @@ Abaixo estão os códigos para cada uma das partes.
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
 
     <body>
 
@@ -101,6 +99,10 @@ Abaixo estão os códigos para cada uma das partes.
 ```
 
 **bottomFacelet.xhtml**
+
+Para evidenciar a divisão entre o content e a a parte inferior da página iremos utilizar oficialmente o **primeiro** **elemento** do **PrimeFaces** chamado **separator **que é basicamente uma linha horizontal. 
+
+Para o correto funcionamento desse elemento é preciso inserir no cabeçalho dessa página: **xmlns:p="http://primefaces.org/ui"**
 
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
