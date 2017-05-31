@@ -102,7 +102,7 @@ Abaixo estão os códigos para cada uma das partes.
 
 Para evidenciar a divisão entre o content e a a parte inferior da página iremos utilizar **um** **elemento** do **PrimeFaces** chamado **separator, **que é basicamente uma linha horizontal.
 
-Para o correto funcionamento desse elemento é preciso inserir no cabeçalho dessa página: **xmlns:p="**[http://primefaces.org/ui"](http://primefaces.org/ui**"**)
+Para o correto funcionamento desse elemento é preciso inserir no cabeçalho dessa página: xmlns:p="http://primefaces.org/ui"
 
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
