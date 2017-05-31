@@ -6,7 +6,7 @@ Note que os elementos que iremos mostrar abaixo **já estão customizados** com 
 
 Primeiramente gostaríamos de mostrar a estrutura almejada para a página **aluno**:
 
-![](/assets/alunoMin.png)
+![](/assets/alunoMinimal.png)
 
 É importante ressaltar que alguns trechos de código estão **omissos** na imagem a cima. Não se preocupe em tentar copiá-lo agora, pois todos os **códigos** estarão **disponiveis** no **fim** dessa página.
 
