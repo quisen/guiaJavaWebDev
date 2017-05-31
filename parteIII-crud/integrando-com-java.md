@@ -2,7 +2,7 @@
 
 Agora iremos complementar a página **aluno.xhtml** com a inserção de alguns componentes do PrimeFaces.
 
-Mas, note que os elementos que iremos mostrar abaixo **já estão customizados** com as **variáveis** do nosso projeto, ou seja, na **página** do **PrimeFaces** o código estará disponível de maneira **diferente**, mais **genérica**.
+Note que os elementos que iremos mostrar abaixo **já estão customizados** com as **variáveis** do nosso projeto, ou seja, na **página** do **PrimeFaces** o código estará disponível de maneira **diferente**, mais **genérica**.
 
 Primeiramente gostaríamos de mostrar a estrutura almejada para a página **aluno**:
 
