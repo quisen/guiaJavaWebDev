@@ -93,7 +93,7 @@ O segundo form é o **modifica**.
 
                 <p:outputLabel value="Endereço" />
                 <p:inputText value="#{alunoBean.alunoSelecionado.endereco}" size="20" />
-    
+
                 <p:outputLabel value="Período" />
                 <p:inputText value="#{alunoBean.alunoSelecionado.periodo}" size="20" />
             </h:panelGrid>
@@ -117,8 +117,6 @@ O segundo form é o **modifica**.
     <p:defaultCommand target="btnEdit" />
 </h:form>
 ```
-
-
 
 
 
@@ -392,5 +390,7 @@ Então fazemos um processo semelhante em **matricula.xhtml**:
 </html>
 ```
 
-aluno.xhtml Link: [https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9146](https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9146)
+alunos.xhtml Link: [https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9146](https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9146)
+
+disciplinas.xhtml Link: https://gist.github.com/quisen/791930ba6c15a23a2dfbb55a0d392d63
 
