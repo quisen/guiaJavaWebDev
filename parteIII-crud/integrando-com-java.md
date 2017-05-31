@@ -288,3 +288,5 @@ alunos.xhtml Link: [https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9
 
 disciplinas.xhtml Link: [https://gist.github.com/quisen/791930ba6c15a23a2dfbb55a0d392d63](https://gist.github.com/quisen/791930ba6c15a23a2dfbb55a0d392d63)
 
+matriculas.xhtml Link: https://gist.github.com/quisen/ededf8cdf2dd5a7b46b1ac8810f57671
+
