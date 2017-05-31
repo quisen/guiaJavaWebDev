@@ -12,7 +12,7 @@ Primeiramente gostaríamos de mostrar a estrutura almejada para a página **alun
 
 A estrutura principal dessa página está dentro da tag** ui:define="content"**, e ela consiste basicamente em três forms**  **- **tabela**, **modifica** e **cadastro** - que executam funções para a visualização, inserção, edição e exclusão.
 
-Iremos abordar um form por vez, o primeiro será o **tabela**.
+Iremos abordar um form por vez, o primeiro a ser comentado será o **tabela**.
 
 ```xhtml
 <h:form id="tabela">
