@@ -10,7 +10,7 @@ Portanto, elas precisam ser Clientes do Modelo de Facelets que foi definido ante
 
 ![](/assets/contentscustom.png)
 
-Depois de criar essas três páginas, iremos utilizar o **segundo** elemento do **PrimeFaces** em nosso projeto, o **menu**. 
+Depois de criar essas três páginas, iremos utilizara outro elemento do **PrimeFaces**, o **menu**. 
 
 Lembre que para toda página que contiver elementos do PrimeFaces é preciso declarar sua utilização no cabeçalho.
 
