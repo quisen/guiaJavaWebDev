@@ -65,11 +65,15 @@ Iremos abordar um form por vez, o primeiro a ser comentado será o **tabela**.
 </h:form>
 ```
 
-Neste exemplo a **"dataTable"** possui o atributo "**var**", que é o tipo de objeto que será iterado no preenchimento - e o "**value**" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior.
+A estrutura desse form é composta por três blocos. O **primeiro** é o **commandButton** para **cadastrar** um novo aluno. O **segundo** é o **dataTable** para a **visualização** dos registros. O **terceiro** é outro **commandButton** para **editar** um aluno já existente, que estará inserido na **última** **coluna** da direita.
+
+Observe que a **"dataTable"** possui o atributo "**var**", que é o tipo de objeto que será iterado no preenchimento - e o "**value**" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior.
 
 Em cada coluna, usa-se diretamente a referência de variáveis em relação ao objeto que estamos utilizando, como por exemplo, "\#{aluno.nome}".
 
-**ATENÇÃO, **nosso Managed Bean possui o nome "AlunoBean", porém na hora de referenciá-lo no código xhtml, devemos sempre utilizar a **primeira letra minúscula,** caso contrário, ocorrerão **erros** de execução.
+#### **ATENÇÃO!**
+
+Nosso Managed Bean possui o nome "**AlunoBean**", porém na hora de referenciá-lo no código xhtml, devemos sempre utilizar a **primeira letra MINÚSCULA,** caso contrário, ocorrerão **ERROS** de execução.
 
 **Repita** o processo para o arquivo **disciplina.xhtml**:
 
