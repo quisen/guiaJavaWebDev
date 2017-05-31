@@ -14,9 +14,9 @@ Depois de criar essas três páginas, iremos utilizara outro elemento do **Prime
 
 Lembre que para toda página que contiver elementos do PrimeFaces é preciso declarar sua utilização no cabeçalho.
 
-Observe que dentro da tag **menu** temos um **submenu** e é nele que estarão os itens do menu para a navegação entre facelets. 
+Observe que dentro da tag **menu** temos um **submenu** e é nele que estarão os itens do menu para a navegação entre facelets.
 
-Quem controla a transição entre facelets é o do atributo **outcome**, é nele que deve ser declarado qual facelet deverá ser exibido quando sua opção for selecionada**.** 
+Quem controla a transição entre facelets é o do atributo **outcome **dentro do elemento **menuitem**.
 
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
