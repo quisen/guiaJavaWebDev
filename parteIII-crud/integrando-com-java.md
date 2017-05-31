@@ -428,3 +428,5 @@ Então fazemos um processo semelhante em **matricula.xhtml**:
 
 
 
+aluno.xhtml Link: https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9146
+
