@@ -8,9 +8,9 @@ Primeiramente gostaríamos de mostrar a estrutura almejada para a página **alun
 
 ![](/assets/alunoCOLAPSED.png)
 
-É importante ressaltar que alguns elementos estão **omissos** na imagem a cima. Não se preocupe em tentar copiá-lo agora, pois todos os **códigos** estarão **disponiveis** no **fim** dessa página.
+É importante ressaltar que alguns trechos de código estão **omissos** na imagem a cima. Não se preocupe em tentar copiá-lo agora, pois todos os **códigos** estarão **disponiveis** no **fim** dessa página.
 
-A estrutura principal dessa página está dentro da tag** ui:define="content"**, e ela consiste basicamente em três **forms  **- tabela, modifica e cadastro - que executam funções  para a visualização, inserção edição e exclusão.
+A estrutura principal dessa página está dentro da tag** ui:define="content"**, e ela consiste basicamente em três **forms  **- **tabela**, **modifica** e **cadastro** - que executam funções para a visualização, inserção edição e exclusão.
 
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
