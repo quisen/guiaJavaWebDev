@@ -10,7 +10,9 @@ Portanto, elas precisam ser Clientes do Modelo de Facelets que foi definido ante
 
 ![](/assets/contentscustom.png)
 
-Depois de criar essas três páginas, iremos utilizar o primeiro elemento do PrimeFaces em nosso projeto, o "p:menu". Para a utilização desse componente
+Depois de criar essas três páginas, iremos utilizar o **segundo** elemento do **PrimeFaces** em nosso projeto, o **menu**. 
+
+Lembre que para toda página que contiver elementos do PrimeFaces é preciso declarar sua utilização no cabeçalho.
 
 Observe que dentro da tag **menu** temos um **submenu** e é nele que estarão os itens do menu para a navegação entre facelets.
 
