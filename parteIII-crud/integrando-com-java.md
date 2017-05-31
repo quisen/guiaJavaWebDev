@@ -17,8 +17,8 @@ A estrutura principal dessa página está dentro da tag** ui:define="content"**,
     <p:commandButton value="Cadastrar novo Aluno" process="@this"
     update=":cadastro:novo-aluno-dialog"
     oncomplete="PF('novo-aluno-widget').show()"/>
-    <br/>
-    <br/>
+<br/>
+<br/>
     <p:dataTable id="tabela-alunos" var="aluno" value="#{alunoBean.alunos}" tableStyle="text-align:center">
         <p:column headerText="Id">
             <h:outputText value="#{aluno.id}" />
@@ -55,12 +55,8 @@ A estrutura principal dessa página está dentro da tag** ui:define="content"**,
             title="View" action="#{alunoBean.enviaAluno(aluno)}" />
         </p:column>
     </p:dataTable>
-</h:form>  
+</h:form>
 ```
-
-
-
-
 
 Neste exemplo a **"dataTable"** possui o atributo "**var**", que é o tipo de objeto que será iterado no preenchimento - e o "**value**" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior.
 
