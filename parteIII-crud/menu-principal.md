@@ -16,7 +16,7 @@ Lembre que para toda página que contiver elementos do PrimeFaces é preciso dec
 
 Observe que dentro da tag **menu** temos um **submenu** e é nele que estarão os itens do menu para a navegação entre facelets.
 
-Quem controla a transição entre facelets é o do atributo **outcome **dentro do elemento **menuitem**. O atributo **icon** pode ser customizado. \(exemplos de icons: [https://api.jqueryui.com/theming/icons/](https://api.jqueryui.com/theming/icons/)\)
+Quem controla a transição entre facelets é o do atributo **outcome **dentro do elemento **menuitem**. O atributo **icon** também pode ser customizado. \(exemplos de icons: [https://api.jqueryui.com/theming/icons/](https://api.jqueryui.com/theming/icons/)\)
 
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
