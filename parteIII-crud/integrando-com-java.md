@@ -19,8 +19,8 @@ Iremos abordar um form por vez, o primeiro a ser comentado será o **tabela**.
     <p:commandButton value="Cadastrar novo Aluno" process="@this"
     update=":cadastro:novo-aluno-dialog"
     oncomplete="PF('novo-aluno-widget').show()"/>
-<br/>
-<br/>
+    <br/>
+    <br/>
     <p:dataTable id="tabela-alunos"
         var="aluno"
         value="#{alunoBean.alunos}"
