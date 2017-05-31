@@ -75,6 +75,53 @@ Em cada coluna, usa-se diretamente a referência de variáveis em relação ao o
 
 Nosso Managed Bean possui o nome "**AlunoBean**", porém na hora de referenciá-lo no código xhtml, devemos sempre utilizar a **primeira letra MINÚSCULA,** caso contrário, ocorrerão **ERROS** de execução.
 
+O segundo form é o **modifica**.
+
+```
+<h:form id="modifica">
+    <p:dialog header="Modificar Aluno Selecionado" widgetVar="modifica-aluno-widget" modal="false" showEffect="fade" hideEffect="fade" resizable="false" id="modifica-aluno-dialog">
+        <p:outputPanel id="modifica-aluno-panel" style="text-align:center">
+            <h:panelGrid  columns="2" columnClasses="label,value">
+                <p:outputLabel value="Nome" />
+                <p:inputText size="20" value="#{alunoBean.alunoSelecionado.nome}" />
+
+                <p:outputLabel value="CPF" />
+                <p:inputText value="#{alunoBean.alunoSelecionado.cpf}" size="20" />
+
+                <p:outputLabel value="Telefone" />
+                <p:inputText value="#{alunoBean.alunoSelecionado.telefone}" size="20" />
+
+                <p:outputLabel value="Endereço" />
+                <p:inputText value="#{alunoBean.alunoSelecionado.endereco}" size="20" />
+    
+                <p:outputLabel value="Período" />
+                <p:inputText value="#{alunoBean.alunoSelecionado.periodo}" size="20" />
+            </h:panelGrid>
+    <br/>
+            <p:commandButton value="Modificar" id="btnEdit" actionListener="#{alunoBean.modificaAluno}" update=":tabela:tabela-alunos" oncomplete="PF('modifica-aluno-widget').hide()" >
+                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
+            </p:commandButton>
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+            </p:confirmDialog>
+            <p:commandButton value="Excluir" actionListener="#{alunoBean.deletaAluno}" update=":tabela:tabela-alunos" oncomplete="PF('modifica-aluno-widget').hide()">
+                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
+            </p:commandButton>
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+            </p:confirmDialog>
+        </p:outputPanel>
+    </p:dialog>
+    <p:defaultCommand target="btnEdit" />
+</h:form>
+```
+
+
+
+
+
 **Repita** o processo para o arquivo **disciplina.xhtml**:
 
 ```xhtml
