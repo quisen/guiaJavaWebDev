@@ -19,7 +19,11 @@ A estrutura principal dessa página está dentro da tag** ui:define="content"**,
     oncomplete="PF('novo-aluno-widget').show()"/>
 <br/>
 <br/>
-    <p:dataTable id="tabela-alunos" var="aluno" value="#{alunoBean.alunos}" tableStyle="text-align:center">
+    <p:dataTable id="tabela-alunos"
+        var="aluno"
+        value="#{alunoBean.alunos}"
+        tableStyle="text-align:center">
+        
         <p:column headerText="Id">
             <h:outputText value="#{aluno.id}" />
         </p:column>
@@ -50,10 +54,11 @@ A estrutura principal dessa página está dentro da tag** ui:define="content"**,
 
         <p:column style="width:40px;text-align: center">
             <p:commandButton update=":modifica:modifica-aluno-panel" 
-            oncomplete="PF('modifica-aluno-widget').show()" 
-            icon="ui-icon-arrow-4-diag"
-            title="View" action="#{alunoBean.enviaAluno(aluno)}" />
+                oncomplete="PF('modifica-aluno-widget').show()" 
+                icon="ui-icon-arrow-4-diag"
+                title="View" action="#{alunoBean.enviaAluno(aluno)}" />
         </p:column>
+        
     </p:dataTable>
 </h:form>
 ```
