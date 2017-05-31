@@ -130,11 +130,53 @@ Agora iremos detalhar o segundo form, **modifica**.
 </h:form>
 ```
 
+Agora iremos detalhar o terceiro form, **cadastro**.
+
+```
+                <h:form id="cadastro">
+                    <p:dialog header="Novo Aluno" widgetVar="novo-aluno-widget" id="novo-aluno-dialog"
+                              resizable="false" modal="false" closeOnEscape="true">
+                        <p:outputPanel style="text-align:center">
+                            <h:panelGrid  columns="2" columnClasses="label,value">
+
+                                <p:outputLabel value="Nome" />
+                                <p:inputText size="20" value="#{alunoBean.aluno.nome}" />
+
+                                <p:outputLabel value="CPF" />
+                                <p:inputText value="#{alunoBean.aluno.cpf}" size="20" />
+
+                                <p:outputLabel value="Telefone" />
+                                <p:inputText value="#{alunoBean.aluno.telefone}" size="20" />
+
+                                <p:outputLabel value="Endereço" />
+                                <p:inputText value="#{alunoBean.aluno.endereco}" size="20" />
+
+                                <p:outputLabel value="Período" />
+                                <p:inputText value="#{alunoBean.aluno.periodo}" size="20" />
+
+                                <br/>
+                                <p:commandButton id="btnCadastro" value="Cadastrar" action="#{alunoBean.novoCadastro}" update=":tabela:tabela-alunos" oncomplete="PF('novo-aluno-widget').hide()" >
+                                    <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
+                                </p:commandButton>
+                                <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                                    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                                    <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+                                </p:confirmDialog>
+
+                            </h:panelGrid>
+                        </p:outputPanel>
+                    </p:dialog>
+
+                    <p:defaultCommand target="btnCadastro" />
+
+                </h:form>
+```
+
+
+
 **Repita** o processo para o arquivo **disciplina.xhtml**
 
 Então fazemos um processo semelhante em **matricula.xhtml**:
-
-
 
 Códigos completos:
 
