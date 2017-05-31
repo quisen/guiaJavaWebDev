@@ -6,7 +6,11 @@ Mas, note que os elementos que iremos mostrar abaixo **já estão customizados**
 
 Primeiramente gostaríamos de mostrar a estrutura almejada para a página **aluno**:
 
-![](/assets/alunoCOLAPSED.png) 
+![](/assets/alunoCOLAPSED.png)
+
+É importante ressaltar que alguns elementos estão **omissos** na imagem a cima. Não se preocupe em tentar copiá-lo agora, pois todos os **códigos** estarão **disponiveis** no **fim** dessa página.
+
+A estrutura principal dessa página consiste basicamente em 3 **forms **- tabela, modifica e cadastro - que executam funções  para a visualização
 
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
