@@ -10,7 +10,9 @@ Primeiramente gostaríamos de mostrar a estrutura almejada para a página **alun
 
 É importante ressaltar que alguns trechos de código estão **omissos** na imagem a cima. Não se preocupe em tentar copiá-lo agora, pois todos os **códigos** estarão **disponiveis** no **fim** dessa página.
 
-A estrutura principal dessa página está dentro da tag** ui:define="content"**, e ela consiste basicamente em três forms**  **- **tabela**, **modifica** e **cadastro** - que executam funções para a visualização, inserção, edição e exclusão.
+A estrutura principal dessa página está dentro da tag** ui:define="content"**, e ela consiste basicamente em três forms distintos que executam funções para a visualização, inserção, edição e exclusão. 
+
+Os forms são: **tabela**, **modifica **e **cadastro.**
 
 Iremos abordar um form por vez, o primeiro a ser comentado será o **tabela**.
 
@@ -65,11 +67,15 @@ Iremos abordar um form por vez, o primeiro a ser comentado será o **tabela**.
 </h:form>
 ```
 
-A estrutura desse form é composta por três blocos:
+A estrutura desse do form **tabela** é composta por três blocos:
 
 * O **primeiro** é o **commandButton** para **cadastrar** um novo aluno. 
 * O **segundo** é o **dataTable** para a **visualização** dos registros. 
 * O **terceiro** é outro **commandButton** para **editar** um aluno já existente, que está inserido na **última** **coluna** da direita.
+
+Para o primeiro bloco \(cadastrar\) o atributo **"update"** indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":cadastro:" é uma referência à outro form \(veja em seguida\).
+
+O atributo **"oncomplete"** define uma ação que irá ser realizada quando o botão for clicado.
 
 Observe que a **"dataTable"** possui o atributo "**var**", que é o tipo de objeto que será iterado no preenchimento - e o "**value**" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior.
 
