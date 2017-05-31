@@ -1,6 +1,8 @@
 # Integrando com Java
 
-Agora iremos complementar a página **aluno.xhtml** com a inserção de alguns componentes do PrimeFaces. Mas, observe que os elementos que iremos mostrar abaixo já estão customizados com as variáveis do nosso projeto, ou seja, na página do PrimeFaces o código estará disponível de maneira genérica.
+Agora iremos complementar a página **aluno.xhtml** com a inserção de alguns componentes do PrimeFaces. 
+
+Mas, note que os elementos que iremos mostrar abaixo **já estão customizados** com as **variáveis** do nosso projeto, ou seja, na **página** do **PrimeFaces** o código estará disponível de maneira **diferente**, mais **genérica**.
 
 ```xhtml
 <?xml version='1.0' encoding='UTF-8' ?>
