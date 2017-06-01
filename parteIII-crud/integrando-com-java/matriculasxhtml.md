@@ -51,15 +51,20 @@
 
 ```xhtml
 <h:form id="cadastro">
-    <p:dialog header="Nova Matrícula" widgetVar="nova-matricula-widget" id="nova-matricula-dialog"
-    resizable="false" modal="false" closeOnEscape="true">
+    <p:dialog header="Nova Matrícula" widgetVar="nova-matricula-widget"
+    id="nova-matricula-dialog" resizable="false"
+    modal="false" closeOnEscape="true">
         <p:outputPanel style="text-align:center">
             <h:panelGrid  columns="2" columnClasses="label,value">
                 <p:outputLabel value="Aluno: "  />
-                <p:selectOneMenu value="#{matriculaBean.alunoSelecionado}" converter="alunoConverter" panelStyle="width:180px"
-                effect="fade" var="a" style="width:160px" filter="true" filterMatchMode="startsWith">
+                <p:selectOneMenu value="#{matriculaBean.alunoSelecionado}"
+                converter="alunoConverter" panelStyle="width:180px"
+                effect="fade" var="a" style="width:160px"
+                filter="true" filterMatchMode="startsWith">
                     <f:selectItem itemLabel="Selecione" itemValue="" />
-                    <f:selectItems value="#{matriculaBean.alunos}" var="aluno" itemLabel="#{aluno.matricula} - #{aluno.nome}" itemValue="#{aluno}" />
+                    <f:selectItems value="#{matriculaBean.alunos}"
+                    var="aluno" itemLabel="#{aluno.matricula} - #{aluno.nome}"
+                    itemValue="#{aluno}" />
 
                     <p:column style="width:10%">
                         <h:outputText value="#{a.matricula}" />
@@ -71,10 +76,14 @@
                 </p:selectOneMenu>
 
                 <p:outputLabel value="Disciplina "  />
-                <p:selectOneMenu value="#{matriculaBean.disciplinaSelecionada}" converter="disciplinaConverter" panelStyle="width:180px"
-                effect="fade" var="d" style="width:160px" filter="true" filterMatchMode="startsWith">
+                <p:selectOneMenu value="#{matriculaBean.disciplinaSelecionada}"
+                converter="disciplinaConverter" panelStyle="width:180px"
+                effect="fade" var="d" style="width:160px"
+                filter="true" filterMatchMode="startsWith">
                     <f:selectItem itemLabel="Selecione" itemValue="" />
-                    <f:selectItems value="#{matriculaBean.disciplinas}" var="disciplina" itemLabel="#{disciplina.nome}" itemValue="#{disciplina}" />
+                    <f:selectItems value="#{matriculaBean.disciplinas}"
+                    var="disciplina" itemLabel="#{disciplina.nome}"
+                    itemValue="#{disciplina}" />
 
                     <p:column style="width:10%">
                         <h:outputText value="#{d.nome}" />
@@ -82,12 +91,18 @@
                 </p:selectOneMenu>
 
                 <br/>
-                <p:commandButton id="btnCadastro" value="Cadastrar" action="#{matriculaBean.novaMatricula}" update=":tabela:tabela-matriculas" oncomplete="PF('nova-matricula-widget').hide()" >
-                    <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
+                <p:commandButton id="btnCadastro" value="Cadastrar"
+                action="#{matriculaBean.novaMatricula}"
+                update=":tabela:tabela-matriculas"
+                oncomplete="PF('nova-matricula-widget').hide()" >
+                    <p:confirm header="Confirmação" message="Tem certeza?"
+                    icon="ui-icon-alert"  />
                 </p:commandButton>
                 <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-                    <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+                    <p:commandButton value="Sim" type="button"
+                    styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                    <p:commandButton value="Não" type="button"
+                    styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
                 </p:confirmDialog>
 
             </h:panelGrid>
