@@ -8,9 +8,7 @@ O **código** completo estará **disponível** ao final da página.
 
 A estrutura principal dessa página está dentro da tag** ui:define="content" **que possui basicamente três forms distintos que executam funções para a visualização, inserção, edição e exclusão.
 
-Os forms são: **tabela**, **modifica **e **cadastro.**
-
-Iremos detalhar um form de cada vez e o primeiro será o **tabela**.
+Os forms são: **tabela**, **modifica **e **cadastro. **Iremos detalhar um form de cada vez.
 
 ## &lt;h:form id="tabela"&gt;
 
@@ -70,7 +68,7 @@ O form **tabela** pode ser decomposto em três principais blocos:
 * O **segundo** é o **dataTable** para a **visualização** dos registros. 
 * O **terceiro** é outro **commandButton** para **editar** um aluno já existente, que está inserido na **última** **coluna** da direita.
 
-Para o **primeiro** bloco \(cadastrar\) o atributo **"update"** indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":cadastro:" é uma referência à outro form \(veja em seguida\). O atributo **"oncomplete"** define uma ação que irá ser realizada quando o botão for clicado. 
+Para o **primeiro** bloco \(cadastrar\) o atributo **"update"** indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":cadastro:" é uma referência à outro form \(veja em seguida\). O atributo **"oncomplete"** define uma ação que irá ser realizada quando o botão for clicado.
 
 Dentro do **segundo** bloco \(dataTable - tabela-alunos\) observe que a **"dataTable"** possui o atributo "**var**", que é o tipo de objeto que será iterado no preenchimento - e o "**value**" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior.
 
@@ -85,6 +83,8 @@ Abaixo é possível visualizar o botão inserido em uma nova coluna da tabela:![
 **ATENÇÃO!**
 
 Nosso Managed Bean possui o nome "**AlunoBean**", porém na hora de referenciá-lo no código xhtml, devemos sempre utilizar a **primeira letra MINÚSCULA,** caso contrário, ocorrerão **ERROS** de execução.
+
+## &lt;h:form id="cadastro"&gt;
 
 Agora iremos detalhar o segundo form, **cadastro**.
 
@@ -153,7 +153,7 @@ Novo aluno listado e cadastrado após confirmação do preenchimento no pop-up:
 
 ![](/assets/listado.PNG)
 
-Agora iremos detalhar o terceiro form, **modifica**.
+## &lt;h:form id="modifica"&gt;
 
 Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado para edição.
 
