@@ -177,7 +177,7 @@ Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado p
                 <p:outputLabel value="Período" />
                 <p:inputText value="#{alunoBean.alunoSelecionado.periodo}" size="20" />
             </h:panelGrid>
-    <br/>
+            <br/>
             <p:commandButton value="Modificar" id="btnEdit" actionListener="#{alunoBean.modificaAluno}" update=":tabela:tabela-alunos" oncomplete="PF('modifica-aluno-widget').hide()" >
                 <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
             </p:commandButton>
