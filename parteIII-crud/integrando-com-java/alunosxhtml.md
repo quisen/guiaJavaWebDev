@@ -10,7 +10,7 @@ A estrutura principal dessa página está dentro da tag** ui:define="content" **
 
 Os forms são: **tabela**, **modifica **e **cadastro.**
 
-Iremos abordar um form por vez, o primeiro a ser comentado será o **tabela**.
+Iremos detalhar um form de cada vez e o primeiro será o **tabela**.
 
 ```xhtml
 <h:form id="tabela">
@@ -77,56 +77,19 @@ Dentro do **segundo** bloco \(dataTable - tabela-alunos\) observe que a **"dataT
 
 Em cada coluna, usa-se diretamente a referência de variáveis em relação ao objeto que estamos utilizando, como por exemplo, "\#{aluno.nome}".
 
-No **terceiro** bloco \(EDITAR\) o atributo **"update"** indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":modifica:" é uma referência à outro form \(veja em seguida\).
+No **terceiro** bloco \(EDITAR\) o atributo **"update" **dentro do commandButton indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":modifica:" é uma referência à outro form \(veja em seguida\). 
+
+Esse mesmo botão servirá também para abrir o pop-up com as informações do aluno selecionado, e ao mesmo tempo acionar o método "enviaAluno" que repassa os dados do registro clicado para um objeto volátil \(sem informação fixa\) "alunoSelecionado" - que receberá o tratamento adequado.
+
+Abaixo é possível visualizar o botão inserido em uma nova coluna da tabela:![](/assets/novobotao expandir.png)
 
 #### **ATENÇÃO!**
 
 Nosso Managed Bean possui o nome "**AlunoBean**", porém na hora de referenciá-lo no código xhtml, devemos sempre utilizar a **primeira letra MINÚSCULA,** caso contrário, ocorrerão **ERROS** de execução.
 
-Agora iremos detalhar o segundo form, **modifica**.
 
-```
-<h:form id="modifica">
-    <p:dialog header="Modificar Aluno Selecionado" widgetVar="modifica-aluno-widget" modal="false" showEffect="fade" hideEffect="fade" resizable="false" id="modifica-aluno-dialog">
-        <p:outputPanel id="modifica-aluno-panel" style="text-align:center">
-            <h:panelGrid  columns="2" columnClasses="label,value">
-                <p:outputLabel value="Nome" />
-                <p:inputText size="20" value="#{alunoBean.alunoSelecionado.nome}" />
 
-                <p:outputLabel value="CPF" />
-                <p:inputText value="#{alunoBean.alunoSelecionado.cpf}" size="20" />
-
-                <p:outputLabel value="Telefone" />
-                <p:inputText value="#{alunoBean.alunoSelecionado.telefone}" size="20" />
-
-                <p:outputLabel value="Endereço" />
-                <p:inputText value="#{alunoBean.alunoSelecionado.endereco}" size="20" />
-
-                <p:outputLabel value="Período" />
-                <p:inputText value="#{alunoBean.alunoSelecionado.periodo}" size="20" />
-            </h:panelGrid>
-    <br/>
-            <p:commandButton value="Modificar" id="btnEdit" actionListener="#{alunoBean.modificaAluno}" update=":tabela:tabela-alunos" oncomplete="PF('modifica-aluno-widget').hide()" >
-                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
-            </p:commandButton>
-            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
-            </p:confirmDialog>
-            <p:commandButton value="Excluir" actionListener="#{alunoBean.deletaAluno}" update=":tabela:tabela-alunos" oncomplete="PF('modifica-aluno-widget').hide()">
-                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
-            </p:commandButton>
-            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
-            </p:confirmDialog>
-        </p:outputPanel>
-    </p:dialog>
-    <p:defaultCommand target="btnEdit" />
-</h:form>
-```
-
-Agora iremos detalhar o terceiro form, **cadastro**.
+Agora iremos detalhar o segundo form, **cadastro**.
 
 ```
                 <h:form id="cadastro">
@@ -169,4 +132,57 @@ Agora iremos detalhar o terceiro form, **cadastro**.
 ```
 
 
+
+Agora iremos detalhar o terceiro form, **modifica**.
+
+Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado para edição.
+
+```
+<h:form id="modifica">
+    <p:dialog header="Modificar Aluno Selecionado" widgetVar="modifica-aluno-widget" modal="false" showEffect="fade" hideEffect="fade" resizable="false" id="modifica-aluno-dialog">
+        <p:outputPanel id="modifica-aluno-panel" style="text-align:center">
+            <h:panelGrid  columns="2" columnClasses="label,value">
+                <p:outputLabel value="Nome" />
+                <p:inputText size="20" value="#{alunoBean.alunoSelecionado.nome}" />
+
+                <p:outputLabel value="CPF" />
+                <p:inputText value="#{alunoBean.alunoSelecionado.cpf}" size="20" />
+
+                <p:outputLabel value="Telefone" />
+                <p:inputText value="#{alunoBean.alunoSelecionado.telefone}" size="20" />
+
+                <p:outputLabel value="Endereço" />
+                <p:inputText value="#{alunoBean.alunoSelecionado.endereco}" size="20" />
+
+                <p:outputLabel value="Período" />
+                <p:inputText value="#{alunoBean.alunoSelecionado.periodo}" size="20" />
+            </h:panelGrid>
+    <br/>
+            <p:commandButton value="Modificar" id="btnEdit" actionListener="#{alunoBean.modificaAluno}" update=":tabela:tabela-alunos" oncomplete="PF('modifica-aluno-widget').hide()" >
+                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
+            </p:commandButton>
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+            </p:confirmDialog>
+            <p:commandButton value="Excluir" actionListener="#{alunoBean.deletaAluno}" update=":tabela:tabela-alunos" oncomplete="PF('modifica-aluno-widget').hide()">
+                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
+            </p:commandButton>
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+            </p:confirmDialog>
+        </p:outputPanel>
+    </p:dialog>
+    <p:defaultCommand target="btnEdit" />
+</h:form>
+```
+
+Note que no trecho de código acima temos dois botões que executam os métodos java que criamos anteriormente, um para **modificação** e outro para **exclusão**.
+
+Visualização da janela pop-up ao clicar no botão de edição localizado na última coluna à direita:
+
+![](/assets/popup modifica.png)
+
+Ao escolher modificar ou excluir, o registro será atualizado ou removido automaticamente da tabela após a confirmação.
 
