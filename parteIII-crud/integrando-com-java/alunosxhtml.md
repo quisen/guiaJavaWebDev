@@ -206,3 +206,7 @@ Visualização da janela pop-up ao clicar no botão de edição localizado na ú
 
 Ao escolher modificar ou excluir, o registro será atualizado ou removido automaticamente da tabela após a confirmação.
 
+---
+
+Link para download do arquivo alunos.xhtml: https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9146
+
