@@ -115,50 +115,68 @@
 ## &lt;h:form id="modifica"&gt;
 
 ```xhtml
-                <h:form id="modifica">
-                    <p:dialog header="Modificar Matrícula Selecionada" widgetVar="modifica-matricula-widget" modal="false" showEffect="fade" hideEffect="fade" resizable="false" id="modifica-matricula-dialog">
-                        <p:outputPanel id="modifica-matricula-panel" style="text-align:center">
+<h:form id="modifica">
+    <p:dialog header="Modificar Matrícula Selecionada"
+    widgetVar="modifica-matricula-widget" modal="false"
+    showEffect="fade" hideEffect="fade" resizable="false"
+    id="modifica-matricula-dialog">
+        <p:outputPanel id="modifica-matricula-panel"
+        style="text-align:center">
 
-                            <h:panelGrid  columns="2" columnClasses="label,value">
-                                <p:outputLabel value="Aluno:" />
-                                <p:outputLabel value="#{matriculaBean.matriculaMinSelecionada.aluno.nome}" />
-                                <br/>
-                                <p:outputLabel value=""/>
-                                <p:outputLabel value="RA:" />
-                                <p:outputLabel value="#{matriculaBean.matriculaMinSelecionada.aluno.matricula}" />
-                                <br/>
-                                <p:outputLabel value=""/>
-                                <p:outputLabel value="Disciplina"  />
-                                <p:selectOneMenu value="#{matriculaBean.matriculaMinSelecionada.disciplina}" converter="disciplinaConverter" panelStyle="width:180px"
-                                                 effect="fade" var="d" style="width:160px" filter="true" filterMatchMode="startsWith">
-                                    <f:selectItem itemLabel="Selecione" itemValue="" />
-                                    <f:selectItems value="#{matriculaBean.disciplinas}" var="disciplina" itemLabel="#{disciplina.nome}" itemValue="#{disciplina}" />
+            <h:panelGrid  columns="2" columnClasses="label,value">
+                <p:outputLabel value="Aluno:" />
+                <p:outputLabel value="#{matriculaBean.matriculaMinSelecionada.aluno.nome}" />
+                <br/>
+                <p:outputLabel value=""/>
+                <p:outputLabel value="RA:" />
+                <p:outputLabel value="#{matriculaBean.matriculaMinSelecionada.aluno.matricula}" />
+                <br/>
+                <p:outputLabel value=""/>
+                <p:outputLabel value="Disciplina"  />
+                    <p:selectOneMenu
+                    value="#{matriculaBean.matriculaMinSelecionada.disciplina}"
+                    converter="disciplinaConverter" panelStyle="width:180px"
+                    effect="fade" var="d" style="width:160px"
+                    filter="true" filterMatchMode="startsWith">
+                        <f:selectItem itemLabel="Selecione" itemValue="" />
+                        <f:selectItems value="#{matriculaBean.disciplinas}"
+                        var="disciplina" itemLabel="#{disciplina.nome}"
+                        itemValue="#{disciplina}" />
 
-                                    <p:column style="width:10%">
-                                        <h:outputText value="#{d.nome}" />
-                                    </p:column>
-                                </p:selectOneMenu>
-
-                            </h:panelGrid>
-                            <br/>
-                            <p:commandButton value="Modificar" id="btnEdit" actionListener="#{matriculaBean.modificaMatricula}" update=":tabela:tabela-matriculas" oncomplete="PF('modifica-matricula-widget').hide()" >
-                                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
-                            </p:commandButton>
-                            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-                                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
-                            </p:confirmDialog>
-                            <p:commandButton value="Excluir" actionListener="#{matriculaBean.deletaMatricula}" update=":tabela:tabela-matriculas" oncomplete="PF('modifica-matricula-widget').hide()">
-                                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
-                            </p:commandButton>
-                            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-                                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
-                            </p:confirmDialog>
-                        </p:outputPanel>
-                    </p:dialog>
-                    <p:defaultCommand target="btnEdit" />
-                </h:form>
+                        <p:column style="width:10%">
+                            <h:outputText value="#{d.nome}" />
+                        </p:column>
+                    </p:selectOneMenu>
+            </h:panelGrid>
+            <br/>
+            <p:commandButton value="Modificar" id="btnEdit"
+            actionListener="#{matriculaBean.modificaMatricula}"
+            update=":tabela:tabela-matriculas"
+            oncomplete="PF('modifica-matricula-widget').hide()" >
+                <p:confirm header="Confirmação" message="Tem certeza?"
+                icon="ui-icon-alert"  />
+            </p:commandButton>
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                <p:commandButton value="Sim" type="button"
+                styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                <p:commandButton value="Não" type="button"
+                styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+            </p:confirmDialog>
+            <p:commandButton value="Excluir" actionListener="#{matriculaBean.deletaMatricula}"
+            update=":tabela:tabela-matriculas"
+            oncomplete="PF('modifica-matricula-widget').hide()">
+                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
+            </p:commandButton>
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                <p:commandButton value="Sim" type="button"
+                styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                <p:commandButton value="Não" type="button"
+                styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+            </p:confirmDialog>
+        </p:outputPanel>
+    </p:dialog>
+    <p:defaultCommand target="btnEdit" />
+</h:form>
 ```
 
 
