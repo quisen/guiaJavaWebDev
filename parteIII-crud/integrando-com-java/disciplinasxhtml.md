@@ -189,9 +189,13 @@ Note que no trecho de código acima temos dois botões que executam os métodos 
 
 Visualização da janela pop-up ao clicar no botão de edição localizado na última coluna à direita:
 
-![](/assets/popup modifica.png)
+![](/assets/modificaDisciEdit.png)
 
-Ao escolher modificar ou excluir, o registro será atualizado ou removido automaticamente da tabela após a confirmação.
+Após o usuário escolher modificar ou excluir será necessário confirmar a ação clicando em Sim ou Não.
+
+![](/assets/modifiConfirmDiscipl.png)
+
+Por fim, o registro será atualizado ou removido automaticamente da tabela após a confirmação.
 
 ---
 
