@@ -27,6 +27,9 @@
     * [Facelets](parteIII-crud/facelets.md)
     * [Menu Principal](parteIII-crud/menu-principal.md)
     * [Integrando com Java](parteIII-crud/integrando-com-java.md)
+      * alunos.xhtml
+      * disciplinas.xhtml
+      * matriculas.xhtml
     * [\*Inserção de Registros](parteIII-crud/insercao-de-registros.md)
     * [\*Edição e Exclusão de Registros](parteIII-crud/edicao-de-registros.md)
 * [Parte IV: Dicas e Soluções de Problemas](parteIV-dicas-solucoes.md)

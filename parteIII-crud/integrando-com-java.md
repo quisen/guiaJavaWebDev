@@ -1,6 +1,6 @@
 # Integrando com Java
 
-Agora iremos complementar a página **aluno.xhtml** com a inserção de alguns componentes do PrimeFaces.
+Agora iremos complementar a página **alunos.xhtml** com a inserção de alguns componentes do PrimeFaces.
 
 Note que os elementos que iremos mostrar abaixo **já estão customizados** com as **variáveis** do nosso projeto, ou seja, na **página** do **PrimeFaces** o código estará disponível de maneira **diferente**, mais **genérica**.
 
@@ -77,11 +77,11 @@ Para o **primeiro** bloco \(cadastrar\) o atributo **"update"** indica que irá 
 
 O atributo **"oncomplete"** define uma ação que irá ser realizada quando o botão for clicado.
 
-Para o **segundo** bloco \(dataTable - tabela-alunos\) observe que a **"dataTable"** possui o atributo "**var**", que é o tipo de objeto que será iterado no preenchimento - e o "**value**" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior.
+Dentro do **segundo** bloco \(dataTable - tabela-alunos\) observe que a **"dataTable"** possui o atributo "**var**", que é o tipo de objeto que será iterado no preenchimento - e o "**value**" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior.
 
 Em cada coluna, usa-se diretamente a referência de variáveis em relação ao objeto que estamos utilizando, como por exemplo, "\#{aluno.nome}".
 
-Para o **terceiro** bloco \(EDITAR\) o atributo **"update"** indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":modifica:" é uma referência à outro form \(veja em seguida\).
+No **terceiro** bloco \(EDITAR\) o atributo **"update"** indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":modifica:" é uma referência à outro form \(veja em seguida\).
 
 #### **ATENÇÃO!**
 
@@ -171,8 +171,6 @@ Agora iremos detalhar o terceiro form, **cadastro**.
 
                 </h:form>
 ```
-
-
 
 **Repita** o processo para o arquivo **disciplina.xhtml**
 
