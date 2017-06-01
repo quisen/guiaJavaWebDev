@@ -141,7 +141,9 @@ Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado p
 
 ```
 <h:form id="modifica">
-    <p:dialog header="Modificar Disciplina Selecionada" widgetVar="modifica-disciplina-widget" modal="false" showEffect="fade" hideEffect="fade" resizable="false" id="modifica-disciplina-dialog">
+    <p:dialog header="Modificar Disciplina Selecionada"
+    widgetVar="modifica-disciplina-widget" modal="false"
+    showEffect="fade" hideEffect="fade" resizable="false" id="modifica-disciplina-dialog">
         <p:outputPanel id="modifica-disciplina-panel" style="text-align:center">
             <h:panelGrid  columns="2" columnClasses="label,value">
                 <p:outputLabel value="Nome" />
@@ -154,19 +156,28 @@ Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado p
                 <p:inputText value="#{disciplinaBean.disciplinaSelecionada.periodo}" size="20" />
             </h:panelGrid>
             <br/>
-            <p:commandButton value="Modificar" id="btnEdit" actionListener="#{disciplinaBean.modificaDisciplina}" update=":tabela:tabela-disciplinas" oncomplete="PF('modifica-disciplina-widget').hide()" >
+            <p:commandButton value="Modificar" id="btnEdit"
+            actionListener="#{disciplinaBean.modificaDisciplina}"
+            update=":tabela:tabela-disciplinas" oncomplete="PF('modifica-disciplina-widget').hide()" >
                 <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
             </p:commandButton>
             <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes"
+                icon="ui-icon-check" />
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no"
+                icon="ui-icon-close" />
             </p:confirmDialog>
-            <p:commandButton value="Excluir" actionListener="#{disciplinaBean.deletaDisciplina}" update=":tabela:tabela-disciplinas" oncomplete="PF('modifica-disciplina-widget').hide()">
+            <p:commandButton value="Excluir"
+            actionListener="#{disciplinaBean.deletaDisciplina}"
+            update=":tabela:tabela-disciplinas"
+            oncomplete="PF('modifica-disciplina-widget').hide()">
                 <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
             </p:commandButton>
             <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes"
+                icon="ui-icon-check" />
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no"
+                icon="ui-icon-close" />
             </p:confirmDialog>
         </p:outputPanel>
     </p:dialog>
