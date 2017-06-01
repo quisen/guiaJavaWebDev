@@ -204,9 +204,13 @@ Visualização da janela pop-up ao clicar no botão de edição localizado na ú
 
 ![](/assets/popup modifica.png)
 
-Ao escolher modificar ou excluir, o registro será atualizado ou removido automaticamente da tabela após a confirmação.
+Após o usuário escolher modificar ou excluir será necessário confirmar a ação clicando em Sim ou Não.
+
+![](/assets/modifiConfirmDiscipl.png)
+
+Por fim, o registro será atualizado ou removido automaticamente da tabela após a confirmação.
 
 ---
 
-Link para download do arquivo alunos.xhtml: https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9146
+Link para download do arquivo alunos.xhtml: [https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9146](https://gist.github.com/quisen/9e575c58ff28cdded07f789ca16b9146)
 
