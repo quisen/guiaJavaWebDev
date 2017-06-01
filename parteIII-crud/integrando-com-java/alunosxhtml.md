@@ -4,13 +4,9 @@ Agora iremos complementar a página **alunos.xhtml** com a inserção de alguns 
 
 Note que os elementos que iremos mostrar abaixo **já estão customizados** com as **variáveis** do nosso projeto, ou seja, na **página** do **PrimeFaces** o código estará disponível de maneira **diferente**, mais **genérica**.
 
-Primeiramente gostaríamos de mostrar a estrutura almejada para a página **aluno**:
+O **código** completo estará **disponível** ao final da página.
 
-![](/assets/alunoMinimal.png)
-
-É importante ressaltar que alguns trechos de código estão **omissos** na imagem a cima. Não se preocupe em tentar copiá-lo agora, pois todos os **códigos** estarão **disponiveis** no **fim** dessa página.
-
-A estrutura principal dessa página está dentro da tag** ui:define="content"**, e ela consiste basicamente em três forms distintos que executam funções para a visualização, inserção, edição e exclusão.
+A estrutura principal dessa página está dentro da tag** ui:define="content" **que possui basicamente três forms distintos que executam funções para a visualização, inserção, edição e exclusão.
 
 Os forms são: **tabela**, **modifica **e **cadastro.**
 

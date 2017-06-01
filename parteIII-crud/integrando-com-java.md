@@ -1,8 +1,8 @@
 # Integrando com Java
 
-Nesta seção iremos complementar as páginas com a inserção de alguns componentes do PrimeFaces. 
+Nesta seção iremos complementar as páginas com a inserção de alguns componentes do PrimeFaces. Também iremos abordar como relacionar esses elementos com o código Java.
 
-*  **alunos.xhtml**
+* **alunos.xhtml**
 * **disciplinas.xhtml**
 * **matriculas.xhtml**
 
