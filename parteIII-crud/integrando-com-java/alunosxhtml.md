@@ -12,6 +12,8 @@ Os forms são: **tabela**, **modifica **e **cadastro.**
 
 Iremos detalhar um form de cada vez e o primeiro será o **tabela**.
 
+## &lt;h:form id="tabela"&gt;
+
 ```xhtml
 <h:form id="tabela">
     <p:commandButton value="Cadastrar novo Aluno" process="@this"
@@ -19,8 +21,7 @@ Iremos detalhar um form de cada vez e o primeiro será o **tabela**.
     oncomplete="PF('novo-aluno-widget').show()"/>
     <br/>
     <br/>
-    <p:dataTable id="tabela-alunos"
-        var="aluno"
+    <p:dataTable id="tabela-alunos" var="aluno"
         value="#{alunoBean.alunos}"
         tableStyle="text-align:center">
 
@@ -69,69 +70,88 @@ O form **tabela** pode ser decomposto em três principais blocos:
 * O **segundo** é o **dataTable** para a **visualização** dos registros. 
 * O **terceiro** é outro **commandButton** para **editar** um aluno já existente, que está inserido na **última** **coluna** da direita.
 
-Para o **primeiro** bloco \(cadastrar\) o atributo **"update"** indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":cadastro:" é uma referência à outro form \(veja em seguida\).
-
-O atributo **"oncomplete"** define uma ação que irá ser realizada quando o botão for clicado.
+Para o **primeiro** bloco \(cadastrar\) o atributo **"update"** indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":cadastro:" é uma referência à outro form \(veja em seguida\). O atributo **"oncomplete"** define uma ação que irá ser realizada quando o botão for clicado. 
 
 Dentro do **segundo** bloco \(dataTable - tabela-alunos\) observe que a **"dataTable"** possui o atributo "**var**", que é o tipo de objeto que será iterado no preenchimento - e o "**value**" é uma lista que contém objetos do mesmo tipo que declaramos na tag anterior.
 
 Em cada coluna, usa-se diretamente a referência de variáveis em relação ao objeto que estamos utilizando, como por exemplo, "\#{aluno.nome}".
 
-No **terceiro** bloco \(EDITAR\) o atributo **"update" **dentro do commandButton indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":modifica:" é uma referência à outro form \(veja em seguida\). 
+No **terceiro** bloco \(EDITAR\) o atributo **"update" **dentro do commandButton indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":modifica:" é uma referência à outro form \(veja em seguida\).
 
 Esse mesmo botão servirá também para abrir o pop-up com as informações do aluno selecionado, e ao mesmo tempo acionar o método "enviaAluno" que repassa os dados do registro clicado para um objeto volátil \(sem informação fixa\) "alunoSelecionado" - que receberá o tratamento adequado.
 
 Abaixo é possível visualizar o botão inserido em uma nova coluna da tabela:![](/assets/novobotao expandir.png)
 
-#### **ATENÇÃO!**
+**ATENÇÃO!**
 
 Nosso Managed Bean possui o nome "**AlunoBean**", porém na hora de referenciá-lo no código xhtml, devemos sempre utilizar a **primeira letra MINÚSCULA,** caso contrário, ocorrerão **ERROS** de execução.
-
-
 
 Agora iremos detalhar o segundo form, **cadastro**.
 
 ```
-                <h:form id="cadastro">
-                    <p:dialog header="Novo Aluno" widgetVar="novo-aluno-widget" id="novo-aluno-dialog"
-                              resizable="false" modal="false" closeOnEscape="true">
-                        <p:outputPanel style="text-align:center">
-                            <h:panelGrid  columns="2" columnClasses="label,value">
+<h:form id="cadastro">
+    <p:dialog header="Novo Aluno" widgetVar="novo-aluno-widget" id="novo-aluno-dialog"
+    resizable="false" modal="false" closeOnEscape="true">
+        <p:outputPanel style="text-align:center">
+            <h:panelGrid  columns="2" columnClasses="label,value">
 
-                                <p:outputLabel value="Nome" />
-                                <p:inputText size="20" value="#{alunoBean.aluno.nome}" />
+                <p:outputLabel value="Nome" />
+                <p:inputText size="20" value="#{alunoBean.aluno.nome}" />
 
-                                <p:outputLabel value="CPF" />
-                                <p:inputText value="#{alunoBean.aluno.cpf}" size="20" />
+                <p:outputLabel value="CPF" />
+                <p:inputText value="#{alunoBean.aluno.cpf}" size="20" />
 
-                                <p:outputLabel value="Telefone" />
-                                <p:inputText value="#{alunoBean.aluno.telefone}" size="20" />
+                <p:outputLabel value="Telefone" />
+                <p:inputText value="#{alunoBean.aluno.telefone}" size="20" />
 
-                                <p:outputLabel value="Endereço" />
-                                <p:inputText value="#{alunoBean.aluno.endereco}" size="20" />
+                <p:outputLabel value="Endereço" />
+                <p:inputText value="#{alunoBean.aluno.endereco}" size="20" />
 
-                                <p:outputLabel value="Período" />
-                                <p:inputText value="#{alunoBean.aluno.periodo}" size="20" />
+                <p:outputLabel value="Período" />
+                <p:inputText value="#{alunoBean.aluno.periodo}" size="20" />
 
-                                <br/>
-                                <p:commandButton id="btnCadastro" value="Cadastrar" action="#{alunoBean.novoCadastro}" update=":tabela:tabela-alunos" oncomplete="PF('novo-aluno-widget').hide()" >
-                                    <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
-                                </p:commandButton>
-                                <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                                    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-                                    <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
-                                </p:confirmDialog>
+                 <br/>
+                <p:commandButton id="btnCadastro" value="Cadastrar"
+                action="#{alunoBean.novoCadastro}" update=":tabela:tabela-alunos"
+                oncomplete="PF('novo-aluno-widget').hide()" >
+                    <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
+                </p:commandButton>
+                <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes"
+                    icon="ui-icon-check" />
+                    <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no"
+                    icon="ui-icon-close" />
+                </p:confirmDialog>
 
-                            </h:panelGrid>
-                        </p:outputPanel>
-                    </p:dialog>
+            </h:panelGrid>
+        </p:outputPanel>
+    </p:dialog>
 
-                    <p:defaultCommand target="btnCadastro" />
-
-                </h:form>
+    <p:defaultCommand target="btnCadastro" />
+</h:form>
 ```
 
+Partes relevantes do código:
 
+* O **panelGrid** é um componente que estabelece uma área pré-determinada com uma organização específica, neste caso - duas colunas, sendo a primeira um label \(etiqueta, texto indicativo\), e a segunda o valor do campo.
+* Na entrada de dados \(**inputText**\), o atributo "value" indica qual variável no código java será linkado com o campo no xhtml respectivo. Neste caso, referenciamos nossa classe alunoBean, e dentro da classe teremos um objeto chamado "aluno", então acessamos suas variáveis utilizando o ponto \(criaremos este objeto e os métodos de criação logo em seguida\).
+* Criamos um botão que executa uma ação \(**action**=""\), neste caso, executa o método novoCadastro do nosso código java.
+* O botão possui o atributo "**update**" que realizará uma mudança visual na tabela, pois ao adicionar o novo usuário queremos que ele seja listado imediatamente junto com os demais.
+* A tag "**defaultCommand**" indica o id do componente que será executado ao pressionar a tecla Enter.
+
+E então adicionamos o método novoCadastro\(\) no nosso managed bean, bem como o objeto "aluno", que será utilizado para fazer o link dos campos de texto para cadastro.
+
+Visualização do pop-up:
+
+![](/assets/popup.PNG)
+
+Preenchimento do pop-up:
+
+![](/assets/preenche.PNG)
+
+Novo aluno listado e cadastrado após confirmação do preenchimento no pop-up:
+
+![](/assets/listado.PNG)
 
 Agora iremos detalhar o terceiro form, **modifica**.
 
