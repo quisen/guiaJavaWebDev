@@ -90,14 +90,14 @@ Agora iremos detalhar o segundo form, **cadastro**.
                 <p:inputText value="#{disciplinaBean.disciplina.periodo}" size="20" />
 
                 <br/>
-                
+
                 <p:commandButton id="btnCadastro" value="Cadastrar"
                 action="#{disciplinaBean.novoCadastro}"
                 update=":tabela:tabela-disciplinas"
                 oncomplete="PF('nova-disciplina-widget').hide()" >
                     <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
                 </p:commandButton>
-                
+
                 <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
                         <p:commandButton value="Sim" type="button"
                         styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
@@ -116,24 +116,24 @@ Agora iremos detalhar o segundo form, **cadastro**.
 Partes relevantes do código:
 
 * O **panelGrid** é um componente que estabelece uma área pré-determinada com uma organização específica, neste caso - duas colunas, sendo a primeira um label \(etiqueta, texto indicativo\), e a segunda o valor do campo.
-* Na entrada de dados \(**inputText**\), o atributo "value" indica qual variável no código java será linkado com o campo no xhtml respectivo. Neste caso, referenciamos nossa classe alunoBean, e dentro da classe teremos um objeto chamado "aluno", então acessamos suas variáveis utilizando o ponto \(criaremos este objeto e os métodos de criação logo em seguida\).
+* Na entrada de dados \(**inputText**\), o atributo "value" indica qual variável no código java será linkado com o campo no xhtml respectivo. Neste caso, referenciamos nossa classe disciplinaBean, e dentro da classe teremos um objeto chamado "disciplina", então acessamos suas variáveis utilizando o ponto \(criaremos este objeto e os métodos de criação logo em seguida\).
 * Criamos um botão que executa uma ação \(**action**=""\), neste caso, executa o método novoCadastro do nosso código java.
 * O botão possui o atributo "**update**" que realizará uma mudança visual na tabela, pois ao adicionar o novo usuário queremos que ele seja listado imediatamente junto com os demais.
 * A tag "**defaultCommand**" indica o id do componente que será executado ao pressionar a tecla Enter.
 
-E então adicionamos o método novoCadastro\(\) no nosso managed bean, bem como o objeto "aluno", que será utilizado para fazer o link dos campos de texto para cadastro.
+E então adicionamos o método novoCadastro\(\) no nosso managed bean, bem como o objeto "disciplina", que será utilizado para fazer o link dos campos de texto para cadastro.
 
 Visualização do pop-up:
 
-![](/assets/popup.PNG)
+![](/assets/dialogDisciplina.png)
 
 Preenchimento do pop-up:
 
-![](/assets/preenche.PNG)
+![](/assets/dialogDisciplinaPreenchido.png)
 
-Novo aluno listado e cadastrado após confirmação do preenchimento no pop-up:
+Nova disciplina listada e cadastrada após confirmação do preenchimento no pop-up:
 
-![](/assets/listado.PNG)
+![](/assets/resultadoDisciplinaInserida.png)
 
 ## &lt;h:form id="modifica"&gt;
 
