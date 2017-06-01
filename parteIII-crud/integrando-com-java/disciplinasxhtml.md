@@ -26,7 +26,7 @@ Os forms são: **tabela**, **modifica **e **cadastro. **Iremos detalhar um form 
         <p:column headerText="Nome">
             <h:outputText value="#{disciplina.nome}" />
         </p:column>
-        
+
         <p:column headerText="Professor">
             <h:outputText value="#{disciplina.professor}" />
         </p:column>
@@ -59,13 +59,15 @@ Em cada coluna, usa-se diretamente a referência de variáveis em relação ao o
 
 No **terceiro** bloco \(EDITAR\) o atributo **"update" **dentro do commandButton indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":modifica:" é uma referência à outro form \(veja em seguida\).
 
-Esse mesmo botão servirá também para abrir o pop-up com as informações da disciplina selecionada, e ao mesmo tempo acionar o método "enviaDisciplina" que repassa os dados do registro clicado para um objeto volátil \(sem informação fixa\) "disciplinaSelecionado" - que receberá o tratamento adequado.
+Esse mesmo botão servirá também para abrir o pop-up com as informações da disciplina selecionada, e ao mesmo tempo acionar o método "enviaDisciplina" que repassa os dados do registro clicado para um objeto volátil \(sem informação fixa\) "disciplinaSelecionada" - que receberá o tratamento adequado.
 
-Abaixo é possível visualizar o botão inserido em uma nova coluna da tabela:![](/assets/novobotao expandir.png)
+Abaixo é possível visualizar o botão inserido em uma nova coluna da tabela:
+
+![](/assets/editaDisciplina.png)
 
 **ATENÇÃO!**
 
-Nosso Managed Bean possui o nome "**AlunoBean**", porém na hora de referenciá-lo no código xhtml, devemos sempre utilizar a **primeira letra MINÚSCULA,** caso contrário, ocorrerão **ERROS** de execução.
+Nosso Managed Bean possui o nome "**DisciplinaBean**", porém na hora de referenciá-lo no código xhtml, devemos sempre utilizar a **primeira letra MINÚSCULA,** caso contrário, ocorrerão **ERROS** de execução.
 
 ## &lt;h:form id="cadastro"&gt;
 
@@ -73,37 +75,34 @@ Agora iremos detalhar o segundo form, **cadastro**.
 
 ```
 <h:form id="cadastro">
-    <p:dialog header="Novo Aluno" widgetVar="novo-aluno-widget" id="novo-aluno-dialog"
-    resizable="false" modal="false" closeOnEscape="true">
+    <p:dialog header="Novo Disciplina" widgetVar="nova-disciplina-widget"
+    id="nova-disciplina-dialog" resizable="false" modal="false" closeOnEscape="true">
         <p:outputPanel style="text-align:center">
             <h:panelGrid  columns="2" columnClasses="label,value">
 
                 <p:outputLabel value="Nome" />
-                <p:inputText size="20" value="#{alunoBean.aluno.nome}" />
+                <p:inputText size="20" value="#{disciplinaBean.disciplina.nome}" />
 
-                <p:outputLabel value="CPF" />
-                <p:inputText value="#{alunoBean.aluno.cpf}" size="20" />
-
-                <p:outputLabel value="Telefone" />
-                <p:inputText value="#{alunoBean.aluno.telefone}" size="20" />
-
-                <p:outputLabel value="Endereço" />
-                <p:inputText value="#{alunoBean.aluno.endereco}" size="20" />
+                <p:outputLabel value="Professor" />
+                <p:inputText value="#{disciplinaBean.disciplina.professor}" size="20" />
 
                 <p:outputLabel value="Período" />
-                <p:inputText value="#{alunoBean.aluno.periodo}" size="20" />
+                <p:inputText value="#{disciplinaBean.disciplina.periodo}" size="20" />
 
-                 <br/>
+                <br/>
+                
                 <p:commandButton id="btnCadastro" value="Cadastrar"
-                action="#{alunoBean.novoCadastro}" update=":tabela:tabela-alunos"
-                oncomplete="PF('novo-aluno-widget').hide()" >
+                action="#{disciplinaBean.novoCadastro}"
+                update=":tabela:tabela-disciplinas"
+                oncomplete="PF('nova-disciplina-widget').hide()" >
                     <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
                 </p:commandButton>
+                
                 <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                    <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes"
-                    icon="ui-icon-check" />
-                    <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no"
-                    icon="ui-icon-close" />
+                        <p:commandButton value="Sim" type="button"
+                        styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                        <p:commandButton value="Não" type="button"
+                        styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
                 </p:confirmDialog>
 
             </h:panelGrid>
