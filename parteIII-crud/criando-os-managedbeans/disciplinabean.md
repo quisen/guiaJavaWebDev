@@ -14,7 +14,7 @@ private int larguraPopupConfirma = 200;
 * O objeto "**disciplina**" será utilizado na inserção de novos registros.
 * O objeto "**disciplinaSelecionada**" será utilizado para armazenar o registro da tabela que deseja-se fazer alguma alteração.
 
-Método que **popula** a **lista** de alunos com registros **atualizados**:
+Método que **popula** a **lista** de disciplinas com registros **atualizados**:
 
 ```java
 public void atualizaListaDisciplinas() {
@@ -26,7 +26,7 @@ Nesta linha de código, fazemos uma requisição ao **EntityManager** para retor
 
 \(**Obs**: NamedQuery Disciplina.findAll = SELECT \* FROM Disciplina\).
 
-Método que trata a **inserção** de novos alunos na tabela:
+Método que trata a **inserção** de novas disciplinas na tabela:
 
 ```java
 public void novoCadastro() {
@@ -40,11 +40,11 @@ public void novoCadastro() {
 
 Neste método, utilizamos a instância do objeto disciplina criado no início da classe \(this.disciplina\) como objeto base para **receber** as informações da **nova** disciplina.
 
-Então iniciamos uma **transação** com o banco de dados através da **unidade de persistência \(gerenciada pelo EntityManager\)** e "**persistimos**" a entidade aluno - Isto indica que esta entidade será inserida como um novo registro. Por fim, é feito o "**commit**", que **grava** as mudanças realizadas durante a transação.
+Então iniciamos uma **transação** com o banco de dados através da **unidade de persistência \(gerenciada pelo EntityManager\)** e "**persistimos**" a entidade disciplina - Isto indica que esta entidade será inserida como um novo registro. Por fim, é feito o "**commit**", que **grava** as mudanças realizadas durante a transação.
 
 Após a inserção, re-instanciamos nosso objeto disciplina para prevenir que existam dados **remanescentes** de transações anteriores, e então atualizamos a lista - para obter o novo registro junto com os demais.
 
-Método que trata a **modificação** de registros de alunos na tabela:
+Método que trata a **modificação** de registros de disciplinas na tabela:
 
 ```java
 public void modificaDisciplina() {
@@ -147,7 +147,6 @@ public int getLarguraPopupConfirma() {
 public void setLarguraPopupConfirma(int larguraPopupConfirma) {
     this.larguraPopupConfirma = larguraPopupConfirma;
 }
-
 ```
 
 Link para download da classe DisciplinaBean.java: [https://gist.github.com/quisen/f8933141f19ffdb2a80a0c3551b5a863](https://gist.github.com/quisen/f8933141f19ffdb2a80a0c3551b5a863)
