@@ -1,3 +1,5 @@
+# Classes Adicionais
+
 Para a utilização de um componente do primefaces que exibe uma **lista** de **entidades** **selecionáveis** \(para a seleção de alunos e disciplinas para a matrícula, por exemplo\), precisamos implementar um **Converter** para **cada** **classe** envolvida.
 
 Em nossa utilização do java em conjunto com o JSF, um converter é um componente que permite o **encapsulamento** de um ou mais objetos em uma **representação** via **texto** \(String\) - não sendo esta a visualização que o **usuário** terá, mas sim uma representação **interna** que permite por exemplo, saber qual dos objetos de uma lista foi **selecionada**.
