@@ -62,7 +62,7 @@ Os forms são: **tabela**, **modifica **e **cadastro. **Iremos detalhar um form 
 </h:form>
 ```
 
-O form **tabela** pode ser decomposto em três principais blocos:
+O form **tabela** pode ser explicado em três blocos:
 
 * O **primeiro** é o **commandButton** para **cadastrar** um novo aluno. 
 * O **segundo** é o **dataTable** para a **visualização** dos registros. 

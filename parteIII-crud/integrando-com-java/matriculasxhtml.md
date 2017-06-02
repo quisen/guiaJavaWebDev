@@ -1,5 +1,9 @@
 # matriculas.xhtml
 
+Agora iremos demonstrar como construir uma interface para uma tabela que possui relações com outras tabelas.
+
+O funcionamento é relativamente simples, será necessário selecionar um aluno e uma disciplina, previamente cadastrados em suas respectivas tabelas,  e guardar esse relacionamento dentro da tabela matriculas.
+
 ## &lt;h:form id="tabela"&gt;
 
 ```xhtml
@@ -181,5 +185,5 @@
 
 ---
 
-Link para download do arquivo matriculas.xhtml: https://gist.github.com/quisen/ededf8cdf2dd5a7b46b1ac8810f57671
+Link para download do arquivo matriculas.xhtml: [https://gist.github.com/quisen/ededf8cdf2dd5a7b46b1ac8810f57671](https://gist.github.com/quisen/ededf8cdf2dd5a7b46b1ac8810f57671)
 
