@@ -88,7 +88,7 @@ Nosso Managed Bean possui o nome "**AlunoBean**", porém na hora de referenciá-
 
 Agora iremos detalhar o segundo form, **cadastro**.
 
-```
+```xhtml
 <h:form id="cadastro">
     <p:dialog header="Novo Aluno" widgetVar="novo-aluno-widget" id="novo-aluno-dialog"
     resizable="false" modal="false" closeOnEscape="true">
@@ -157,7 +157,7 @@ Novo aluno listado e cadastrado após confirmação do preenchimento no pop-up:
 
 Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado para edição.
 
-```
+```xhtml
 <h:form id="modifica">
     <p:dialog header="Modificar Aluno Selecionado" widgetVar="modifica-aluno-widget" modal="false" showEffect="fade" hideEffect="fade" resizable="false" id="modifica-aluno-dialog">
         <p:outputPanel id="modifica-aluno-panel" style="text-align:center">

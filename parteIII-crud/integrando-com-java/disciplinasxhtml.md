@@ -67,7 +67,7 @@ Nosso Managed Bean possui o nome "**DisciplinaBean**", porém na hora de referen
 
 Agora iremos detalhar o segundo form, **cadastro**.
 
-```
+```xhtml
 <h:form id="cadastro">
     <p:dialog header="Novo Disciplina" widgetVar="nova-disciplina-widget"
     id="nova-disciplina-dialog" resizable="false" modal="false" closeOnEscape="true">
@@ -133,7 +133,7 @@ Nova disciplina listada e cadastrada após confirmação do preenchimento no pop
 
 Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado para edição.
 
-```
+```xhtml
 <h:form id="modifica">
     <p:dialog header="Modificar Disciplina Selecionada"
     widgetVar="modifica-disciplina-widget" modal="false"
