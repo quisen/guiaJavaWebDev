@@ -1,12 +1,6 @@
 # disciplinas.xhtml
 
-Agora iremos complementar a página **disciplinas.xhtml** com a inserção de alguns componentes do PrimeFaces.
-
-Note que os elementos que iremos mostrar abaixo **já estão customizados** com as **variáveis** do nosso projeto, ou seja, na **página** do **PrimeFaces** o código estará disponível de maneira **diferente**, mais **genérica**.
-
-O **código** completo estará **disponível** ao final da página.
-
-A estrutura principal dessa página está dentro da tag** ui:define="content" **que possui basicamente três forms distintos que executam funções para a visualização, inserção, edição e exclusão.
+Agora iremos complementar a página **disciplinas.xhtml**, perceba que o processo é análogo ao realizado na página anterior alunos.xhtml.
 
 Os forms são: **tabela**, **modifica **e **cadastro. **Iremos detalhar um form de cada vez.
 
