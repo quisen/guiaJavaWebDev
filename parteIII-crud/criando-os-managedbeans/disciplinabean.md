@@ -76,19 +76,19 @@ Utilizamos aqui o mesmo processo, diferenciando-se dos outros com o método "**r
 
 **Vale ressaltar que**, todas estas operações ocorrem com base no **id** do registro que deseja-se manipular - sendo na inserção adicionado um id gerado automaticamente pelo banco SQL \(pois utilizamos **auto increment**\), e na modificação e exclusão utilizamos o id do registro já existente.
 
-Método que irá repassar o objeto **Aluno** escolhido na tabela \(pela página web\) para nosso objeto instanciado anteriormente.
+Método que irá repassar o objeto **Disciplina** escolhido na tabela \(pela página web\) para nosso objeto instanciado anteriormente.
 
 ```java
-public void enviaAluno(Aluno a) {
-    this.alunoSelecionado = a;
-    List<Matricula> m = EManager.getInstance().createNamedQuery("Matricula.findByAluno").setParameter("idAluno", this.alunoSelecionado.getId()).getResultList();
+public void enviaDisciplina(Disciplina a) {
+    this.disciplinaSelecionada = a;
+    List<Matricula> m = EManager.getInstance().createNamedQuery("Matricula.findByDisciplina").setParameter("idDisciplina", this.disciplinaSelecionada.getId()).getResultList();
     if (m.size() > 0) {
-        this.msgConfirmacao = "Tem certeza? A remoção do(a) aluno(a) acarretará na exclusão de todas as respectivas matrículas.";
+        this.msgConfirmacao = "Tem certeza? A remoção da disciplina acarretará na exclusão de todas as respectivas matrículas.";
         this.larguraPopupConfirma = 400;
     } else {
-    this.msgConfirmacao = "Tem certeza?";
-    this.larguraPopupConfirma = 200;
-    }
+        this.msgConfirmacao = "Tem certeza?";
+        this.larguraPopupConfirma = 200;
+        }
 }
 ```
 
@@ -99,53 +99,55 @@ Método que inicializa a tabela preenchida com os registros, de forma automátic
 ```java
 @PostConstruct
 public void init() {
-    atualizaListaAlunos();
+    atualizaListaDisciplinas();
 }
 ```
 
-Aqui apenas utilizamos o método **atualizaListaAlunos\(\)** descrito anteriormente, com a anotação **@PostConstruct** \(sua funcionalidade é descrita na seção anterior\).
+Aqui apenas utilizamos o método **atualizaListaDisciplinas\(\)** descrito anteriormente, com a anotação **@PostConstruct** \(sua funcionalidade é descrita na seção anterior\).
 
 E então adicionamos todos os **getters **e **setters** \(dica: utilize o atalho Alt+Insert para inserção automática\).
 
 ```java
-    public List<Aluno> getAlunos() {
-        return alunos;
-    }
+public List<Disciplina> getDisciplinas() {
+    return disciplinas;
+}
 
-    public void setAlunos(List<Aluno> alunos) {
-        this.alunos = alunos;
-    }
+public void setDisciplinas(List<Disciplina> disciplinas) {
+    this.disciplinas = disciplinas;
+}
 
-    public Aluno getAluno() {
-        return aluno;
-    }
+public Disciplina getDisciplina() {
+    return disciplina;
+}
 
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
-    }
+public void setDisciplina(Disciplina disciplina) {
+    this.disciplina = disciplina;
+}
 
-    public Aluno getAlunoSelecionado() {
-        return alunoSelecionado;
-    }
+public Disciplina getDisciplinaSelecionada() {
+    return disciplinaSelecionada;
+}
 
-    public void setAlunoSelecionado(Aluno alunoSelecionado) {
-        this.alunoSelecionado = alunoSelecionado;
-    }
-        public String getMsgConfirmacao() {
-        return msgConfirmacao;
-    }
+public void setDisciplinaSelecionada(Disciplina disciplinaSelecionada) {
+    this.disciplinaSelecionada = disciplinaSelecionada;
+}
 
-    public void setMsgConfirmacao(String msgConfirmacao) {
-        this.msgConfirmacao = msgConfirmacao;
-    }
+public String getMsgConfirmacao() {
+    return msgConfirmacao;
+}
 
-    public int getLarguraPopupConfirma() {
-        return larguraPopupConfirma;
-    }
+public void setMsgConfirmacao(String msgConfirmacao) {
+    this.msgConfirmacao = msgConfirmacao;
+}
 
-    public void setLarguraPopupConfirma(int larguraPopupConfirma) {
-        this.larguraPopupConfirma = larguraPopupConfirma;
-    }
+public int getLarguraPopupConfirma() {
+    return larguraPopupConfirma;
+}
+
+public void setLarguraPopupConfirma(int larguraPopupConfirma) {
+    this.larguraPopupConfirma = larguraPopupConfirma;
+}
+
 ```
 
 Link para download da classe DisciplinaBean.java: [https://gist.github.com/quisen/f8933141f19ffdb2a80a0c3551b5a863](https://gist.github.com/quisen/f8933141f19ffdb2a80a0c3551b5a863)
