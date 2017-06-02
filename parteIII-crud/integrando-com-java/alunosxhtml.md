@@ -186,9 +186,9 @@ Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado p
                 <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
             </p:confirmDialog>
             <p:commandButton value="Excluir" actionListener="#{alunoBean.deletaAluno}" update=":tabela:tabela-alunos" oncomplete="PF('modifica-aluno-widget').hide()">
-                <p:confirm header="Confirmação" message="Tem certeza?" icon="ui-icon-alert"  />
+                <p:confirm header="Confirmação" message="#{alunoBean.msgConfirmacao}" icon="ui-icon-alert"/>
             </p:commandButton>
-            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" closeOnEscape="true" responsive="true" width="#{alunoBean.larguraPopupConfirma}">
                 <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
                 <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
             </p:confirmDialog>
