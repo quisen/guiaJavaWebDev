@@ -33,7 +33,7 @@
     * [Integrando com Java](parteIII-crud/integrando-com-java.md)
       * [alunos.xhtml](parteIII-crud/integrando-com-java/alunosxhtml.md)
       * [disciplinas.xhtml](parteIII-crud/integrando-com-java/disciplinasxhtml.md)
-      * [\*matriculas.xhtml](parteIII-crud/integrando-com-java/matriculasxhtml.md)
+      * [matriculas.xhtml](parteIII-crud/integrando-com-java/matriculasxhtml.md)
 * [Parte IV: Dicas e Soluções de Problemas](parteIV-dicas-solucoes.md)
   * [Visualização de Logs de Erros](parteIV-dicas-solucoes/visualizar-logs.md)
   * [Limpeza de Cache](parteIV-dicas-solucoes/limpeza-de-cache.md)
