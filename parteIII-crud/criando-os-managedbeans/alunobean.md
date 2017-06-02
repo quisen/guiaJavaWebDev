@@ -6,6 +6,8 @@
 private List<Aluno> alunos;
 private Aluno aluno = new Aluno();
 private Aluno alunoSelecionado = new Aluno();
+private String msgConfirmacao = "Tem certeza?";
+private int larguraPopupConfirma = 200;
 ```
 
 * A lista "**alunos**" do tipo **Aluno** será utilizada para preencher a tabela principal com todos os registros, na visualização da página web de gerenciamento desta entidade.
@@ -61,12 +63,16 @@ Utilizamos a mesma metodologia empregada na parte de inserção de alunos, poré
 Método que trata a **remoção** de registros de alunos na tabela:
 
 ```java
-public void deletaAluno() {
-    EManager.getInstance().getTransaction().begin();
-    EManager.getInstance().remove(this.alunoSelecionado);    
-    EManager.getInstance().getTransaction().commit();
-    atualizaListaAlunos();
-}
+    public void deletaAluno() {
+        List<Matricula> m = EManager.getInstance().createNamedQuery("Matricula.findByAluno").setParameter("idAluno", this.alunoSelecionado.getId()).getResultList();
+        EManager.getInstance().getTransaction().begin();
+        for (int i = 0; i < m.size(); i++) {
+            EManager.getInstance().remove(m.get(i));
+        }
+        EManager.getInstance().remove(this.alunoSelecionado);
+        EManager.getInstance().getTransaction().commit();
+        atualizaListaAlunos();
+    }
 ```
 
 Utilizamos aqui o mesmo processo, diferenciando-se dos outros com o método "**remove**", que indica para o EntityManager que estamos apagando um registro da tabela.
@@ -78,6 +84,14 @@ Método que irá repassar o objeto **Aluno** escolhido na tabela \(pela página 
 ```java
 public void enviaAluno(Aluno a) {
     this.alunoSelecionado = a;
+    List<Matricula> m = EManager.getInstance().createNamedQuery("Matricula.findByAluno").setParameter("idAluno", this.alunoSelecionado.getId()).getResultList();
+    if (m.size() > 0) {
+        this.msgConfirmacao = "Tem certeza? A remoção do(a) aluno(a) acarretará na exclusão de todas as respectivas matrículas.";
+        this.larguraPopupConfirma = 400;
+    } else {
+    this.msgConfirmacao = "Tem certeza?";
+    this.larguraPopupConfirma = 200;
+    }
 }
 ```
 
@@ -120,7 +134,22 @@ E então adicionamos todos os **getters **e **setters** \(dica: utilize o atalho
     public void setAlunoSelecionado(Aluno alunoSelecionado) {
         this.alunoSelecionado = alunoSelecionado;
     }
+        public String getMsgConfirmacao() {
+        return msgConfirmacao;
+    }
+
+    public void setMsgConfirmacao(String msgConfirmacao) {
+        this.msgConfirmacao = msgConfirmacao;
+    }
+
+    public int getLarguraPopupConfirma() {
+        return larguraPopupConfirma;
+    }
+
+    public void setLarguraPopupConfirma(int larguraPopupConfirma) {
+        this.larguraPopupConfirma = larguraPopupConfirma;
+    }
 ```
 
-**Exercício** - tente repetir o mesmo processo utilizado no **AlunoBean** para o **DisciplinaBean **\(com exceção de que não será necessário gerar matrículas\). Caso encontre dificuldades, todas as classes serão disponibilizadas no final desta seção.
+
 
