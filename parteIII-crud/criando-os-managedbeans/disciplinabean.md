@@ -30,49 +30,46 @@ Método que trata a **inserção** de novos alunos na tabela:
 
 ```java
 public void novoCadastro() {
-    this.aluno.setMatricula(1000000 + new Random().nextInt(9999999 - 1000000 + 1));
-    EManager.getInstance().getTransaction().begin();
-    EManager.getInstance().persist(this.aluno);
-    EManager.getInstance().getTransaction().commit();
-    this.aluno = new Aluno();
-    atualizaListaAlunos();
+        EManager.getInstance().getTransaction().begin();
+        EManager.getInstance().persist(this.disciplina);
+        EManager.getInstance().getTransaction().commit();
+        this.disciplina = new Disciplina();
+        atualizaListaDisciplinas();
 }
 ```
 
-Neste método, utilizamos a instância do objeto aluno criado no início da classe \(this.aluno\) como objeto base para **receber** as informações do **novo** aluno \(com exceção da matrícula, todos os outros atributos serão preenchidos automaticamente através da página web JSF criada posteriormente\).
-
-Geramos a matrícula de forma **aleatória**, com valores entre 1000000 e 9999999 - estes valores foram escolhidos arbitrariamente para este projeto, porém poderiam ser setados qualquer tipos de valores inteiros.
+Neste método, utilizamos a instância do objeto disciplina criado no início da classe \(this.disciplina\) como objeto base para **receber** as informações da **nova** disciplina.
 
 Então iniciamos uma **transação** com o banco de dados através da **unidade de persistência \(gerenciada pelo EntityManager\)** e "**persistimos**" a entidade aluno - Isto indica que esta entidade será inserida como um novo registro. Por fim, é feito o "**commit**", que **grava** as mudanças realizadas durante a transação.
 
-Após a inserção, re-instanciamos nosso objeto aluno para prevenir que existam dados **remanescentes** de transações anteriores, e então atualizamos a lista - para obter o novo registro junto com os demais.
+Após a inserção, re-instanciamos nosso objeto disciplina para prevenir que existam dados **remanescentes** de transações anteriores, e então atualizamos a lista - para obter o novo registro junto com os demais.
 
 Método que trata a **modificação** de registros de alunos na tabela:
 
 ```java
-public void modificaAluno() {
-    EManager.getInstance().getTransaction().begin();
-    EManager.getInstance().merge(this.alunoSelecionado);
-    EManager.getInstance().getTransaction().commit();
-    atualizaListaAlunos();
+public void modificaDisciplina() {
+        EManager.getInstance().getTransaction().begin();
+        EManager.getInstance().merge(this.disciplinaSelecionada);
+        EManager.getInstance().getTransaction().commit();
+        atualizaListaDisciplinas();
 }
 ```
 
-Utilizamos a mesma metodologia empregada na parte de inserção de alunos, porém aqui ocorre uma mudança durante a transação - chamamos o método "**merge**", passando para ele o objeto "**alunoSelecionado"**, que segura os valores do registro clicado na tabela durante a exibição na página web. Este método indica para o EntityManager que estaremos fazendo mudanças em registros já existentes.
+Utilizamos a mesma metodologia empregada na parte de inserção de disciplinas, porém aqui ocorre uma mudança durante a transação - chamamos o método "**merge**", passando para ele o objeto "**disciplinaSelecionada"**, que segura os valores do registro clicado na tabela durante a exibição na página web. Este método indica para o EntityManager que estaremos fazendo mudanças em registros já existentes.
 
-Método que trata a **remoção** de registros de alunos na tabela:
+Método que trata a **remoção** de registros de disciplinas na tabela:
 
 ```java
-    public void deletaAluno() {
-        List<Matricula> m = EManager.getInstance().createNamedQuery("Matricula.findByAluno").setParameter("idAluno", this.alunoSelecionado.getId()).getResultList();
+public void deletaDisciplina() {
+        List<Matricula> m = EManager.getInstance().createNamedQuery("Matricula.findByDisciplina").setParameter("idDisciplina", this.disciplinaSelecionada.getId()).getResultList();
         EManager.getInstance().getTransaction().begin();
         for (int i = 0; i < m.size(); i++) {
             EManager.getInstance().remove(m.get(i));
         }
-        EManager.getInstance().remove(this.alunoSelecionado);
+        EManager.getInstance().remove(this.disciplinaSelecionada);
         EManager.getInstance().getTransaction().commit();
-        atualizaListaAlunos();
-    }
+        atualizaListaDisciplinas();
+}
 ```
 
 Utilizamos aqui o mesmo processo, diferenciando-se dos outros com o método "**remove**", que indica para o EntityManager que estamos apagando um registro da tabela.
