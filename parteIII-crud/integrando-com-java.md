@@ -10,11 +10,11 @@ Primeiro gostaríamos de mostrar a estrutura **genérica** para as nossas págin
 
 ![](/assets/alunoMinimal.png)
 
-A estrutura principal dessa página está dentro da tag** ui:define="content"**, e ela consiste basicamente em três forms distintos que executam funções para a visualização, inserção, edição e exclusão.
+A estrutura principal dessa página está dentro da tag** ui:define name="content"**, e ela consiste basicamente em três forms distintos que executam funções para a visualização, inserção, edição e exclusão.
 
 Os forms são: **tabela**, **modifica **e **cadastro.**
 
 É importante ressaltar que alguns trechos de código estão **omissos** na imagem a cima.
 
-Ou seja, para cada páginas iremos customizar seus reespectivos forms de acordo com os atributos de cada tabela.
+Ou seja, para cada páginas iremos customizar seus respectivos forms de acordo com os atributos de cada tabela.
 

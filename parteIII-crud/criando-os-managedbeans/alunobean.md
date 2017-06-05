@@ -13,6 +13,7 @@ private int larguraPopupConfirma = 200;
 * A lista "**alunos**" do tipo **Aluno** será utilizada para preencher a tabela principal com todos os registros, na visualização da página web de gerenciamento desta entidade.
 * O objeto "**aluno**" será utilizado na inserção de novos registros.
 * O objeto "**alunoSelecionado**" será utilizado para armazenar o registro da tabela que deseja-se fazer alguma alteração.
+* A String "**msgConfirmacao**" seta a mensagem padrão para a exclusão de alunos \(será diferente quando o aluno estiver matriculado em alguma disciplina\).
 
 Método que **popula** a **lista** de alunos com registros **atualizados**:
 
@@ -97,6 +98,8 @@ public void enviaAluno(Aluno a) {
 
 Desta forma recebemos o registro completo, incluindo seu **id.**
 
+Também verificamos se o aluno está matriculado em alguma disciplina, para atualizar a mensagem de confirmação de exclusão \(caso clicado\) para alertar o usuário da consequência de tal ação - adicionalmente modificamos a largura do pop-up, para se adequar ao tamanho do novo texto.
+
 Método que inicializa a tabela preenchida com os registros, de forma automática ao carregar a página:
 
 ```java
@@ -151,5 +154,5 @@ E então adicionamos todos os **getters **e **setters** \(dica: utilize o atalho
     }
 ```
 
-Link para download da classe AlunoBean.java: https://gist.github.com/quisen/42eadb84505bc6aa8259c70ea66fee74
+Link para download da classe AlunoBean.java: [https://gist.github.com/quisen/42eadb84505bc6aa8259c70ea66fee74](https://gist.github.com/quisen/42eadb84505bc6aa8259c70ea66fee74)
 

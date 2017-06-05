@@ -66,7 +66,7 @@ O form **tabela** pode ser explicado em três blocos:
 
 * O **primeiro** é o **commandButton** para **cadastrar** um novo aluno. 
 * O **segundo** é o **dataTable** para a **visualização** dos registros. 
-* O **terceiro** é outro **commandButton** para **editar** um aluno já existente, que está inserido na **última** **coluna** da direita.
+* O **terceiro** é outro **commandButton **localizado na última coluna da direita - para **modificar** um aluno já existente.
 
 Para o **primeiro** bloco \(cadastrar\) o atributo **"update"** indica que irá ocorrer alguma mudança visual na página, sendo que a parte ":cadastro:" é uma referência à outro form \(veja em seguida\). O atributo **"oncomplete"** define uma ação que irá ser realizada quando o botão for clicado.
 
