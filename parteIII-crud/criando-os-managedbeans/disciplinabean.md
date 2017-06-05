@@ -13,6 +13,7 @@ private int larguraPopupConfirma = 200;
 * A lista "**disciplinas**" do tipo **Disciplina** será utilizada para preencher a tabela principal com todos os registros, na visualização da página web de gerenciamento desta entidade.
 * O objeto "**disciplina**" será utilizado na inserção de novos registros.
 * O objeto "**disciplinaSelecionada**" será utilizado para armazenar o registro da tabela que deseja-se fazer alguma alteração.
+* O inteiro "**larguraPopupConfirma**" representa a largura da caixa de mensagem de confirmação.
 
 Método que **popula** a **lista** de disciplinas com registros **atualizados**:
 
@@ -93,6 +94,8 @@ public void enviaDisciplina(Disciplina a) {
 ```
 
 Desta forma recebemos o registro completo, incluindo seu **id.**
+
+Também verificamos se a disciplina está vinculada à matricula de algum aluno, para atualizar a mensagem de confirmação de exclusão \(caso clicado\) para alertar o usuário da consequência de tal ação - adicionalmente modificamos a largura do pop-up, para se adequar ao tamanho do novo texto.
 
 Método que inicializa a tabela preenchida com os registros, de forma automática ao carregar a página:
 

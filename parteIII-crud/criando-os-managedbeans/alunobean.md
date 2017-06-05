@@ -14,6 +14,7 @@ private int larguraPopupConfirma = 200;
 * O objeto "**aluno**" será utilizado na inserção de novos registros.
 * O objeto "**alunoSelecionado**" será utilizado para armazenar o registro da tabela que deseja-se fazer alguma alteração.
 * A String "**msgConfirmacao**" seta a mensagem padrão para a exclusão de alunos \(será diferente quando o aluno estiver matriculado em alguma disciplina\).
+* O inteiro "**larguraPopupConfirma**" representa a largura da caixa de mensagem de confirmação.
 
 Método que **popula** a **lista** de alunos com registros **atualizados**:
 
