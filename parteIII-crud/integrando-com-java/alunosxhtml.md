@@ -155,7 +155,7 @@ Novo aluno listado e cadastrado após confirmação do preenchimento no pop-up:
 
 ## &lt;h:form id="modifica"&gt;
 
-Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado para edição.
+Esse form irá conter um pop-up que irá mostrar os dados do aluno selecionado para edição ou exclusão.
 
 ```xhtml
 <h:form id="modifica">
@@ -207,6 +207,8 @@ Visualização da janela pop-up ao clicar no botão de edição localizado na ú
 Após o usuário escolher modificar ou excluir será necessário confirmar a ação clicando em Sim ou Não.
 
 ![](/assets/modifiConfirmDiscipl.png)
+
+Caso seja escolhida a opção de exclusão, a mensagem de confirmação e largura do popup serão diferentes, como apresentados anteriormente no código java. Também note a referência às variáveis do nosso bean na parte de exclusão no código xhtml.
 
 Por fim, o registro será atualizado ou removido automaticamente da tabela após a confirmação.
 
