@@ -1,8 +1,10 @@
 # Utilização do Git e Github
 
+O Git é uma ferramenta gratuita e open source distribuída para gerenciar sistemas de controle de versão. 
 
+O GitHub é serviço de hospedagem de reposítórios baseado em Git que permite a criação de repositórios públicos, de maneira gratuita, mas para criar repositórios privados é necessário pagar por um plano mensal.
 
-Git is a free and open source distributed **version control system ** designed to handle everything from small to very large projects with speed and efficiency"
+Se você for estudante e a sua instituição de ensino for filiada, é possível conseguir uma conta de desenvolvedor. 
 
-"GitHub is a **web-based **Git repository **hosting service**, which offers all of the distributed revision control and source code management \(SCM\) functionality of Git as well as adding its own features."
+Link: [https://education.github.com/pack](https://education.github.com/pack)
 
