@@ -16,5 +16,5 @@ Github permite:
 
 
 
-https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
+Cheat Sheet do Git com os comandos básicos: [https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 
