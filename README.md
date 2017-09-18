@@ -18,7 +18,7 @@ A parte dois demonstra como configurar e gerenciar a **conexão** entre a sua **
 
 # Parte III:
 
-A etapa três contém a parte mais importante para a implementação do CRUD. Nela utilizaremos o a especificação Java para o desenvolvimento de **interfaces** **de** **usuário** chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces,** com componentes que serão fundamentais para o funcionamento do projeto.
+A partetrês contém a parte mais importante para a implementação do CRUD. Nela utilizaremos o a especificação Java para o desenvolvimento de **interfaces** **de** **usuário** chamada** JSF - JavaServer Faces**, e mais especificamente a suíte open source **PrimeFaces,** com componentes que serão fundamentais para o funcionamento do projeto.
 
 # Parte IV:
 
