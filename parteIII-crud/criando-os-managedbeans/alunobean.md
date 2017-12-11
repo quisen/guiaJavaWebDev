@@ -155,5 +155,7 @@ E então adicionamos todos os **getters **e **setters** \(dica: utilize o atalho
     }
 ```
 
+
+
 Link para download da classe AlunoBean.java: [https://gist.github.com/quisen/42eadb84505bc6aa8259c70ea66fee74](https://gist.github.com/quisen/42eadb84505bc6aa8259c70ea66fee74)
 

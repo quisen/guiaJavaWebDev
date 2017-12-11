@@ -43,3 +43,18 @@ Depois disso você perceberá que as classes serão criadas dentro do seu pacote
 
 ![](/assets/classesentidadegerada.png)
 
+**Atenção**, abra a classe Matricula.java e inclua 2 @NamedQuery , que servirão para fazer a verificação de existência de vínculo entre os registros de alunos que possuem vínculo com as outras tabelas \(Alunos e Disciplinas\).
+
+```
+@Entity
+@Table(name = "matricula")
+@XmlRootElement
+@NamedQueries({
+    @NamedQuery(name = "Matricula.findAll", query = "SELECT m FROM Matricula m")
+    , @NamedQuery(name = "Matricula.findByAluno", query = "SELECT m FROM Matricula m JOIN m.idAluno i WHERE i.id = :idAluno")
+    , @NamedQuery(name = "Matricula.findByDisciplina", query = "SELECT m FROM Matricula m JOIN m.idDisciplina d WHERE d.id = :idDisciplina")
+    , @NamedQuery(name = "Matricula.findById", query = "SELECT m FROM Matricula m WHERE m.id = :id")})
+```
+
+
+
