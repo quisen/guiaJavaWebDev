@@ -50,10 +50,10 @@ Depois disso você perceberá que as classes serão criadas dentro do seu pacote
 @Table(name = "matricula")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Matricula.findAll", query = "SELECT m FROM Matricula m")
+    @NamedQuery(name = "Matricula.findById", query = "SELECT m FROM Matricula m WHERE m.id = :id")
+    , @NamedQuery(name = "Matricula.findAll", query = "SELECT m FROM Matricula m")
     , @NamedQuery(name = "Matricula.findByAluno", query = "SELECT m FROM Matricula m JOIN m.idAluno i WHERE i.id = :idAluno")
-    , @NamedQuery(name = "Matricula.findByDisciplina", query = "SELECT m FROM Matricula m JOIN m.idDisciplina d WHERE d.id = :idDisciplina")
-    , @NamedQuery(name = "Matricula.findById", query = "SELECT m FROM Matricula m WHERE m.id = :id")})
+    , @NamedQuery(name = "Matricula.findByDisciplina", query = "SELECT m FROM Matricula m JOIN m.idDisciplina d WHERE d.id = :idDisciplina")})
 ```
 
 
